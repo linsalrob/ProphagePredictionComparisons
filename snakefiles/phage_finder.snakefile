@@ -37,7 +37,7 @@ rule run_phage_finder:
         "/home3/redwards/anaconda3/envs/phage_finder"
     shell:
         """
-        cd {params.wd} && /home3/redwards/opt/phage_finder/phage_finder_v2.1/bin/phage_finder_v2.1.sh {params.pr}
+        cd {params.wd} && touch error.log formatdb.log && /home3/redwards/opt/phage_finder/phage_finder_v2.1/bin/phage_finder_v2.1.sh {params.pr}
         """
 
 rule phage_finder_to_tbl:
@@ -47,7 +47,19 @@ rule phage_finder_to_tbl:
         os.path.join(phage_finderdir, "{genome}_phage_finder", "{genome}_phage_finder_locs.tsv")
     shell:
         """
-        grep -v ^# {input.tsv} | cut -f 1,4,5 > {output}
+        set +e
+        G=$(grep -v ^# {input.tsv})
+        exitcode=$?
+        if [ $exitcode == 0 ]; then
+            IFS=$"\n"
+            for X in $(echo $G); do 
+                echo $X | cut -f 1,4,5 > {output}
+            done
+        elif [ $exitcode == 1 ]; then
+            touch {output}
+        else
+            exit $exitcode
+        fi
         """
 
 rule count_tp_tn:
