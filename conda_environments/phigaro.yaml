@@ -46,5 +46,4 @@ dependencies:
     - singleton==0.1.0
     - six==1.15.0
     - soupsieve==2.0.1
-prefix: /home3/redwards/anaconda3/envs/phigaro
 

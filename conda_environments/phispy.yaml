@@ -37,5 +37,4 @@ dependencies:
   - wheel=0.34.2=py_1
   - xz=5.2.5=h516909a_0
   - zlib=1.2.11=h516909a_1006
-prefix: /home3/redwards/anaconda3/envs/phispy
 
