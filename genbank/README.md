@@ -1,12 +1,11 @@
-# Training data for PhiSpy
+# Manually Curated Prophages
 
-This is training data that is used in the prediction of the prophages. If possible, you should use the 
-closest relative to your genome, however if that is not possible, you can also use the Generic Training set.
+We have manually curated these prophages and marked the phage regions in a couple of different ways. First, each gene within a prophage region is labelled with the tag `is_phage`. Second, the prophage features are actually added to the GenBank file.
 
+To add more genomes to this set, or to suggest corrections, please make a Pull Request. We welcome more genomes!
 
-You can also use these data to validate the genomes. The genomes are provided in the [tests](../tests) directory.
+These data come from [PhiSpy](https://github.com/linsalrob/PhiSpy).
 
-Here are the phages in the training sets. *Please note:* At the moment the ends are only approximate and have not been validated.
 
 Genus Species | Number of prophages
 --- | ---
@@ -51,6 +50,8 @@ Yersinia pestis CO92  | 3
 Yersinia pestis KIM  | 5
 
 
+
+These are the locations of the prophages that we have identified. Please submit an issue or pull request if you disagree with these regions.
 
 
 Genus Species | PP # | Start | End | Number of genes
