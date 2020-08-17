@@ -7,11 +7,11 @@ This is extracted from their example code, but we added parsing genbank files to
 
 import sys
 import argparse
-import binascii
-import gzip
+
 import pandas as pd
-from Bio import SeqIO
 from PhageBoost.main import calculate_features, read_model_from_file, predict, get_predictions
+
+from ProphagePredictionsLib import genbank_seqio, feature_id
 
 __author__ = 'Rob Edwards'
 __copyright__ = 'Copyright 2020, Rob Edwards'
@@ -19,49 +19,6 @@ __credits__ = ['Rob Edwards']
 __license__ = 'MIT'
 __maintainer__ = 'Rob Edwards'
 __email__ = 'raedwards@gmail.com'
-
-
-def is_gzip(gbkf):
-    """
-    Is the file compressed?
-    :param gbkf:
-    :return: true if compressed else false
-    """
-
-    with open(gbkf, 'rb') as i:
-        return binascii.hexlify(i.read(2)) == b'1f8b'
-
-
-def genbank_seqio(gbkf):
-    """
-    Get the parser stream
-    :param gbkf: genbank file
-    :return:
-    """
-
-    if is_gzip(gbkf):
-        handle = gzip.open(gbkf, 'rt')
-    else:
-        handle = open(gbkf, 'r')
-    return SeqIO.parse(handle, "genbank")
-
-
-def feature_id(seq, feat):
-    """
-    Choose the appropriate id for the feature
-    :param seq: the bioseq object
-    :param feat: the feature
-    :return: the id
-    """
-
-    if 'protein_id' in feat.qualifiers:
-        return '|'.join(feat.qualifiers['protein_id'])
-    elif 'locus_tag' in feat.qualifiers:
-        return "|".join(feat.qualifiers['locus_tag'])
-    elif 'db_xref' in feat.qualifiers:
-        return '|'.join(feat.qualifiers['db_xref'])
-    else:
-        return seq.id + "." + str(feat.location)
 
 
 def genbank_to_pandas(gbkf, mincontiglen, ignorepartials=True, convert_selenocysteine=False):
