@@ -7,40 +7,40 @@
 # https://www.biorxiv.org/content/10.1101/2020.08.09.243022v1.full.pdf #
 #                                                                      #
 #                                                                      #
-# For this test, we need phageboost and phispy installed in conda      #
-#                                                                      #
 ########################################################################
 
 
 
-phispydir = "/home3/redwards/GitHubs/PhiSpy/test_genbank_files"
-GENOMES, = glob_wildcards(os.path.join(phispydir, '{genome}.gb.gz'))
+test_genomes = "genbank"
+GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
 
-phageboostdir = "phageboost_tests"
+outputdir = "phageboost_tests"
 
 
 rule all:
     input:
-        expand(os.path.join(phageboostdir, "{genome}_phageboost_tptn.tsv"), genome=GENOMES)
+        expand(os.path.join(outputdir, "{genome}_phageboost_tptn.tsv"), genome=GENOMES)
 
 
 rule run_phageboost:
     input:
-        gen = os.path.join(phispydir, "{genome}.gb.gz")
+        gen = os.path.join(test_genomes, "{genome}.gb.gz")
     output:
-        tsv = os.path.join(phageboostdir, "{genome}_phageboost.tsv")
+        tsv = os.path.join(outputdir, "{genome}_phageboost.tsv")
     benchmark:
-        os.path.join(phageboostdir, "benchmarks", "{genome}_phageboost.txt")
+        os.path.join(outputdir, "benchmarks", "{genome}_phageboost.txt")
+    conda:
+        "conda_environments/phageboost.yaml"
     shell:
         """
-        python3 ~/GitHubs/EdwardsLab/prophages/phageboost_genbank.py -g {input.gen} -o {output.tsv} -m /home3/redwards/phage/prophage/model_delta_std_hacked.pickled.silent.gz
+        python3 scripts/phageboost_genbank.py -g {input.gen} -o {output.tsv} -m data/model_delta_std_hacked.pickled.silent.gz
         """
 
 rule phageboost_to_tbl:
     input:
-        tsv = os.path.join(phageboostdir, "{genome}_phageboost.tsv")
+        tsv = os.path.join(outputdir, "{genome}_phageboost.tsv")
     output:
-        os.path.join(phageboostdir, "{genome}_phageboost_locs.tsv")
+        os.path.join(outputdir, "{genome}_phageboost_locs.tsv")
     shell:
         """
         if [ $(stat -c %s {input}) -lt 50 ]; then
@@ -52,11 +52,11 @@ rule phageboost_to_tbl:
 
 rule count_tp_tn:
     input:
-        gen = os.path.join(phispydir, "{genome}.gb.gz"),
-        tbl = os.path.join(phageboostdir, "{genome}_phageboost_locs.tsv")
+        gen = os.path.join(test_genomes, "{genome}.gb.gz"),
+        tbl = os.path.join(outputdir, "{genome}_phageboost_locs.tsv")
     output:
-        tp = os.path.join(phageboostdir, "{genome}_phageboost_tptn.tsv")
+        tp = os.path.join(outputdir, "{genome}_phageboost_tptn.tsv")
     shell:
         """
-        python3 ~/GitHubs/PhiSpy/scripts/compare_predictions_to_phages.py -t {input.gen} -r {input.tbl} > {output.tp}
+        python3 scripts/compare_predictions_to_phages.py -t {input.gen} -r {input.tbl} > {output.tp}
         """

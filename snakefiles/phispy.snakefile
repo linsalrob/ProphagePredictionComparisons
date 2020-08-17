@@ -1,9 +1,12 @@
 
 
+
+
+test_genomes = "genbank"
+GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
+
 outputdir = "phispy_tptn"
 
-phispydir = "/home3/redwards/GitHubs/PhiSpy/test_genbank_files"
-GENOMES, = glob_wildcards(os.path.join(phispydir, '{genome}.gb.gz'))
 
 rule all:
     input:
@@ -11,7 +14,7 @@ rule all:
 
 rule run_phispy:
     input:
-        g = os.path.join(phispydir, "{genome}.gb.gz")
+        g = os.path.join(test_genomes, "{genome}.gb.gz")
     params:
         o = os.path.join(outputdir, "{genome}.phispy")
     benchmark:
@@ -22,6 +25,8 @@ rule run_phispy:
         temporary(os.path.join(outputdir, "{genome}.phispy", "phage.fasta")),
         os.path.join(outputdir, "{genome}.phispy", "phage.gbk"),
         os.path.join(outputdir, "{genome}.phispy", "phispy.log"),
+    conda:
+        "conda_environments/phispy.yaml"
     shell:
         """
         PhiSpy.py -o {params.o} --output_choice 4 {input.g}
@@ -29,11 +34,11 @@ rule run_phispy:
 
 rule count_tp_tn:
     input:
-        gen = os.path.join(phispydir, "{genome}.gb.gz"),
+        gen = os.path.join(test_genomes, "{genome}.gb.gz"),
         phg = os.path.join(outputdir, "{genome}.phispy", "phage.gbk")
     output:
         tp = os.path.join(outputdir, "{genome}_phispy_tptn.tsv")
     shell:
         """
-        python3 ~/GitHubs/PhiSpy/scripts/compare_predictions_to_phages.py -t {input.gen} -p {input.phg} > {output.tp}
+        python3 scripts/compare_predictions_to_phages.py -t {input.gen} -p {input.phg} > {output.tp}
         """
