@@ -21,12 +21,13 @@ f1 score: 0.872 (this is the harmonic mean of precision and recall, and is the b
 =cut
 
 my %opts;
-getopts('d:c:v', \%opts);
+getopts('d:c:hv', \%opts);
 unless ($opts{d} && $opts{c}) {
 	die <<EOF;
 	$0
 	-d directory that contains the *tptn files (required)
 	-c prophage caller (e.g. phispy, phigaro, virsorter, phage_finder (required)
+	-h print header line
 	-v verbose output
 
 
@@ -36,9 +37,11 @@ EOF
 }
 
 
-my @cols = ("Accuracy", "Precision", "Recall", "Specificity", "f1 score");
+my @cols = ("TP", "TN", "FP", "FN", "Accuracy", "Precision", "Recall", "Specificity", "f1 score");
 
-print join("\t", "Prophage Caller", "Genome", @cols), "\n";
+if ($opts{h}) {
+	print join("\t", "Prophage Caller", "Genome", @cols), "\n";
+}
 
 opendir(DIR, $opts{d}) || die "can't open $opts{d}";
 foreach my $f (grep {m/_tptn.tsv/} readdir(DIR)) {
@@ -56,6 +59,12 @@ foreach my $f (grep {m/_tptn.tsv/} readdir(DIR)) {
 	open(IN, "$opts{d}/$f") || die "can't open $opts{d}/$f";
 	while (<IN>) {
 		chomp;
+		if (/^TP: (\d+)\s+FP: (\d+)\s+TN: (\d+)\s+FN: (\d+)/) {
+			$res{"TP"} = $1;
+			$res{"FP"} = $2;
+			$res{"TN"} = $3;
+			$res{"FN"} = $4;
+		}
 		if (/^(.*?):\s+([\d\.]+)/ && $res{$1}) {$res{$1}=$2}
 	}
 	close IN;
