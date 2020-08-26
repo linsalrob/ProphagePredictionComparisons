@@ -1,3 +1,15 @@
+=pod
+
+Parse the True Positive/True Negative output file, that I typically call *_tptn.tsv and summarize
+the output as a table. The [python code](compare_predictions_to_phages.py) should just print this
+out as a table, but it was repurporsed from something else and so it was easier to just write this
+little parser.
+
+Run with a directory of tptn files
+
+=cut
+
+
 use strict;
 use Getopt::Std;
 use Data::Dumper;
