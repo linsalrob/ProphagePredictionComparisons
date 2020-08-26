@@ -33,11 +33,11 @@ If you go to all that work, please make a pull request and we will update this s
 # What software is currently included?
 
 We have:
- - [PhageBoost](http://phageboost.ml) [original citation](https://www.biorxiv.org/content/10.1101/2020.08.09.243022v1.full.pdf)
- - [Phage Finder](http://phage-finder.sourceforge.net/) [original citation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1635311/)
- - [Phigaro](https://github.com/bobeobibo/phigaro) [original citation](https://academic.oup.com/bioinformatics/article-abstract/36/12/3882/5822875?redirectedFrom=fulltext)
- - [PhiSpy](https://github.com/linsalrob/phispy) [original citation](https://pubmed.ncbi.nlm.nih.gov/22584627/)
- - [VirSorter](https://github.com/simroux/VirSorter) [original citation](https://peerj.com/articles/985/) 
+ - [PhageBoost](http://phageboost.ml) [original citation](https://www.biorxiv.org/content/10.1101/2020.08.09.243022v1.full.pdf) Version used: 0.1.4
+ - [Phage Finder](http://phage-finder.sourceforge.net/) [original citation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1635311/) Version used: v2.1
+ - [Phigaro](https://github.com/bobeobibo/phigaro) [original citation](https://academic.oup.com/bioinformatics/article-abstract/36/12/3882/5822875?redirectedFrom=fulltext) Version used: v2.2.3
+ - [PhiSpy](https://github.com/linsalrob/phispy) [original citation](https://pubmed.ncbi.nlm.nih.gov/22584627/) Version used: 4.1.19
+ - [VirSorter](https://github.com/simroux/VirSorter) [original citation](https://peerj.com/articles/985/)  Version used: v1.0.6
 
 If you know of other tools that should be included please let us know or make a PR.
 
