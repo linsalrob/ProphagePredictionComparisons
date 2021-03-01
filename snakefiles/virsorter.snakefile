@@ -38,7 +38,7 @@ rule run_virsorter:
         "conda_environments/virsorter.yaml"
     shell:
         """
-        wrapper_phage_contigs_sorter_iPlant.pl -f {input.fna} --db 1 --wdir {params.odir} --data-dir ~/opt/virsorter/virsorter-data
+        wrapper_phage_contigs_sorter_iPlant.pl --ncpu 1 -f {input.fna} --db 1 --wdir {params.odir} --data-dir ~/opt/virsorter/virsorter-data
         """
 
 rule virsorter_to_tbl:
