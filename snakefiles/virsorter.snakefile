@@ -20,6 +20,7 @@ rule convert_gb_to_fna:
         fna = os.path.join(outputdir, "{genome}.fna")
     shell:
         """
+        export PYTHONPATH=$PYTHONPATH:{EdwardsLab}
         python3 {EdwardsLab}/bin/genbank2sequences.py -g {input.gen} -n {output.fna}
         """
 
