@@ -1,5 +1,6 @@
 
-test_genomes = "genbank"
+
+test_genomes = os.path.join(workflow.basedir, "genbank")
 GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
 
 outputdir = "virsorter_tests"
@@ -35,7 +36,7 @@ rule run_virsorter:
     benchmark:
         os.path.join(outputdir, "benchmarks", "{genome}_virsorter.txt")
     conda:
-        "conda_environments/virsorter.yaml"
+        "../conda_environments/virsorter.yaml"
     shell:
         """
         wrapper_phage_contigs_sorter_iPlant.pl --ncpu 1 -f {input.fna} --db 1 --wdir {params.odir} --data-dir ~/opt/virsorter/virsorter-data

@@ -1,4 +1,6 @@
-test_genomes = "genbank"
+
+
+test_genomes = os.path.join(workflow.basedir, "genbank")
 GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
 
 outputdir = "phigaro_tests"
@@ -28,7 +30,7 @@ rule run_phigaro:
     benchmark:
         os.path.join(outputdir, "benchmarks", "{genome}_phigaro.txt")
     conda:
-        "conda_environments/phigaro.yaml"
+        "../conda_environments/phigaro.yaml"
     shell:
         """
         phigaro -f {input.fna} -e tsv -o {params.tsv} --delete-shorts

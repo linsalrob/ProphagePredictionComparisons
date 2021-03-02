@@ -1,5 +1,6 @@
 
-test_genomes = "genbank"
+
+test_genomes = os.path.join(workflow.basedir, "genbank")
 GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
 
 outputdir = "phage_finder_tests"
@@ -34,7 +35,7 @@ rule run_phage_finder:
     benchmark:
         os.path.join(outputdir, "benchmarks", "{genome}_phage_finder.txt")
     conda:
-        "conda_environments/phage_finder.yaml"
+        "../conda_environments/phage_finder.yaml"
     shell:
         """
         cd {params.wd} && touch error.log formatdb.log && /home3/redwards/opt/phage_finder/phage_finder_v2.1/bin/phage_finder_v2.1.sh {params.pr}

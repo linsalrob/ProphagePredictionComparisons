@@ -1,8 +1,6 @@
 
 
-
-
-test_genomes = "genbank"
+test_genomes = os.path.join(workflow.basedir, "genbank")
 GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
 
 outputdir = "phispy_tptn"
@@ -26,7 +24,7 @@ rule run_phispy:
         os.path.join(outputdir, "{genome}.phispy", "phage.gbk"),
         os.path.join(outputdir, "{genome}.phispy", "phispy.log"),
     conda:
-        "conda_environments/phispy.yaml"
+        "../conda_environments/phispy.yaml"
     shell:
         """
         PhiSpy.py -o {params.o} --output_choice 4 {input.g}

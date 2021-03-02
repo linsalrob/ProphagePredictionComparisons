@@ -10,8 +10,7 @@
 ########################################################################
 
 
-
-test_genomes = "genbank"
+test_genomes = os.path.join(workflow.basedir, "genbank")
 GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
 
 outputdir = "phageboost_tests"
@@ -30,7 +29,7 @@ rule run_phageboost:
     benchmark:
         os.path.join(outputdir, "benchmarks", "{genome}_phageboost.txt")
     conda:
-        "conda_environments/phageboost.yaml"
+        "../conda_environments/phageboost.yaml"
     shell:
         """
         python3 scripts/phageboost_genbank.py -g {input.gen} -o {output.tsv} -m data/model_delta_std_hacked.pickled.silent.gz
