@@ -1,6 +1,8 @@
 
 
-test_genomes = os.path.join(workflow.basedir, "genbank")
+test_genomes = os.path.join(workflow.basedir, "../genbank")
+EdwardsLab = os.path.join(workflow.basedir, "../EdwardsLab")
+scripts = os.path.join(workflow.basedir, "../scripts")
 GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
 
 outputdir = "virsorter_tests"
@@ -18,7 +20,7 @@ rule convert_gb_to_fna:
         fna = os.path.join(outputdir, "{genome}.fna")
     shell:
         """
-        python3 ~/GitHubs/EdwardsLab/bin/genbank2sequences.py -g {input.gen} -n {output.fna}
+        python3 {EdwardsLab}/bin/genbank2sequences.py -g {input.gen} -n {output.fna}
         """
 
 
@@ -83,5 +85,5 @@ rule count_tp_tn:
         tp = os.path.join(outputdir, "{genome}_virsorter_tptn.tsv")
     shell:
         """
-        python3 scripts/compare_predictions_to_phages.py -t {input.gen} -r {input.tbl} > {output.tp}
+        python3 {scripts}/compare_predictions_to_phages.py -t {input.gen} -r {input.tbl} > {output.tp}
         """
