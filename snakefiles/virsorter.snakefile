@@ -18,6 +18,8 @@ rule convert_gb_to_fna:
         gen = os.path.join(test_genomes, "{genome}.gb.gz")
     output:
         fna = os.path.join(outputdir, "{genome}.fna")
+    conda:
+        "../conda_environments/roblib.yaml"
     shell:
         """
         export PYTHONPATH=$PYTHONPATH:{EdwardsLab}
