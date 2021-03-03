@@ -101,11 +101,11 @@ rule count_tp_tn:
     output:
         tp = os.path.join(outputdir, "{genome}_virsorter_tptn.tsv")
     params:
-        projDir = os.path.join(workflow.basedir, '../')
+        os.path.join(workflow.basedir, '../')
     conda:
         "../conda_environments/virsorter.yaml"
     shell:
         """
-        export PYTHONPATH={projDir};
+        export PYTHONPATH={params};
         python3 {scripts}/compare_predictions_to_phages.py -t {input.gen} -r {input.tbl} > {output.tp}
         """
