@@ -6,16 +6,27 @@ Software: https://github.com/simroux/VirSorter
 
 """
 
+# CONFIG
 include: "../scripts/preflight.smk"
+
+vs1Build = os.path.join(workflow.basedir, "../build/vs1")
+vs1DbUrl = 'https://cloudstor.aarnet.edu.au/plus/s/m55PsF0siDDWI7o/download'
+vs1DbTar = 'virsorter-data-v2.tar.gz'
+vs1Db = os.path.join(vs1Build, 'virsorter-data')
 
 outputdir = "virsorter_tests"
 
+if not os.path.exists(vs1Build):
+    os.makedirs(vs1Build)
 
+
+# TARGETS
 rule all:
     input:
         expand(os.path.join(outputdir, "{genome}_virsorter_tptn.tsv"), genome=GENOMES)
 
 
+# RECIPES
 rule convert_gb_to_fna:
     input:
         gen = os.path.join(test_genomes, "{genome}.gb.gz")
@@ -32,9 +43,22 @@ rule convert_gb_to_fna:
         """
 
 
+rule virsorter_db:
+    output:
+        os.path.join(vs1Db,'VirSorter_Readme.txt')
+    shell:
+        """
+        cd {vs1Build};
+        wget {vs1DbUrl};
+        tar xvf {vs1DbTar};
+        rm {vs1DbTar};
+        """
+
+
 rule run_virsorter:
     input:
-        fna = os.path.join(outputdir, "{genome}.fna")
+        fna = os.path.join(outputdir, "{genome}.fna"),
+        req = os.path.join(vs1Db,'VirSorter_Readme.txt')
     output:
         c1 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_cat-1.gb"),
         c2 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_cat-2.gb"),
@@ -49,8 +73,9 @@ rule run_virsorter:
         "../conda_environments/virsorter.yaml"
     shell:
         """
-        wrapper_phage_contigs_sorter_iPlant.pl --ncpu 1 -f {input.fna} --db 1 --wdir {params.odir} --data-dir ~/opt/virsorter/virsorter-data
+        wrapper_phage_contigs_sorter_iPlant.pl --ncpu 1 -f {input.fna} --db 1 --wdir {params.odir} --data-dir {vs1Db}
         """
+
 
 rule virsorter_to_tbl:
     input:
@@ -84,6 +109,7 @@ rule virsorter_to_tbl:
             exit $exitcode
         fi
         """
+
 
 rule count_tp_tn:
     input:

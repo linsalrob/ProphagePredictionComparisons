@@ -9,3 +9,5 @@ GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
 virsorter2Build = os.path.join(workflow.basedir, "../build/vs2")
 vs2DbUrl = 'https://osf.io/v46sc/download'
 
+
+
