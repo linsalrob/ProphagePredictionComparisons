@@ -49,7 +49,7 @@ rule virsorter_db:
     shell:
         """
         cd {vs1Build};
-        wget {vs1DbUrl};
+        curl -o {vs1DbTar} {vs1DbUrl};
         tar xvf {vs1DbTar};
         rm {vs1DbTar};
         """
