@@ -5,3 +5,5 @@ dependencies:
   - numpy
   - biopython
   - pandas
+  - pip
+  - zlib

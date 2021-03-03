@@ -1,9 +1,12 @@
+"""
+Virsorter
 
+Manuscript: https://peerj.com/articles/985/
+Software: https://github.com/simroux/VirSorter
 
-test_genomes = os.path.join(workflow.basedir, "../genbank")
-EdwardsLab = os.path.join(workflow.basedir, "../EdwardsLab")
-scripts = os.path.join(workflow.basedir, "../scripts")
-GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
+"""
+
+include: "../scripts/preflight.smk"
 
 outputdir = "virsorter_tests"
 
@@ -20,10 +23,12 @@ rule convert_gb_to_fna:
         fna = os.path.join(outputdir, "{genome}.fna")
     conda:
         "../conda_environments/roblib.yaml"
+    params:
+        os.path.join(outputdir, '{genome}')
     shell:
         """
-        export PYTHONPATH=$PYTHONPATH:{EdwardsLab}
-        python3 {EdwardsLab}/bin/genbank2sequences.py -g {input.gen} -n {output.fna}
+        export PYTHONPATH={EdwardsLab};
+        python3 {EdwardsLab}/bin/genbank2sequences.py -g {input.gen} -n {params}
         """
 
 

@@ -10,8 +10,7 @@
 ########################################################################
 
 
-test_genomes = os.path.join(workflow.basedir, "../genbank")
-GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
+include: "../scripts/preflight.smk"
 
 outputdir = "phageboost_tests"
 
