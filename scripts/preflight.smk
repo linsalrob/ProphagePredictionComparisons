@@ -5,9 +5,15 @@ EdwardsLab = os.path.join(workflow.basedir, "../EdwardsLab")
 scripts = os.path.join(workflow.basedir, "../scripts")
 GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
 
-# Virsorter2
-virsorter2Build = os.path.join(workflow.basedir, "../build/vs2")
-vs2DbUrl = 'https://osf.io/v46sc/download'
 
 
-
+rule convert_gb_to_fna:
+    input:
+        gen = os.path.join(test_genomes, "{genome}.gb.gz")
+    output:
+        fna = os.path.join(outputdir, "{genome}.fna")
+    shell:
+        """
+        export PYTHONPATH={EdwardsLab};
+        python3 {EdwardsLab}/bin/genbank2sequences.py -g {input.gen} -n {output.fna}
+        """

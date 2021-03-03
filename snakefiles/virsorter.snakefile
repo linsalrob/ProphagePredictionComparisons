@@ -7,17 +7,16 @@ Software: https://github.com/simroux/VirSorter
 """
 
 # CONFIG
-include: "../scripts/preflight.smk"
-
 vs1Build = os.path.join(workflow.basedir, "../build/vs1")
+if not os.path.exists(vs1Build):
+    os.makedirs(vs1Build)
 vs1DbUrl = 'https://cloudstor.aarnet.edu.au/plus/s/m55PsF0siDDWI7o/download'
 vs1DbTar = 'virsorter-data-v2.tar.gz'
 vs1Db = os.path.join(vs1Build, 'virsorter-data')
-
 outputdir = "virsorter_tests"
 
-if not os.path.exists(vs1Build):
-    os.makedirs(vs1Build)
+# PRE-FLIGHT
+include: "../scripts/preflight.smk"
 
 
 # TARGETS
@@ -27,22 +26,6 @@ rule all:
 
 
 # RECIPES
-rule convert_gb_to_fna:
-    input:
-        gen = os.path.join(test_genomes, "{genome}.gb.gz")
-    output:
-        fna = os.path.join(outputdir, "{genome}.fna")
-    conda:
-        "../conda_environments/roblib.yaml"
-    params:
-        os.path.join(outputdir, '{genome}')
-    shell:
-        """
-        export PYTHONPATH={EdwardsLab};
-        python3 {EdwardsLab}/bin/genbank2sequences.py -g {input.gen} -n {params}
-        """
-
-
 rule virsorter_db:
     output:
         os.path.join(vs1Db,'VirSorter_Readme.txt')
@@ -117,7 +100,12 @@ rule count_tp_tn:
         tbl = os.path.join(outputdir, "{genome}_virsorter", "locs.tsv")
     output:
         tp = os.path.join(outputdir, "{genome}_virsorter_tptn.tsv")
+    params:
+        projDir = os.path.join(workflow.basedir, '../')
+    conda:
+        "../conda_environments/virsorter.yaml"
     shell:
         """
+        export PYTHONPATH={projDir};
         python3 {scripts}/compare_predictions_to_phages.py -t {input.gen} -r {input.tbl} > {output.tp}
         """
