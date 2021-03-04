@@ -51,7 +51,7 @@ rule convert_gb_to_fna_faa:
     shell:
         """
         export PYTHONPATH={params.dir};
-        python3 {scripts}/genbank2sequences.py -g {input.gen} -n {output.prefix} -a {output.prefix} --phage_finder {output.pfi}
+        python3 {scripts}/genbank2sequences.py -g {input.gen} -n {params.prefix} -a {params.prefix} --phage_finder {output.pfi}
         """
 
 
