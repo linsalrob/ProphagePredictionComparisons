@@ -103,7 +103,7 @@ rule count_tp_tn:
     params:
         os.path.join(workflow.basedir, '../')
     conda:
-        "../conda_environments/virsorter.yaml"
+        "../conda_environments/roblib.yaml"
     shell:
         """
         export PYTHONPATH={params};

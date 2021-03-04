@@ -1,4 +1,10 @@
+"""
+Phage_Finder
 
+Manuscript: https://academic.oup.com/nar/article/34/20/5839/3100473
+Software: http://phage-finder.sourceforge.net/
+
+"""
 
 # CONFIG
 outputdir = "phage_finder_tests"
@@ -39,6 +45,8 @@ rule convert_gb_to_fna_faa:
         pfi = os.path.join(outputdir, "{genome}_phage_finder", "phage_finder_info.txt"),
     params:
         os.path.join(workflow.basedir,'../')
+    conda:
+        "../conda_environments/roblib.yaml"
     shell:
         """
         export PYTHONPATH={params};
@@ -96,6 +104,8 @@ rule count_tp_tn:
         tp = os.path.join(outputdir, "{genome}_phage_finder", "{genome}_phage_finder_tptn.tsv")
     params:
         os.path.join(workflow.basedir,'../')
+    conda:
+        "../conda_environments/roblib.yaml"
     shell:
         """
         export PYTHONPATH={params};

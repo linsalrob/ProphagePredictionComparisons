@@ -1,3 +1,10 @@
+"""
+Phispy (v2)
+
+Manuscript: (v1) https://academic.oup.com/nar/article/40/16/e126/1027055
+Software: (v2) https://github.com/linsalrob/PhiSpy
+
+"""
 
 # CONFIG
 outputdir = "phispy_tptn"
@@ -44,6 +51,8 @@ rule count_tp_tn:
         tp = os.path.join(outputdir, "{genome}_phispy_tptn.tsv")
     params:
         os.path.join(workflow.basedir,'../')
+    conda:
+        "../conda_environments/roblib.yaml"
     shell:
         """
         export PYTHONPATH={params};

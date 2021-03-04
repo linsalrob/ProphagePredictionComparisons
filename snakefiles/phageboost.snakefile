@@ -1,14 +1,15 @@
-########################################################################
-#                                                                      #
-# Run and test PhageBoost                                              #
-#                                                                      #
-# PhageBoost is available from                                         #
-# https://github.com/ku-cbd/PhageBoost                                 #
-# https://www.biorxiv.org/content/10.1101/2020.08.09.243022v1.full.pdf #
-#                                                                      #
-#                                                                      #
-########################################################################
+"""
+PhageBoost
 
+Manuscript: https://www.biorxiv.org/content/10.1101/2020.08.09.243022v1.full.pdf
+Software: https://github.com/ku-cbd/PhageBoost
+
+Notes:
+    PhageBoost can be invoked from the command line (PhageBoost -h), however
+    by default it accepts a fasta format file and performs its own gene predictions.
+    The phageboost_genbank.py script is required to use the annotations provided by
+    the genbank files.
+"""
 
 # CONFIG
 outputdir = "phageboost_tests"
@@ -68,6 +69,8 @@ rule count_tp_tn:
         tp = os.path.join(outputdir, "{genome}_phageboost_tptn.tsv")
     params:
         os.path.join(workflow.basedir,'../')
+    conda:
+        "../conda_environments/roblib.yaml"
     shell:
         """
         export PYTHONPATH={params};

@@ -1,3 +1,10 @@
+"""
+Phigaro
+
+Manuscript: https://academic.oup.com/bioinformatics/article/36/12/3882/5822875
+Software: https://github.com/bobeobibo/phigaro
+
+"""
 
 # CONFIG
 outputdir = "phigaro_tests"
@@ -53,6 +60,8 @@ rule count_tp_tn:
         tp = os.path.join(outputdir, "{genome}_phigaro_tptn.tsv")
     params:
         os.path.join(workflow.basedir,'../')
+    conda:
+        "../conda_environments/roblib.yaml"
     shell:
         """
         export PYTHONPATH={params};

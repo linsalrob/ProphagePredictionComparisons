@@ -13,6 +13,8 @@ rule convert_gb_to_fna:
         fna = os.path.join(outputdir, "{genome}.fna")
     params:
         os.path.join(workflow.basedir,'../')
+    conda:
+        "../conda_environments/roblib.yaml"
     shell:
         """
         export PYTHONPATH={params};
