@@ -19,16 +19,32 @@ This site is not intended to be a gentle introduction to prophages, but a FAIR (
 
 # How do I use it?
 
-If you develop prophage prediction software, clone the repository and implement your tool using a [snakemake](https://snakemake.readthedocs.io/) pipeline. There are several examples in the [snakefiles](snakefiles) directory. We have also defined [conda environments](conda/) for each of the tools (see the note below). 
+To run the tests, first clone the repository and pull the files (requires git and git lfs)
+```bash
+git clone https://github.com/linsalrob/ProphagePredictionComparisons.git
+cd ProphagePredictionComparisons
+git submodule update
+git lfs install
+git lfs update
+```
+Then run the pipelines (requires snakemake and conda)
+```bash
+snakemake -s snakefiles/virsorter.snakefile --use-conda # --profile slurm or -j 16 etc...
+```
 
-Once your tool is working, use it to predict the prophages in the [genbank](genbank) folder, and use the [scripts](scripts) to calculate true positive, true negative, false positive, false negative and related statistics.
+If you develop prophage prediction software, clone the repository and implement your tool using a [snakemake](https://snakemake.readthedocs.io/) pipeline. 
+There are several examples in the [snakefiles](snakefiles) directory. 
+We have also defined [conda environments](conda/) for each of the tools (see the note below). 
+
+Once your tool is working, use it to predict the prophages in the [genbank](genbank) folder, and use the [scripts](scripts) 
+to calculate true positive, true negative, false positive, false negative and related statistics.
 
 The [jupyter notebooks](jupyter_notebooks) can be used to plot your data and make images like those below.
 
 If you go to all that work, please make a pull request and we will update this site with your code.
 
-<small>Note: The conda environments are not yet perfect. For example, you can't just `conda install phage_finder` but we are working on that. Please let us know if you want to help.</small>
-
+<small>Note: The conda environments are not yet perfect. For example, you can't just `conda install phage_finder` but we are working on that. 
+Please let us know if you want to help.</small>
 
 # What software is currently included?
 

@@ -1,8 +1,9 @@
 
 
-include: "../scripts/preflight.smk"
-
 outputdir = "phispy_tptn"
+
+
+include: "../scripts/preflight.smk"
 
 
 rule all:
@@ -37,5 +38,6 @@ rule count_tp_tn:
         tp = os.path.join(outputdir, "{genome}_phispy_tptn.tsv")
     shell:
         """
+        export PYTHONPATH={params};
         python3 scripts/compare_predictions_to_phages.py -t {input.gen} -p {input.phg} > {output.tp}
         """

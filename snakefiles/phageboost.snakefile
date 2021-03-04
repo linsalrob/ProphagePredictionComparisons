@@ -10,9 +10,10 @@
 ########################################################################
 
 
-include: "../scripts/preflight.smk"
-
 outputdir = "phageboost_tests"
+
+
+include: "../scripts/preflight.smk"
 
 
 rule all:

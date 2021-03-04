@@ -1,23 +1,15 @@
 
 
-include: "../scripts/preflight.smk"
-
 outputdir = "phigaro_tests"
+
+
+include: "../scripts/preflight.smk"
 
 
 rule all:
     input:
         expand(os.path.join(outputdir, "{genome}_phigaro_tptn.tsv"), genome=GENOMES)
 
-rule convert_gb_to_fna:
-    input:
-        gen = os.path.join(test_genomes, "{genome}.gb.gz")
-    output:
-        fna = os.path.join(outputdir, "{genome}.fna")
-    shell:
-        """
-        python3 ~/GitHubs/EdwardsLab/bin/genbank2sequences.py -g {input.gen} -n {output.fna}
-        """
 
 rule run_phigaro:
     input:

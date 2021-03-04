@@ -15,7 +15,7 @@ vs1DbTar = 'virsorter-data-v2.tar.gz'
 vs1Db = os.path.join(vs1Build, 'virsorter-data')
 outputdir = "virsorter_tests"
 
-# PRE-FLIGHT
+# GENERIC CONFIG/RECIPES
 include: "../scripts/preflight.smk"
 
 

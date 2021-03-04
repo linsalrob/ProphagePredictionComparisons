@@ -1,25 +1,15 @@
 
 
-include: "../scripts/preflight.smk"
-
 outputdir = "phage_finder_tests"
+
+
+include: "../scripts/preflight.smk"
 
 
 rule all:
     input:
         expand(os.path.join(outputdir, "{genome}_phage_finder", "{genome}_phage_finder_tptn.tsv"), genome=GENOMES)
 
-rule convert_gb_to_fna:
-    input:
-        gen = os.path.join(test_genomes, "{genome}.gb.gz")
-    output:
-        fna = os.path.join(outputdir, "{genome}_phage_finder", "{genome}.fna"),
-        faa = os.path.join(outputdir, "{genome}_phage_finder", "{genome}.faa"),
-        pfi = os.path.join(outputdir, "{genome}_phage_finder", "phage_finder_info.txt"),
-    shell:
-        """
-        python3 ~/GitHubs/EdwardsLab/bin/genbank2sequences.py -g {input.gen} -n {output.fna} -a {output.faa} --phage_finder {output.pfi}
-        """
 
 rule run_phage_finder:
     input:
