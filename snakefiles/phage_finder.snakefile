@@ -30,6 +30,22 @@ rule build_phage_finder:
         """
 
 
+rule convert_gb_to_fna_faa:
+    input:
+        gen = os.path.join(test_genomes, "{genome}.gb.gz")
+    output:
+        fna = os.path.join(outputdir, "{genome}_phage_finder", "{genome}.fna"),
+        faa = os.path.join(outputdir, "{genome}_phage_finder", "{genome}.faa"),
+        pfi = os.path.join(outputdir, "{genome}_phage_finder", "phage_finder_info.txt"),
+    params:
+        os.path.join(workflow.basedir,'../')
+    shell:
+        """
+        export PYTHONPATH={params};
+        python3 {scripts}/genbank2sequences.py -g {input.gen} -n {output.fna} -a {output.faa} --phage_finder {output.pfi}
+        """
+
+
 rule run_phage_finder:
     input:
         fna = os.path.join(outputdir, "{genome}_phage_finder", "{genome}.fna"),
