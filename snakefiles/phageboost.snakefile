@@ -11,6 +11,7 @@
 
 
 outputdir = "phageboost_tests"
+dataDir = os.path.join(workflow.basedir, "../data")
 
 
 include: "../scripts/preflight.smk"
@@ -30,9 +31,14 @@ rule run_phageboost:
         os.path.join(outputdir, "benchmarks", "{genome}_phageboost.txt")
     conda:
         "../conda_environments/phageboost.yaml"
+    params:
+        pypath = os.path.join(workflow.basedir,'../'),
+        datdir = dataDir
     shell:
         """
-        python3 scripts/phageboost_genbank.py -g {input.gen} -o {output.tsv} -m data/model_delta_std_hacked.pickled.silent.gz
+        export PYTHONPATH={params.pypath};
+        python3 scripts/phageboost_genbank.py -g {input.gen} -o {output.tsv} \
+            -m {params.datdir}/model_delta_std_hacked.pickled.silent.gz
         """
 
 rule phageboost_to_tbl:
@@ -55,7 +61,10 @@ rule count_tp_tn:
         tbl = os.path.join(outputdir, "{genome}_phageboost_locs.tsv")
     output:
         tp = os.path.join(outputdir, "{genome}_phageboost_tptn.tsv")
+    params:
+        os.path.join(workflow.basedir,'../')
     shell:
         """
+        export PYTHONPATH={params};
         python3 scripts/compare_predictions_to_phages.py -t {input.gen} -r {input.tbl} > {output.tp}
         """
