@@ -25,6 +25,8 @@ rule run_phispy:
         os.path.join(outputdir, "{genome}.phispy", "phispy.log"),
     conda:
         "../conda_environments/phispy.yaml"
+    resources:
+        mem_mb = 8000
     shell:
         """
         PhiSpy.py -o {params.o} --output_choice 4 {input.g}

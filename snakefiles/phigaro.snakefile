@@ -47,7 +47,10 @@ rule count_tp_tn:
         tbl = os.path.join(outputdir, "{genome}_phigaro_locs.tsv")
     output:
         tp = os.path.join(outputdir, "{genome}_phigaro_tptn.tsv")
+    params:
+        os.path.join(workflow.basedir,'../')
     shell:
         """
+        export PYTHONPATH={params};
         python3 scripts/compare_predictions_to_phages.py -t {input.gen} -r {input.tbl} > {output.tp}
         """
