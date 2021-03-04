@@ -44,13 +44,14 @@ rule convert_gb_to_fna_faa:
         faa = os.path.join(outputdir, "{genome}_phage_finder", "{genome}.faa"),
         pfi = os.path.join(outputdir, "{genome}_phage_finder", "phage_finder_info.txt"),
     params:
-        os.path.join(workflow.basedir,'../')
+        dir = os.path.join(workflow.basedir,'../'),
+        prefix = os.path.join(outputdir, "{genome}_phage_finder", "{genome}")
     conda:
         "../conda_environments/roblib.yaml"
     shell:
         """
-        export PYTHONPATH={params};
-        python3 {scripts}/genbank2sequences.py -g {input.gen} -n {output.fna} -a {output.faa} --phage_finder {output.pfi}
+        export PYTHONPATH={params.dir};
+        python3 {scripts}/genbank2sequences.py -g {input.gen} -n {output.prefix} -a {output.prefix} --phage_finder {output.pfi}
         """
 
 
