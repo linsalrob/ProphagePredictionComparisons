@@ -36,6 +36,8 @@ rule count_tp_tn:
         phg = os.path.join(outputdir, "{genome}.phispy", "phage.gbk")
     output:
         tp = os.path.join(outputdir, "{genome}_phispy_tptn.tsv")
+    params:
+        os.path.join(workflow.basedir,'../')
     shell:
         """
         export PYTHONPATH={params};
