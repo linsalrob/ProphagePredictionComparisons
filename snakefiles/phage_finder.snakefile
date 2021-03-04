@@ -9,7 +9,8 @@ Software: http://phage-finder.sourceforge.net/
 # CONFIG
 outputdir = "phage_finder_tests"
 pfBuild = os.path.join(workflow.basedir, "../build/phage_finder")
-pfRun = os.path.join(pfBuild, 'phage_finder_v2.1/bin/phage_finder_v2.1.sh')
+pfHome = os.path.join(pfBuild, 'phage_finder_v2.1')
+pfRun = os.path.join(pfBuild, 'phage_finder_v2.1/bin/Phage_Finder_v2.1.pl')
 dlUrl = 'https://cloudstor.aarnet.edu.au/plus/s/LZAWr3htZbZc1uF/download'
 dlTar = 'phage_finder_v2.1.tar.gz'
 
@@ -60,6 +61,7 @@ rule run_phage_finder:
         fna = os.path.join(outputdir, "{genome}_phage_finder", "{genome}.fna"),
         faa = os.path.join(outputdir, "{genome}_phage_finder", "{genome}.faa"),
         pfi = os.path.join(outputdir, "{genome}_phage_finder", "phage_finder_info.txt"),
+        req = pfRun
     output:
         os.path.join(outputdir, "{genome}_phage_finder", "PFPR_tab.txt")
     params:
@@ -70,7 +72,23 @@ rule run_phage_finder:
         "../conda_environments/phage_finder.yaml"
     shell:
         """
-        cd {params} && touch error.log formatdb.log && {pfRun} {wildcards.genome}
+        # hmm searches
+        for i in `cat {pfHome}/hmm3.lst`; do
+            hmmsearch {pfHome}/PHAGE_HMM3s_dir/$i.HMM {input.faa};
+        done > combined.out
+        
+        # blast
+        blastall -p blastp -d {pfHome}/DB/phage_10_02_07_release.db -m 8 -e 0.001 -i {input.faa} \
+            -o ncbi.out -v 4 -b 4 -a 2 -F F
+        
+        # tRNA scan
+        tRNAscan-SE -B -o tRNAscan.out {input.fna}
+        
+        # aragorn
+        aragorn -m -o tmRNA_aragorn.out {input.fna}
+        
+        # phage_finder
+        {pfRun} -t ncbi.out -i {input.pfi} -r tRNAscan.out -n tmRNA_aragorn.out -A {input.fna} -S
         """
 
 
