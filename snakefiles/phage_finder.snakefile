@@ -1,14 +1,33 @@
 
 
+# CONFIG
 outputdir = "phage_finder_tests"
+pfBuild = os.path.join(workflow.basedir, "../build/phage_finder")
+pfRun = os.path.join(pfBuild, 'phage_finder_v2.1/bin/phage_finder_v2.1.sh')
+dlUrl = 'https://cloudstor.aarnet.edu.au/plus/s/LZAWr3htZbZc1uF/download'
+dlTar = 'phage_finder_v2.1.tar.gz'
 
-
+# GENERIC CONFIG/RECIPES
 include: "../scripts/preflight.smk"
 
 
+# TARGETS
 rule all:
     input:
         expand(os.path.join(outputdir, "{genome}_phage_finder", "{genome}_phage_finder_tptn.tsv"), genome=GENOMES)
+
+
+# RECIPES
+rule build_phage_finder:
+    output:
+        pfRun
+    shell:
+        """
+        cd {pfBuild};
+        curl -o {dlTar} {dlUrl};
+        tar xvf {dlTar};
+        rm {dlTar};
+        """
 
 
 rule run_phage_finder:
@@ -19,16 +38,16 @@ rule run_phage_finder:
     output:
         os.path.join(outputdir, "{genome}_phage_finder", "PFPR_tab.txt")
     params:
-        wd = os.path.join(outputdir, "{genome}_phage_finder"),
-        pr = "{genome}"
+        os.path.join(outputdir, "{genome}_phage_finder")
     benchmark:
         os.path.join(outputdir, "benchmarks", "{genome}_phage_finder.txt")
     conda:
         "../conda_environments/phage_finder.yaml"
     shell:
         """
-        cd {params.wd} && touch error.log formatdb.log && /home3/redwards/opt/phage_finder/phage_finder_v2.1/bin/phage_finder_v2.1.sh {params.pr}
+        cd {params} && touch error.log formatdb.log && {pfRun} {wildcards.genome}
         """
+
 
 rule phage_finder_to_tbl:
     input:
@@ -52,13 +71,17 @@ rule phage_finder_to_tbl:
         fi
         """
 
+
 rule count_tp_tn:
     input:
         gen = os.path.join(test_genomes, "{genome}.gb.gz"),
         tbl = os.path.join(outputdir, "{genome}_phage_finder", "{genome}_phage_finder_locs.tsv")
     output:
         tp = os.path.join(outputdir, "{genome}_phage_finder", "{genome}_phage_finder_tptn.tsv")
+    params:
+        os.path.join(workflow.basedir,'../')
     shell:
         """
+        export PYTHONPATH={params};
         python3 scripts/compare_predictions_to_phages.py -t {input.gen} -r {input.tbl} > {output.tp}
         """

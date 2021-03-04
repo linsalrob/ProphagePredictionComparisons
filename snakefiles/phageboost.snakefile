@@ -10,18 +10,21 @@
 ########################################################################
 
 
+# CONFIG
 outputdir = "phageboost_tests"
 dataDir = os.path.join(workflow.basedir, "../data")
 
-
+# GENERIC CONFIG/RECIPES
 include: "../scripts/preflight.smk"
 
 
+# TARGETS
 rule all:
     input:
         expand(os.path.join(outputdir, "{genome}_phageboost_tptn.tsv"), genome=GENOMES)
 
 
+# RECIPES
 rule run_phageboost:
     input:
         gen = os.path.join(test_genomes, "{genome}.gb.gz")
@@ -41,6 +44,7 @@ rule run_phageboost:
             -m {params.datdir}/model_delta_std_hacked.pickled.silent.gz
         """
 
+
 rule phageboost_to_tbl:
     input:
         tsv = os.path.join(outputdir, "{genome}_phageboost.tsv")
@@ -54,6 +58,7 @@ rule phageboost_to_tbl:
             grep -v probability {input.tsv} | cut -f 3,4,5 > {output}
         fi
         """
+
 
 rule count_tp_tn:
     input:

@@ -1,16 +1,18 @@
 
-
+# CONFIG
 outputdir = "phigaro_tests"
 
-
+# GENERIC CONFIG/RECIPES
 include: "../scripts/preflight.smk"
 
 
+# TARGETS
 rule all:
     input:
         expand(os.path.join(outputdir, "{genome}_phigaro_tptn.tsv"), genome=GENOMES)
 
 
+# RECIPES
 rule run_phigaro:
     input:
         fna = os.path.join(outputdir, "{genome}.fna")
@@ -27,6 +29,7 @@ rule run_phigaro:
         phigaro -f {input.fna} -e tsv -o {params.tsv} --delete-shorts
         """
 
+
 rule phigaro_to_tbl:
     input:
         tsv = "{genome}_phigaro.tsv"
@@ -40,6 +43,7 @@ rule phigaro_to_tbl:
             grep -v scaffold {input.tsv} | cut -f 1,2,3 > {output}
         fi
         """
+
 
 rule count_tp_tn:
     input:

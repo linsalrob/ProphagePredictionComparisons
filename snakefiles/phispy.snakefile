@@ -1,15 +1,18 @@
 
-
+# CONFIG
 outputdir = "phispy_tptn"
 
-
+# GENERIC CONFIG/RECIPES
 include: "../scripts/preflight.smk"
 
 
+# TARGETS
 rule all:
     input:
         expand(os.path.join(outputdir, "{genome}_phispy_tptn.tsv"), genome=GENOMES)
 
+
+# RECIPES
 rule run_phispy:
     input:
         g = os.path.join(test_genomes, "{genome}.gb.gz")
@@ -31,6 +34,7 @@ rule run_phispy:
         """
         PhiSpy.py -o {params.o} --output_choice 4 {input.g}
         """
+
 
 rule count_tp_tn:
     input:
