@@ -11,4 +11,4 @@ dependencies:
   - mummer=3.23
   - perl=5.26.2
   - perl-math-round=0.07
-  - trnascan-se=2.0.5
+  - trnascan-se=2

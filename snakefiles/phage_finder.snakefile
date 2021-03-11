@@ -89,7 +89,7 @@ rule run_phage_finder:
         
         # tRNA scan
         echo "Running tRNAscan-SE";
-        if [[ -e tRNAscan.out ]]; then rm tRNAscan.out; fi
+        if [[ -e {params}/tRNAscan.out ]]; then rm {params}/tRNAscan.out; fi
         tRNAscan-SE -B -o {params}/tRNAscan.out {input.fna};
         
         # aragorn
