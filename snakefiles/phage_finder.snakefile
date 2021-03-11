@@ -76,29 +76,32 @@ rule run_phage_finder:
         time_min = 2880
     shell:
         """
+        cd {params};
+        
         # hmm searches
         echo "Running hmmsearch";
         for i in `cat {pfHome}/hmm3.lst`; do
             hmmsearch {pfHome}/PHAGE_HMM3s_dir/$i.HMM {input.faa};
-        done > {params}/combined.hmm3 2> /dev/null
+        done > combined.hmm3 2> /dev/null;
         
         # blast
-        echo "Running blastall"
+        echo "Running blastall";
         blastall -p blastp -d {pfHome}/DB/phage_10_02_07_release.db -m 8 -e 0.001 -i {input.faa} \
-            -o {params}/ncbi.out -v 4 -b 4 -a 2 -F F 2> /dev/null
+            -o ncbi.out -v 4 -b 4 -a 2 -F F 2> /dev/null;
         
         # tRNA scan
-        echo "Running tRNAscan-SE"
-        tRNAscan-SE -B -o {params}/tRNAscan.out {input.fna} 2> /dev/null
+        echo "Running tRNAscan-SE";
+        tRNAscan-SE -B -o tRNAscan.out {input.fna} 2> /dev/null;
         
         # aragorn
-        echo "Running aragorn"
-        aragorn -m -o {params}/tmRNA_aragorn.out {input.fna} 2> /dev/null
+        echo "Running aragorn";
+        aragorn -m -o tmRNA_aragorn.out {input.fna} 2> /dev/null;
         
         # phage_finder
-        echo "Running phage_finder"
-        {pfRun} -t {params}/ncbi.out -i {input.pfi} -r {params}/tRNAscan.out \
-            -n {params}/tmRNA_aragorn.out -A {input.fna} -S 2> /dev/null
+        echo "Running phage_finder";
+        {pfRun} -t ncbi.out -i {input.pfi} -r tRNAscan.out \
+            -n tmRNA_aragorn.out -A {input.fna} -S 2> /dev/null;
+        
         """
 
 
