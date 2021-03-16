@@ -25,7 +25,7 @@ rule virsorter_setup:
     shell:
         """
         cd {vs2Build};
-        wget -o db.tgz {vs2DbUrl};
+        wget -O db.tgz {vs2DbUrl};
         tar xvf db.tgz;
         virsorter config --init-source --db-dir=./db;
         touch {output}
