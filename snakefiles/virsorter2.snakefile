@@ -35,7 +35,7 @@ rule virsorter_setup:
 rule run_virsorter2:
     input:
         fna = os.path.join(outputdir, "{genome}.fna"),
-        req = os.path.join(vs2, 'setup.done')
+        req = os.path.join(vs2Build, 'setup.done')
     output:
         os.path.join(outputdir, "{genome}.out", 'final-viral-boundary.tsv'),
     params:
