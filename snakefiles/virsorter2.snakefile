@@ -13,7 +13,7 @@ include: "../scripts/preflight.smk"
 # TARGETS
 rule all:
     input:
-        expand(os.path.join(outputdir, "{genome}_virsorter_tptn.tsv"), genome=GENOMES)
+        expand(os.path.join(outputdir, "{genome}_virsorter2_tptn.tsv"), genome=GENOMES)
 
 
 # RECIPES
