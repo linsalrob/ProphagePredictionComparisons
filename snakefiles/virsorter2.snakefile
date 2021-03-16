@@ -50,9 +50,7 @@ rule run_virsorter2:
         time_min = 480
     shell:
         """
-        mkdir {params};
-        cd {params};
-        virsorter run -w {params} -i {input.fna} -j 4 all
+        virsorter run --use-conda-off  -w {params} -i {input.fna} -j 4 all
         """
 
 

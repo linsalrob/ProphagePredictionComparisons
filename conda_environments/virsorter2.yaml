@@ -1,7 +1,15 @@
 name: virsorter
 channels:
-  - conda-forge
   - bioconda
+  - conda-forge
   - defaults
 dependencies:
-  - virsorter=2.1
+  - virsorter=2
+  - python=3
+  - scikit-learn=0.22.1
+  - imbalanced-learn
+  - pandas
+  - seaborn
+  - hmmer=3
+  - prodigal
+  - screed
