@@ -10,7 +10,7 @@ Software: http://phage-finder.sourceforge.net/
 outputdir = "phage_finder_tests"
 pfBuild = os.path.join(workflow.basedir, "../build/phage_finder")
 pfHome = os.path.join(pfBuild, 'phage_finder_v2.1')
-pfRun = os.path.join(pfBuild, 'phage_finder_v2.1/bin/Phage_Finder_v2.1.pl')
+pfRun = os.path.join(pfHome, 'bin/Phage_Finder_v2.1.pl')
 dlUrl = 'https://cloudstor.aarnet.edu.au/plus/s/LZAWr3htZbZc1uF/download'
 dlTar = 'phage_finder_v2.1.tar.gz'
 
@@ -112,7 +112,7 @@ rule run_phage_finder:
         
         # phage_finder
         echo "Running phage_finder";
-        {pfRun} -t ncbi.out -i {input.pfi} -r tRNAscan.out -n tmRNA_aragorn.out -A {wildcards.genome}.fna -S;
+        {pfRun} -t ncbi.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -A {wildcards.genome}.fna -S;
         
         """
 
