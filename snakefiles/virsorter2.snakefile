@@ -21,7 +21,7 @@ rule virsorter_setup:
     output:
         os.path.join(vs2Build, 'setup.done')
     conda:
-        "../conda_environments/virsorter.yaml"
+        "../conda_environments/virsorter2.yaml"
     shell:
         """
         cd {vs2Build};
