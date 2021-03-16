@@ -12,11 +12,12 @@ rule convert_gb_to_fna:
     output:
         fna = os.path.join(outputdir, "{genome}.fna")
     params:
-        os.path.join(workflow.basedir,'../')
+        env = os.path.join(workflow.basedir,'../'),
+        out = os.path.join(outputdir, "{genome}")
     conda:
         "../conda_environments/roblib.yaml"
     shell:
         """
-        export PYTHONPATH={params};
-        python3 {scripts}/genbank2sequences.py -g {input.gen} -n {output.fna}
+        export PYTHONPATH={params.env};
+        python3 {scripts}/genbank2sequences.py -g {input.gen} -n {params.out}
         """
