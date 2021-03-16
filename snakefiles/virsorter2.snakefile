@@ -50,7 +50,7 @@ rule run_virsorter2:
         time_min = 480
     shell:
         """
-        virsorter run --use-conda-off  -w {params} -i {input.fna} -j 4 all
+        virsorter run --use-conda-off --db-dir {vs2Build}/db -w {params} -i {input.fna} -j 4 all
         """
 
 
@@ -76,7 +76,12 @@ rule count_tp_tn:
         tbl = os.path.join(outputdir, "{genome}.out", "locs.tsv")
     output:
         tp = os.path.join(outputdir, "{genome}_virsorter2_tptn.tsv")
+    params:
+        os.path.join(workflow.basedir,'../')
+    conda:
+        "../conda_environments/roblib.yaml"
     shell:
         """
+        export PYTHONPATH={params};
         python3 {scripts}/compare_predictions_to_phages.py -t {input.gen} -r {input.tbl} > {output.tp}
         """
