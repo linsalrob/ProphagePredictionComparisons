@@ -4,7 +4,7 @@ vs2Build = os.path.join(workflow.basedir, "../build/vs2")
 if not os.path.exists(vs2Build):
     os.makedirs(vs2Build)
 vs2DbUrl = 'https://osf.io/v46sc/download'
-outputdir = "virsorter2_tests"
+outputdir = os.path.join(workflow.basedir, "../virsorter2_tests")
 
 # GENERIC CONFIG/RECIPES
 include: "../scripts/preflight.smk"
@@ -50,6 +50,8 @@ rule run_virsorter2:
         time_min = 480
     shell:
         """
+        mkdir {params};
+        cd {params};
         virsorter run -w {params} -i {input.fna} -j 4 all
         """
 
