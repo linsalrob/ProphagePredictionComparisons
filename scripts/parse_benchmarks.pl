@@ -47,7 +47,7 @@ foreach my $f (grep {$_ !~ /^\./} readdir(DIR)) {
 			next}
 		chomp;
 		my @p = split /\s+/;
-		unless ($#p == 8) {
+		unless ($#p == 9) {
 			print STDERR "$f does not appear to be a benchmark file. Too many columns in $_. Skipped\n";
 			next;
 		}
