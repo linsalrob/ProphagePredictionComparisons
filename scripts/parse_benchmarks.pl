@@ -9,6 +9,7 @@ Rob Edwards, 2020
 use strict;
 use Getopt::Std;
 use Data::Dumper;
+use FindBin qw($RealBin);
 use lib "$RealBin/../ProphagePredictionsLib";
 use Rob;
 my $rob = new Rob;
