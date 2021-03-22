@@ -7,10 +7,10 @@ Software: (v2) https://github.com/linsalrob/PhiSpy
 """
 
 # CONFIG
-outputdir = "phispy_tptn"
+outDirName = "phispy"
 
 # GENERIC CONFIG/RECIPES
-include: "../scripts/preflight.smk"
+include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
 
 
 # TARGETS

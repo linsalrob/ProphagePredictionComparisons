@@ -12,11 +12,11 @@ Notes:
 """
 
 # CONFIG
-outputdir = "phageboost_tests"
+outDirName = "phageboost"
 dataDir = os.path.join(workflow.basedir, "../data")
 
 # GENERIC CONFIG/RECIPES
-include: "../scripts/preflight.smk"
+include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
 
 
 # TARGETS

@@ -7,7 +7,7 @@ Software: http://phage-finder.sourceforge.net/
 """
 
 # CONFIG
-outputdir = "phage_finder_tests"
+outDirName = 'phage_finder'
 pfBuild = os.path.join(workflow.basedir, "../build/phage_finder")
 pfHome = os.path.join(pfBuild, 'phage_finder_v2.1')
 pfRun = os.path.join(pfHome, 'bin/Phage_Finder_v2.1.pl')
@@ -15,13 +15,13 @@ dlUrl = 'https://cloudstor.aarnet.edu.au/plus/s/LZAWr3htZbZc1uF/download'
 dlTar = 'phage_finder_v2.1.tar.gz'
 
 # GENERIC CONFIG/RECIPES
-include: "../scripts/preflight.smk"
+include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
 
 
 # TARGETS
 rule all:
     input:
-        expand(os.path.join(outputdir, "{genome}_phage_finder", "{genome}_phage_finder_tptn.tsv"), genome=GENOMES)
+        expand(os.path.join(outputdir, "{genome}_phage_finder_tptn.tsv"), genome=GENOMES)
 
 
 # RECIPES
@@ -145,7 +145,7 @@ rule count_tp_tn:
         gen = os.path.join(test_genomes, "{genome}.gb.gz"),
         tbl = os.path.join(outputdir, "{genome}_phage_finder", "{genome}_phage_finder_locs.tsv")
     output:
-        tp = os.path.join(outputdir, "{genome}_phage_finder", "{genome}_phage_finder_tptn.tsv")
+        tp = os.path.join(outputdir, "{genome}_phage_finder_tptn.tsv")
     params:
         os.path.join(workflow.basedir,'../')
     conda:

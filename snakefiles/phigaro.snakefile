@@ -7,10 +7,10 @@ Software: https://github.com/bobeobibo/phigaro
 """
 
 # CONFIG
-outputdir = "phigaro_tests"
+outDirName = "phigaro"
 
 # GENERIC CONFIG/RECIPES
-include: "../scripts/preflight.smk"
+include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
 
 
 # TARGETS

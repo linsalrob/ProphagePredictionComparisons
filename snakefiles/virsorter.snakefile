@@ -13,16 +13,17 @@ if not os.path.exists(vs1Build):
 vs1DbUrl = 'https://cloudstor.aarnet.edu.au/plus/s/m55PsF0siDDWI7o/download'
 vs1DbTar = 'virsorter-data-v2.tar.gz'
 vs1Db = os.path.join(vs1Build, 'virsorter-data')
-outputdir = "virsorter_tests"
+
+outDirName = "virsorter1"
 
 # GENERIC CONFIG/RECIPES
-include: "../scripts/preflight.smk"
+include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
 
 
 # TARGETS
 rule all:
     input:
-        expand(os.path.join(outputdir, "{genome}_virsorter_tptn.tsv"), genome=GENOMES)
+        expand(os.path.join(outputdir, "{genome}_virsorter1_tptn.tsv"), genome=GENOMES)
 
 
 # RECIPES
@@ -99,7 +100,7 @@ rule count_tp_tn:
         gen = os.path.join(test_genomes, "{genome}.gb.gz"),
         tbl = os.path.join(outputdir, "{genome}_virsorter", "locs.tsv")
     output:
-        tp = os.path.join(outputdir, "{genome}_virsorter_tptn.tsv")
+        tp = os.path.join(outputdir, "{genome}_virsorter1_tptn.tsv")
     params:
         os.path.join(workflow.basedir, '../')
     conda:

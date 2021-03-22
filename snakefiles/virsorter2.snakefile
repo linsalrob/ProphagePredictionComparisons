@@ -4,10 +4,10 @@ vs2Build = os.path.join(workflow.basedir, "../build/vs2")
 if not os.path.exists(vs2Build):
     os.makedirs(vs2Build)
 vs2DbUrl = 'https://osf.io/v46sc/download'
-outputdir = os.path.join(workflow.basedir, "../virsorter2_tests")
+outDirName = 'virsorter2'
 
 # GENERIC CONFIG/RECIPES
-include: "../scripts/preflight.smk"
+include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
 
 
 # TARGETS
