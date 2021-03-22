@@ -5,6 +5,4 @@ channels:
   - defaults
 dependencies:
   - python=3
-  - pip
-  - pip:
-    - phigaro==2.2.3
+  - phigaro=2.3
