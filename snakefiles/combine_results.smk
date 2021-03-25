@@ -33,7 +33,7 @@ rule combine_tptn:
 
 rule combine_benchmarks:
     input:
-        expand(os.path.join(testDir, '{tool}/benchmarks/{genome}.benchmarks.txt'), tool=TOOLS, genome=GENOMES)
+        expand(os.path.join(testDir, '{tool}/benchmarks/{genome}_{tool}.txt'), tool=TOOLS, genome=GENOMES)
     output:
         os.path.join(workflow.basedir,"../jupyter_notebooks/all_benchmarks.tsv")
     params:

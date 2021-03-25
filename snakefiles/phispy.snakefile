@@ -26,7 +26,7 @@ rule run_phispy:
     params:
         o = os.path.join(outputdir, "{genome}.phispy")
     benchmark:
-        os.path.join(outputdir, "benchmarks", "{genome}.benchmarks.txt")
+        os.path.join(outputdir, "benchmarks", "{genome}_phispy.txt")
     output:
         temporary(os.path.join(outputdir, "{genome}.phispy", "bacteria.fasta")),
         temporary(os.path.join(outputdir, "{genome}.phispy", "bacteria.gbk")),
