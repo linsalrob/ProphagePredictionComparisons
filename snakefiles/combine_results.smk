@@ -1,10 +1,10 @@
 
-
-test_genomes = os.path.join(workflow.basedir, "../genbank")
-scripts = os.path.join(workflow.basedir, "../scripts")
-GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
+# CONFIG
 TOOLS = ['phage_finder','phageboost','phigaro','phispy','virsorter','virsorter2']
-testDir = os.path.join(workflow.basedir, '../tests')
+outDirName = ''
+
+# GENERIC CONFIG/RECIPES
+include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
 
 
 rule all:
