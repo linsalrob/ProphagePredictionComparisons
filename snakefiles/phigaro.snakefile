@@ -11,6 +11,7 @@ import sys
 
 # CONFIG
 outDirName = "phigaro"
+pfBuild = os.path.join(workflow.basedir, "../build/phigaro")
 
 # GENERIC CONFIG/RECIPES
 include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
@@ -22,10 +23,24 @@ rule all:
         expand(os.path.join(outputdir, "{genome}_phigaro_tptn.tsv"), genome=GENOMES)
 
 
+# BUILD PHIGARO
+rule phigaro_setup:
+    """
+    phigaro needs a one-time setup to download the databases.
+    """
+    output:
+        os.path.join(pfBuild, 'setup.done')
+    conda:
+        "../conda_environments/phigaro.yaml"
+    shell:
+        "phigaro-setup && touch {output}"
+
+
 # RECIPES
 rule run_phigaro:
     input:
-        fna = os.path.join(outputdir, "{genome}.fna")
+        fna = os.path.join(outputdir, "{genome}.fna"),
+        req = os.path.join(pfBuild, 'setup.done')
     output:
         tsv = "{genome}_phigaro.tsv"
     params:
