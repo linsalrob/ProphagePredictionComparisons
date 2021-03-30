@@ -45,7 +45,7 @@ rule build_phage_finder:
         ln -s {pfHome} .;
         cd {pfHome};
         for i in `ls | grep hmm3.lst | sed 's/3.lst//'`;
-            do ln -s ${i}3.lst ${i}.lst; 
+            do ln -s ${{i}}3.lst ${{i}}.lst; 
         done;
         ln -s HMM3_master.lst HMM_master.lst;
         # this file doesn't exist anywhere as far as i can tell, but it's still required...
