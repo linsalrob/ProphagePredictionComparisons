@@ -17,6 +17,8 @@ import sys
 # CONFIG
 outDirName = "phageboost"
 dataDir = os.path.join(workflow.basedir, "../data")
+pfBuild = os.path.join(workflow.basedir, "../build/phageboost")
+
 
 # GENERIC CONFIG/RECIPES
 include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
@@ -29,9 +31,22 @@ rule all:
 
 
 # RECIPES
+rule build_phageboost:
+    """
+    TODO: Fix: The conda env doesn't seem to be installing phageboost properly.
+    """
+    output:
+        os.path.join(pfBuild, 'pip.done')
+    conda:
+        "../conda_environments/phageboost.yaml"
+    shell:
+        "pip install PhageBoost && touch {output}"
+
+
 rule run_phageboost:
     input:
-        gen = os.path.join(test_genomes, "{genome}.gb.gz")
+        gen = os.path.join(test_genomes, "{genome}.gb.gz"),
+        req = os.path.join(pfBuild, 'pip.done')
     output:
         tsv = os.path.join(outputdir, "{genome}_phageboost.tsv")
     benchmark:
