@@ -5,6 +5,6 @@ channels:
   - defaults
 dependencies:
   - python=3
-  - pip3
-  - pip3:
+  - pip
+  - pip:
     - phageboost==0.1.7
