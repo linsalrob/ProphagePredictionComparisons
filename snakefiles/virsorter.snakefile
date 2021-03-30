@@ -6,6 +6,9 @@ Software: https://github.com/simroux/VirSorter
 
 """
 
+import os
+import sys
+
 # CONFIG
 vs1Build = os.path.join(workflow.basedir, "../build/vs1")
 if not os.path.exists(vs1Build):

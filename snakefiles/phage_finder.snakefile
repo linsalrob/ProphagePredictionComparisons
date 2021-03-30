@@ -6,6 +6,9 @@ Software: http://phage-finder.sourceforge.net/
 
 """
 
+import os
+import sys
+
 # CONFIG
 outDirName = 'phage_finder'
 pfBuild = os.path.join(workflow.basedir, "../build/phage_finder")

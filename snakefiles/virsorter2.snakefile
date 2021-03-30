@@ -1,3 +1,14 @@
+"""
+Virsorter2
+
+Manuscript: https://doi.org/10.1186/s40168-020-00990-y
+Software: https://github.com/jiarong/VirSorter2
+
+"""
+
+import os
+import sys
+
 
 # CONFIG
 vs2Build = os.path.join(workflow.basedir, "../build/vs2")

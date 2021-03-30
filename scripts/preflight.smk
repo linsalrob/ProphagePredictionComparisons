@@ -7,7 +7,7 @@ GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
 testDir = os.path.join(workflow.basedir, '../tests')
 outputdir = os.path.join(testDir, outDirName)
 if not os.path.exists(testDir):
-    mkdir(testDir)
+    os.mkdir(testDir)
 
 
 rule convert_gb_to_fna:

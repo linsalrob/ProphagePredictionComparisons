@@ -6,6 +6,9 @@ Software: (v2) https://github.com/linsalrob/PhiSpy
 
 """
 
+import os
+import sys
+
 # CONFIG
 outDirName = "phispy"
 

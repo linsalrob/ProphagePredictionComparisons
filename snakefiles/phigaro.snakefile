@@ -6,6 +6,9 @@ Software: https://github.com/bobeobibo/phigaro
 
 """
 
+import os
+import sys
+
 # CONFIG
 outDirName = "phigaro"
 

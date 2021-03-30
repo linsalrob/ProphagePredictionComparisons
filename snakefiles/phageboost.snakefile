@@ -11,6 +11,9 @@ Notes:
     the genbank files.
 """
 
+import os
+import sys
+
 # CONFIG
 outDirName = "phageboost"
 dataDir = os.path.join(workflow.basedir, "../data")
