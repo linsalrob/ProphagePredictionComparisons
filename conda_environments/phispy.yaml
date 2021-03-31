@@ -5,3 +5,4 @@ channels:
   - defaults
 dependencies:
   - phispy
+  - hmmer=3.3
