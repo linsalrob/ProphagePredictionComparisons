@@ -42,7 +42,7 @@ rule run_phigaro:
         fna = os.path.join(outputdir, "{genome}.fna"),
         req = os.path.join(pgBuild, 'setup.done')
     output:
-        tsv = "{genome}_phigaro.tsv"
+        tsv = os.path.join(outputdir, "{genome}_phigaro", "{genome}.phigaro.tsv")
     params:
         tsv = "{genome}_phigaro" # phigaro adds the .tsv extension
     benchmark:
@@ -58,7 +58,7 @@ rule run_phigaro:
 
 rule phigaro_to_tbl:
     input:
-        tsv = "{genome}_phigaro.tsv"
+        tsv = os.path.join(outputdir, "{sample}_phigaro", "{genome}.phigaro.tsv")
     output:
         os.path.join(outputdir, "{genome}_phigaro_locs.tsv")
     shell:
