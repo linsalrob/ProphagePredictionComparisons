@@ -11,7 +11,7 @@ import sys
 
 # CONFIG
 outDirName = "phigaro"
-pfBuild = os.path.join(workflow.basedir, "../build/phigaro")
+pgBuild = os.path.join(workflow.basedir, "../build/phigaro")
 
 # GENERIC CONFIG/RECIPES
 include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
@@ -29,7 +29,7 @@ rule phigaro_setup:
     phigaro needs a one-time setup to download the databases.
     """
     output:
-        os.path.join(pfBuild, 'setup.done')
+        os.path.join(pgBuild, 'setup.done')
     conda:
         "../conda_environments/phigaro.yaml"
     shell:
@@ -40,7 +40,7 @@ rule phigaro_setup:
 rule run_phigaro:
     input:
         fna = os.path.join(outputdir, "{genome}.fna"),
-        req = os.path.join(pfBuild, 'setup.done')
+        req = os.path.join(pgBuild, 'setup.done')
     output:
         tsv = "{genome}_phigaro.tsv"
     params:
@@ -51,6 +51,7 @@ rule run_phigaro:
         "../conda_environments/phigaro.yaml"
     shell:
         """
+        cd {outputdir};
         phigaro -f {input.fna} -e tsv -o {params.tsv} --delete-shorts
         """
 
