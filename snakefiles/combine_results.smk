@@ -1,10 +1,10 @@
 
 # CONFIG
-TOOLS = ['phage_finder','phageboost','phigaro','phispy','virsorter','virsorter2']
+TOOLS = ['phage_finder','phageboost','phigaro','phispy', 'phispy_trained', 'phispy_pvog','virsorter','virsorter2']
 outDirName = ''
 
 # GENERIC CONFIG/RECIPES
-include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
+include: os.path.join(workflow.basedir, "../rules/preflight.smk")
 
 
 rule all:

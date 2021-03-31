@@ -14,7 +14,7 @@ outDirName = "phigaro"
 pgBuild = os.path.join(workflow.basedir, "../build/phigaro")
 
 # GENERIC CONFIG/RECIPES
-include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
+include: os.path.join(workflow.basedir, "../rules/preflight.smk")
 
 
 # TARGETS

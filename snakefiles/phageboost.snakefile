@@ -21,7 +21,7 @@ pfBuild = os.path.join(workflow.basedir, "../build/phageboost")
 
 
 # GENERIC CONFIG/RECIPES
-include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
+include: os.path.join(workflow.basedir, "../rules/preflight.smk")
 
 
 # TARGETS

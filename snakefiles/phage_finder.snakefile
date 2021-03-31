@@ -18,7 +18,7 @@ dlUrl = 'https://cloudstor.aarnet.edu.au/plus/s/LZAWr3htZbZc1uF/download'
 dlTar = 'phage_finder_v2.1.tar.gz'
 
 # GENERIC CONFIG/RECIPES
-include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
+include: os.path.join(workflow.basedir, "../rules/preflight.smk")
 
 
 # TARGETS

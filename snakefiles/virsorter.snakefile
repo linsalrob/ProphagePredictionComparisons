@@ -20,7 +20,7 @@ vs1Db = os.path.join(vs1Build, 'virsorter-data')
 outDirName = "virsorter1"
 
 # GENERIC CONFIG/RECIPES
-include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
+include: os.path.join(workflow.basedir, "../rules/preflight.smk")
 
 
 # TARGETS

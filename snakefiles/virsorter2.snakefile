@@ -18,7 +18,7 @@ vs2DbUrl = 'https://osf.io/v46sc/download'
 outDirName = 'virsorter2'
 
 # GENERIC CONFIG/RECIPES
-include: os.path.join(workflow.basedir, "../scripts/preflight.smk")
+include: os.path.join(workflow.basedir, "../rules/preflight.smk")
 
 
 # TARGETS
