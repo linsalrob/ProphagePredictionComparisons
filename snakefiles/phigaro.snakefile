@@ -58,7 +58,7 @@ rule run_phigaro:
 
 rule phigaro_to_tbl:
     input:
-        tsv = os.path.join(outputdir, "{sample}_phigaro", "{genome}.phigaro.tsv")
+        tsv = os.path.join(outputdir, "{genome}_phigaro", "{genome}.phigaro.tsv")
     output:
         os.path.join(outputdir, "{genome}_phigaro_locs.tsv")
     shell:
