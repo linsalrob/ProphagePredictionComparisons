@@ -39,7 +39,7 @@ rule run_phispy:
         mem_mb = 8000
     shell:
         """
-        PhiSpy.py -t {params.t} -o {params.o} {params.v} --output_choice 4 {input.g}
+        PhiSpy.py -o {params.o} {params.t} {params.v} --output_choice 4 {input.g}
         """
 
 

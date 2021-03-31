@@ -13,7 +13,7 @@ import sys
 # CONFIG
 outDirName = "phispy"
 use_pvogs = ''
-training_set = "data/testSet_genericAll.txt"
+training_set = ''
 
 
 # GENERIC CONFIG/RECIPES

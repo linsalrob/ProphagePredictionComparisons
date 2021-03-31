@@ -15,7 +15,7 @@ import sys
 # CONFIG
 outDirName = "phispy_pvog"
 use_pvogs = '--phmms ' + os.path.join(psBuild, 'pVOGs.hmm')
-training_set = "data/testSet_genericAll.txt"
+training_set = ''
 
 
 # GENERIC CONFIG/RECIPES
