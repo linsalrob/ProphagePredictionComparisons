@@ -1,7 +1,3 @@
-# CONFIG
-psBuild = os.path.join(workflow.basedir, "../build/phispy")
-
-
 # RECIPES
 rule dl_pvogs:
     output:

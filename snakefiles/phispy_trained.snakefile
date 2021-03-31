@@ -14,7 +14,9 @@ import sys
 
 # CONFIG
 outDirName = "phispy_trained"
+psBuild = os.path.join(workflow.basedir, "../build/phispy")
 use_pvogs = ''
+
 def training_set(wildcards):
     ts = {
         "Achromobacter_denitrificans_strain_PR1": "-t data/trainSet_32002.17.txt",

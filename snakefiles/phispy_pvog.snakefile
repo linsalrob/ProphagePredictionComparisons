@@ -14,6 +14,7 @@ import sys
 
 # CONFIG
 outDirName = "phispy_pvog"
+psBuild = os.path.join(workflow.basedir, "../build/phispy")
 use_pvogs = '--phmms ' + os.path.join(psBuild, 'pVOGs.hmm')
 training_set = ''
 
