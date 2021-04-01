@@ -64,6 +64,8 @@ foreach my $f (grep {m/_tptn.tsv/} readdir(DIR)) {
 	my $tool = $2;
 
 	if ($f =~ /(\S+)_phage_finder_tptn.tsv/) {$genome = $1; $tool = "phage_finder"}
+	if ($f =~ /(\S+)_phispy_trained_tptn.tsv/) {$genome = $1; $tool = "phispy_trained"}
+	if ($f =~ /(\S+)_phispy_pvog_tptn.tsv/) {$genome = $1; $tool = "phispy_pvog"}
 
 	unless (defined $genome) {print STDERR "Couldn't parse genome from $f\n"; die}
 	unless ($tool eq $opts{c}) {print STDERR "You said you used $opts{c} but $opts{d} suggests it was $tool??\n"; die}
