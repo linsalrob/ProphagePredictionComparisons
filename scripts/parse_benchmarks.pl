@@ -51,7 +51,7 @@ foreach my $f (grep {$_ !~ /^\./} readdir(DIR)) {
 			print STDERR "$f does not appear to be a benchmark file. Too many columns in $_. Skipped\n";
 			next;
 		}
-		print join("\t", $opts{c}, $f, @p), "\n";
+		print join("\t", "\t$opts{c}", $f, @p), "\n";
 	}
 	close IN;
 }
