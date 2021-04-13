@@ -151,8 +151,8 @@ def compare_real_predicted(phage: dict, nonphage: dict, predicted: dict, print_f
         if s not in predicted:
             not_predicted.add(s)
 
-    print(f"Found:\nTest set:\n\tPhage: {len(phage)} Not phage: {len(nonphage)}")
-    print(f"Predictions:\n\tPhage: {len(predicted)} Not phage: {len(not_predicted)}")
+    print(f"#Found:\n#Test set:\n#\tPhage: {len(phage)} Not phage: {len(nonphage)}")
+    print(f"#Predictions:\n#\tPhage: {len(predicted)} Not phage: {len(not_predicted)}")
 
     tp = len(phage_set.intersection(predicted_set))
     tn = len(nonphage_set.intersection(not_predicted))
