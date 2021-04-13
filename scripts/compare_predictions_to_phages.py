@@ -159,7 +159,7 @@ def compare_real_predicted(phage: dict, nonphage: dict, predicted: dict, print_f
     fp = len(nonphage_set.intersection(predicted_set))
     fn = len(phage_set.intersection(not_predicted))
 
-    print(f"TP: {tp}\n  FP: {fp}\n  TN: {tn}\n  FN: {fn}\n")
+    print(f"TP:\t{tp}\nFP:\t{fp}\nTN:\t{tn}\nFN:\t{fn}")
     try:
         accuracy = (tp+tn)/(tp + tn + fp + fn)
     except ZeroDivisionError:
@@ -209,11 +209,11 @@ def compare_real_predicted(phage: dict, nonphage: dict, predicted: dict, print_f
         print("Specificity:\tNaN")
     
     if f1_score != "NaN":
-        print(f"f1 score:\t{f1_score:.3f}\t(this is the harmonic mean of precision and recall, and is the best " +
+        print(f"f1_score:\t{f1_score:.3f}\t(this is the harmonic mean of precision and recall, and is the best " +
               "measure when, as in this case, there is a big difference between the " +
               "number of phage and non-phage genes)")
     else:
-        print("f1 score:\tNaN")
+        print("f1_score:\tNaN")
 
     if print_fp:
         for i in nonphage_set.intersection(predicted_set):
