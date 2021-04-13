@@ -1,5 +1,11 @@
 # Installation
 
+Install conda, and then install snakemake (via conda is easiest).
+Installation of all other software is handled by the snakemake pipelines. 
+When running the pipelines, make sure you are using the flag `--use-conda`.
+
+# Manual installation steps (none of the below steps should be necessary)
+
 These instructions should enable you to set up your system to run the different comparisons.
 
 For all the installations, we use [conda](https://docs.conda.io/en/latest/) to create virtual
