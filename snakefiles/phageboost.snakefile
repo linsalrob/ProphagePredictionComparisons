@@ -40,7 +40,11 @@ rule build_phageboost:
     conda:
         "../conda_environments/phageboost.yaml"
     shell:
-        "pip3 install PhageBoost && touch {output}"
+        """
+        pip3 install PhageBoost;
+        PhageBoost -h;
+        touch {output}
+        """
 
 
 rule run_phageboost:
