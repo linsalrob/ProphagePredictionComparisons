@@ -33,7 +33,7 @@ rule phigaro_setup:
     conda:
         "../conda_environments/phigaro.yaml"
     shell:
-        "printf '1\n1\n' | phigaro-setup --no-updatedb && touch {output}"
+        "printf '1\n1\nN\n' | phigaro-setup --no-updatedb && touch {output}"
 
 
 # RECIPES
