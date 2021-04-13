@@ -84,6 +84,7 @@ foreach my $f (grep {m/_tptn.tsv/} readdir(DIR)) {
 		if (/^(.*?):\s+([\d\.]+)/ && $res{$1}) {$res{$1}=$2}
 	}
 	close IN;
-	print join("\t", "\t$tool", $genome, map{$res{$_}} @cols), "\n";
+	print join("\t", "$tool", $genome, map{$res{$_}} @cols);
+	print "\n";
 }
 
