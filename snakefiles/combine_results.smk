@@ -33,7 +33,7 @@ rule combine_tptn:
                         l = line.split()
                         s[l[0]] = l[1]
                 tptn.close()
-                out.write('\t'.join( [ tool, genome, s["TP:"], s["TN:"], s["FP:"], s["FN"], s["Accuracy:"],
+                out.write('\t'.join( [ tool, genome, s["TP:"], s["TN:"], s["FP:"], s["FN:"], s["Accuracy:"],
                     s["Precision"], s["Recall:"], s["Specificity:"], s["f1_score:"] + "\n" ] ))
         out.close()
 
