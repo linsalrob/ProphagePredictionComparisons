@@ -1,288 +1,385 @@
-Prophage Caller	Genome	s	h:m:s	max_rss	max_vms	max_uss	max_pss	io_in	io_out	mean_load
-phispy	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18.benchmarks.txt	226.2935	0:03:46	665.59	1022.14	629.05	632.70	0.00	0.01	108.21
-phispy	Escherichia_coli_CFT073.benchmarks.txt	232.2258	0:03:52	675.92	1057.56	638.75	642.54	0.00	0.02	129.81
-phispy	Xanthomonas_axonopodis_pv._citri_str._306.benchmarks.txt	232.8095	0:03:52	603.18	994.86	566.56	570.21	0.00	0.02	129.43
-phispy	Escherichia_coli_O157-H7.benchmarks.txt	240.2883	0:04:00	700.95	1057.16	663.98	667.51	0.00	0.01	121.85
-phispy	Ralstonia_solanacearum_GMI1000.benchmarks.txt	256.5217	0:04:16	535.89	982.57	499.15	502.72	0.00	0.02	110.72
-phispy	Pseudomonas_putida_KT2440.benchmarks.txt	256.6176	0:04:16	740.13	1096.23	703.22	706.80	0.00	0.01	106.63
-phispy	Escherichia_coli_O157-H7_EDL933.benchmarks.txt	265.0506	0:04:25	712.15	727.23	676.51	684.85	0.00	0.02	127.42
-phispy	Pseudomonas_aeruginosa_PAO1.benchmarks.txt	267.0333	0:04:27	687.05	1043.16	649.96	653.61	0.00	0.01	120.37
-phispy	Achromobacter_denitrificans_strain_PR1.benchmarks.txt	291.3229	0:04:51	798.07	1154.16	760.93	764.69	0.00	0.01	119.65
-phispy	Mesorhizobium_loti_MAFF303099.benchmarks.txt	299.2251	0:04:59	822.93	1178.91	785.80	789.66	0.00	0.01	113.39
-phispy	Bacteroides_uniformis_ATCC_8492_strain_81A2.benchmarks.txt	212.6308	0:03:32	530.97	976.74	493.88	497.90	0.00	0.01	120.84
-phispy	Yersinia_pestis_CO92.benchmarks.txt	207.9069	0:03:27	630.57	993.91	593.59	599.13	0.00	0.02	125.77
-phispy	Yersinia_pestis_KIM.benchmarks.txt	215.0284	0:03:35	631.70	989.64	594.51	600.95	0.00	0.02	119.37
-phispy	Shewanella_oneidensis_MR-1.benchmarks.txt	222.5465	0:03:42	649.99	1006.13	612.97	616.58	0.00	0.01	111.76
-phispy	Escherichia_coli_K12.benchmarks.txt	215.8989	0:03:35	633.34	989.63	596.50	602.52	0.00	0.01	119.95
-phispy	Shigella_flexneri_2a_str._301.benchmarks.txt	208.9476	0:03:28	630.22	993.77	593.23	597.34	0.00	0.02	125.37
-phispy	Paracoccus_denitrificans_PD1222.benchmarks.txt	217.2811	0:03:37	499.26	987.46	461.74	465.41	0.00	0.01	115.82
-phispy	Enterococcus_faecalis_strain_V583.benchmarks.txt	221.2516	0:03:41	631.41	987.48	594.34	598.03	0.00	0.02	112.59
-phispy	Mycobacterium_tuberculosis_H37Rv.benchmarks.txt	210.3335	0:03:30	685.10	1041.35	648.39	652.40	0.00	0.01	117.18
-phispy	Mycobacterium_tuberculosis_CDC1551.benchmarks.txt	201.6778	0:03:21	628.24	988.62	591.60	595.55	0.00	0.01	126.09
-phispy	Paracoccus_sanguinis_5503.benchmarks.txt	132.5364	0:02:12	370.49	995.15	333.01	336.91	0.00	0.01	107.11
-phispy	Bacillus_subtilis_subsp._subtilis_str._168.benchmarks.txt	187.9021	0:03:07	610.55	989.72	573.03	577.48	0.00	0.01	109.97
-phispy	Bacillus_halodurans_C-125.benchmarks.txt	194.3212	0:03:14	600.27	986.16	562.77	568.63	0.00	0.01	109.37
-phispy	Paracoccus_sp._SCN_68-21.benchmarks.txt	165.4001	0:02:45	375.57	982.62	339.00	342.70	0.00	0.01	112.94
-phispy	Vibrio_cholerae_O1_biovar_eltor_str._N16961.benchmarks.txt	195.9564	0:03:15	558.23	968.70	520.70	524.24	0.00	0.02	111.32
-phispy	Paracoccus_aminophilus_JCM_7686.benchmarks.txt	185.3828	0:03:05	516.48	991.59	479.64	483.26	0.00	0.01	119.51
-phispy	Caulobacter_crescentus_CB15.benchmarks.txt	203.5302	0:03:23	533.80	984.09	496.61	500.39	0.00	0.01	131.08
-phispy	Paracoccus_yeei_TT13.benchmarks.txt	191.0690	0:03:11	513.14	988.21	475.94	479.49	0.00	0.01	112.51
-phispy	Brucella_melitensis_16M.benchmarks.txt	173.8434	0:02:53	445.10	966.53	408.48	412.68	0.00	0.01	133.64
-phispy	Deinococcus_radiodurans_R1.benchmarks.txt	176.4827	0:02:56	441.57	977.96	404.54	408.41	0.00	0.01	128.17
-phispy	Listeria_innocua_Clip11262.benchmarks.txt	170.8508	0:02:50	464.95	972.84	427.63	432.16	0.00	0.01	130.98
-phispy	Clostridium_perfringens_str._13.benchmarks.txt	153.4208	0:02:33	458.11	969.85	420.73	425.99	0.00	0.01	119.39
-phispy	Listeria_monocytogenes_EGD-e.benchmarks.txt	162.1059	0:02:42	459.44	973.61	422.39	428.09	0.00	0.01	112.03
-phispy	Staphylococcus_aureus_subsp._aureus_Mu50.benchmarks.txt	155.5401	0:02:35	446.98	970.60	410.45	414.67	0.00	0.01	122.55
-phispy	Staphylococcus_aureus_strain_Sa_Newman_UoM.benchmarks.txt	158.3538	0:02:38	445.40	965.55	407.98	411.71	0.00	0.01	120.69
-phispy	Staphylococcus_aureus_subsp._aureus_MW2.benchmarks.txt	153.5761	0:02:33	441.90	968.68	404.73	408.63	0.00	0.01	123.65
-phispy	Clostridium_tetani_E88.benchmarks.txt	162.6494	0:02:42	450.77	967.75	413.32	417.33	0.00	0.01	116.65
-phispy	Xylella_fastidiosa_9a5c.benchmarks.txt	154.1310	0:02:34	437.42	970.71	400.30	404.37	0.00	0.01	125.70
-phispy	Xylella_fastidiosa_Temecula1.benchmarks.txt	154.5205	0:02:34	423.21	966.98	386.24	390.67	0.00	0.01	122.82
-phispy	Lactococcus_lactis_subsp._lactis_Il1403.benchmarks.txt	158.6963	0:02:38	416.72	966.56	379.66	384.10	0.00	0.02	116.63
-phispy	Neisseria_meningitidis_MC58.benchmarks.txt	134.3035	0:02:14	408.86	962.89	371.71	376.17	0.00	0.02	104.38
-phispy	Pasteurella_multocida_subsp._multocida_str._Pm70.benchmarks.txt	147.7308	0:02:27	415.26	964.49	378.33	383.41	0.00	0.01	126.85
-phispy	Neisseria_meningitidis_Z2491.benchmarks.txt	128.9070	0:02:08	402.68	966.25	366.16	371.06	0.00	0.02	115.47
-phispy	Bifidobacterium_longum_NCC2705.benchmarks.txt	144.0815	0:02:24	411.11	961.54	374.40	379.50	0.00	0.01	138.45
-phispy	Streptococcus_pyogenes_MGAS315.benchmarks.txt	123.0004	0:02:03	386.21	960.66	349.67	354.61	0.00	0.01	126.29
-phispy	Streptococcus_pyogenes_MGAS8232.benchmarks.txt	122.4351	0:02:02	385.92	960.30	348.93	354.43	0.00	0.02	128.19
-phispy	Haemophilus_influenzae_Rd_KW20.benchmarks.txt	116.6127	0:01:56	385.30	958.89	348.71	353.16	0.00	0.02	132.93
-phispy	Streptococcus_pyogenes_M1_GAS.benchmarks.txt	124.3667	0:02:04	382.26	958.88	345.19	350.07	0.00	0.01	121.50
-phispy_trained	Achromobacter_denitrificans_strain_PR1.benchmarks.txt	154.7620	0:02:34	733.54	1957.76	699.54	711.72	5.68	0.00	88.37
-phispy_trained	Mesorhizobium_loti_MAFF303099.benchmarks.txt	169.3959	0:02:49	820.48	2303.82	786.35	798.54	5.13	0.01	131.11
-phispy_trained	Pseudomonas_aeruginosa_PAO1.benchmarks.txt	143.1651	0:02:23	687.48	1911.04	652.95	665.31	4.20	0.01	96.90
-phispy_trained	Pseudomonas_putida_KT2440.benchmarks.txt	142.4977	0:02:22	740.88	1964.11	706.86	719.13	4.23	0.01	97.52
-phispy_trained	Ralstonia_solanacearum_GMI1000.benchmarks.txt	131.2413	0:02:11	536.50	1760.41	501.31	514.16	3.56	0.00	81.80
-phispy_trained	Escherichia_coli_O157-H7.benchmarks.txt	130.7419	0:02:10	700.65	1925.03	665.22	678.10	3.56	0.00	82.02
-phispy_trained	Escherichia_coli_O157-H7_EDL933.benchmarks.txt	139.1786	0:02:19	610.02	806.15	606.17	608.34	3.84	0.02	128.08
-phispy_trained	Escherichia_coli_CFT073.benchmarks.txt	125.6814	0:02:05	674.42	1900.00	640.53	652.70	3.31	0.00	85.37
-phispy_trained	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18.benchmarks.txt	117.3856	0:01:57	668.63	1890.50	633.54	646.27	3.27	0.00	91.40
-phispy_trained	Xanthomonas_axonopodis_pv._citri_str._306.benchmarks.txt	123.1465	0:02:03	602.38	1827.67	566.85	579.64	3.24	0.00	87.12
-phispy_trained	Bacteroides_uniformis_ATCC_8492_strain_81A2.benchmarks.txt	108.6328	0:01:48	525.93	2261.22	491.36	503.84	3.45	0.01	127.64
-phispy_trained	Shewanella_oneidensis_MR-1.benchmarks.txt	119.7608	0:01:59	648.26	1873.72	634.79	636.88	3.20	0.00	89.63
-phispy_trained	Yersinia_pestis_KIM.benchmarks.txt	111.6131	0:01:51	631.46	2277.66	595.77	608.82	3.43	0.01	114.80
-phispy_trained	Yersinia_pestis_CO92.benchmarks.txt	110.4413	0:01:50	629.45	2279.91	595.23	607.56	3.34	0.01	124.36
-phispy_trained	Escherichia_coli_K12.benchmarks.txt	112.6162	0:01:52	659.58	2274.29	625.09	637.52	3.18	0.01	106.23
-phispy_trained	Shigella_flexneri_2a_str._301.benchmarks.txt	107.4153	0:01:47	629.46	2273.00	595.73	607.85	3.26	0.02	105.32
-phispy_trained	Bacillus_subtilis_subsp._subtilis_str._168.benchmarks.txt	107.6038	0:01:47	608.02	2269.77	571.89	581.42	2.91	0.01	136.83
-phispy_trained	Mycobacterium_tuberculosis_CDC1551.benchmarks.txt	116.8028	0:01:56	564.57	1789.12	528.82	538.04	2.76	0.00	91.61
-phispy_trained	Mycobacterium_tuberculosis_H37Rv.benchmarks.txt	118.4743	0:01:58	564.57	1789.95	528.18	537.79	2.77	0.00	89.80
-phispy_trained	Bacillus_halodurans_C-125.benchmarks.txt	107.6545	0:01:47	598.24	2265.66	562.31	571.81	2.88	0.01	144.54
-phispy_trained	Enterococcus_faecalis_strain_V583.benchmarks.txt	122.3208	0:02:02	566.68	1791.60	531.08	540.19	2.82	0.00	86.97
-phispy_trained	Paracoccus_sanguinis_5503.benchmarks.txt	74.4707	0:01:14	319.43	1544.76	282.59	287.95	2.55	0.01	62.37
-phispy_trained	Paracoccus_sp._SCN_68-21.benchmarks.txt	93.2762	0:01:33	374.81	1599.77	337.82	343.37	2.34	0.00	81.37
-phispy_trained	Vibrio_cholerae_O1_biovar_eltor_str._N16961.benchmarks.txt	131.8805	0:02:11	557.03	1782.18	520.33	525.61	2.54	0.01	79.67
-phispy_trained	Caulobacter_crescentus_CB15.benchmarks.txt	132.6861	0:02:12	534.76	1758.44	497.22	502.74	2.49	0.01	79.24
-phispy_trained	Paracoccus_denitrificans_PD1222.benchmarks.txt	160.6193	0:02:40	496.52	1721.76	460.15	465.40	0.00	0.01	81.23
-phispy_trained	Paracoccus_aminophilus_JCM_7686.benchmarks.txt	131.8992	0:02:11	515.19	1740.29	478.44	483.67	2.27	0.01	75.68
-phispy_trained	Paracoccus_yeei_TT13.benchmarks.txt	132.4831	0:02:12	513.26	1736.79	475.80	481.76	2.22	0.00	73.86
-phispy_trained	Brucella_melitensis_16M.benchmarks.txt	117.1514	0:01:57	448.63	2245.18	411.99	417.31	2.26	0.01	107.70
-phispy_trained	Deinococcus_radiodurans_R1.benchmarks.txt	116.9723	0:01:56	441.08	2267.05	404.47	409.79	2.23	0.01	100.26
-phispy_trained	Listeria_innocua_Clip11262.benchmarks.txt	106.9311	0:01:46	464.47	2251.57	427.67	432.97	2.08	0.01	126.99
-phispy_trained	Clostridium_perfringens_str._13.benchmarks.txt	100.3127	0:01:40	457.52	1682.32	420.38	426.67	1.86	0.00	74.64
-phispy_trained	Listeria_monocytogenes_EGD-e.benchmarks.txt	107.7897	0:01:47	458.53	2251.46	423.18	432.13	2.02	0.01	154.82
-phispy_trained	Staphylococcus_aureus_subsp._aureus_Mu50.benchmarks.txt	77.9944	0:01:17	444.29	2178.55	409.09	421.91	1.98	0.01	102.28
-phispy_trained	Staphylococcus_aureus_strain_Sa_Newman_UoM.benchmarks.txt	81.2771	0:01:21	445.06	2177.63	407.58	414.61	1.95	0.01	99.84
-phispy_trained	Lactococcus_lactis_subsp._lactis_Il1403.benchmarks.txt	73.5922	0:01:13	416.37	1641.25	379.40	385.00	1.48	0.00	63.40
-phispy_trained	Xylella_fastidiosa_Temecula1.benchmarks.txt	77.3270	0:01:17	423.12	2173.88	385.60	390.90	1.77	0.02	150.13
-phispy_trained	Xylella_fastidiosa_9a5c.benchmarks.txt	94.5656	0:01:34	437.12	1662.29	400.26	406.29	1.71	0.01	79.11
-phispy_trained	Staphylococcus_aureus_subsp._aureus_MW2.benchmarks.txt	96.6977	0:01:36	441.82	1666.49	404.33	409.89	1.73	0.00	77.47
-phispy_trained	Clostridium_tetani_E88.benchmarks.txt	100.4239	0:01:40	449.78	1674.91	413.02	418.42	1.73	0.00	74.33
-phispy_trained	Neisseria_meningitidis_MC58.benchmarks.txt	69.9700	0:01:09	408.53	1633.64	372.02	379.25	1.42	0.00	66.60
-phispy_trained	Pasteurella_multocida_subsp._multocida_str._Pm70.benchmarks.txt	75.7428	0:01:15	415.50	1639.94	378.77	384.12	1.43	0.00	58.34
-phispy_trained	Streptococcus_pyogenes_MGAS8232.benchmarks.txt	59.3991	0:00:59	385.77	1610.57	348.57	354.00	1.20	0.00	78.44
-phispy_trained	Streptococcus_pyogenes_MGAS315.benchmarks.txt	61.2239	0:01:01	385.36	1610.87	348.68	353.99	1.20	0.00	75.77
-phispy_trained	Bifidobacterium_longum_NCC2705.benchmarks.txt	71.3298	0:01:11	410.58	1636.23	374.38	379.74	1.43	0.00	65.54
-phispy_trained	Neisseria_meningitidis_Z2491.benchmarks.txt	72.8405	0:01:12	402.77	1627.92	366.05	371.58	1.38	0.00	63.80
-phispy_trained	Haemophilus_influenzae_Rd_KW20.benchmarks.txt	44.8496	0:00:44	383.18	1607.84	348.68	360.99	1.16	0.00	37.48
-phispy_trained	Streptococcus_pyogenes_M1_GAS.benchmarks.txt	46.6286	0:00:46	381.70	1947.18	347.48	359.79	1.30	1.00	106.58
-virsorter	Paracoccus_sanguinis_5503_virsorter.txt	5336.0507	1:28:56	96.36	756.46	83.66	83.86	24.07	2052.82	48.16
-virsorter	Enterococcus_faecalis_strain_V583_virsorter.txt	5533.4673	1:32:13	165.61	756.77	153.03	153.23	1273.02	2059.49	59.96
-virsorter	Paracoccus_denitrificans_PD1222_virsorter.txt	5688.9578	1:34:48	147.03	781.11	128.86	129.14	906.15	2085.49	55.73
-virsorter	Escherichia_coli_K12_virsorter.txt	5805.0322	1:36:45	205.92	756.88	187.78	188.04	898.43	2062.42	58.77
-virsorter	Bacillus_halodurans_C-125_virsorter.txt	5828.0904	1:37:08	166.45	756.68	154.14	154.33	907.39	2087.92	55.56
-virsorter	Bacteroides_uniformis_ATCC_8492_strain_81A2_virsorter.txt	5837.1056	1:37:17	153.82	757.39	141.70	141.89	1281.42	2063.49	58.46
-virsorter	Shigella_flexneri_2a_str._301_virsorter.txt	5852.7050	1:37:32	181.33	756.86	162.93	163.29	1277.54	2064.66	59.60
-virsorter	Escherichia_coli_CFT073_virsorter.txt	6040.0841	1:40:40	212.95	757.03	194.84	195.14	4.99	2070.91	67.33
-virsorter	Bacillus_subtilis_subsp._subtilis_str._168_virsorter.txt	6100.7884	1:41:40	220.36	756.93	207.83	208.02	898.03	2068.64	64.25
-virsorter	Mycobacterium_tuberculosis_H37Rv_virsorter.txt	6164.5161	1:42:44	341.09	756.52	328.72	328.91	4.21	2054.11	67.51
-virsorter	Vibrio_cholerae_O1_biovar_eltor_str._N16961_virsorter.txt	6198.5379	1:43:18	125.69	781.34	113.11	113.30	905.62	2084.56	59.87
-virsorter	Yersinia_pestis_CO92_virsorter.txt	6247.4251	1:44:07	208.69	782.99	190.73	191.08	10.31	2090.67	60.72
-virsorter	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18_virsorter.txt	6258.2481	1:44:18	197.11	757.02	178.90	179.22	394.98	2092.31	60.54
-virsorter	Mycobacterium_tuberculosis_CDC1551_virsorter.txt	6270.4135	1:44:30	214.88	756.73	196.73	197.04	374.41	2053.89	66.64
-virsorter	Xanthomonas_axonopodis_pv._citri_str._306_virsorter.txt	6278.8079	1:44:38	193.89	756.77	175.65	175.92	8.18	2063.32	64.16
-virsorter	Yersinia_pestis_KIM_virsorter.txt	6313.7898	1:45:13	185.73	756.88	173.33	173.53	17.33	2065.83	63.01
-virsorter	Pseudomonas_putida_KT2440_virsorter.txt	6318.5353	1:45:18	288.59	756.92	270.57	270.90	14.95	2070.25	68.83
-virsorter	Pseudomonas_aeruginosa_PAO1_virsorter.txt	6477.6757	1:47:57	273.46	756.69	255.49	255.86	22.47	2070.46	69.10
-virsorter	Escherichia_coli_O157-H7_EDL933_virsorter.txt	6545.7626	1:49:05	197.30	756.88	179.07	179.73	5.61	2105.46	67.44
-virsorter	Ralstonia_solanacearum_GMI1000_virsorter.txt	6569.8302	1:49:29	198.05	760.39	179.97	180.24	1274.50	2114.86	62.73
-virsorter	Achromobacter_denitrificans_strain_PR1_virsorter.txt	6698.5613	1:51:38	316.86	756.61	298.67	298.96	13.35	2078.70	70.31
-virsorter	Shewanella_oneidensis_MR-1_virsorter.txt	6700.1770	1:51:40	227.51	762.44	215.40	215.59	898.92	2090.68	62.21
-virsorter	Mesorhizobium_loti_MAFF303099_virsorter.txt	6804.8164	1:53:24	231.18	757.21	212.76	213.03	17.64	2079.92	70.78
-virsorter	Escherichia_coli_O157-H7_virsorter.txt	6832.9930	1:53:52	235.28	778.72	216.91	217.22	11.03	2103.90	66.32
-virsorter	Paracoccus_sp._SCN_68-21_virsorter.txt	3495.7096	0:58:15	100.66	756.66	87.89	88.15	376.65	2050.52	65.37
-virsorter	Caulobacter_crescentus_CB15_virsorter.txt	3658.6245	1:00:58	187.35	756.23	170.71	171.03	6.98	2051.45	68.10
-virsorter	Brucella_melitensis_16M_virsorter.txt	3159.1945	0:52:39	90.64	758.48	78.10	78.35	3.14	2049.00	62.97
-virsorter	Xylella_fastidiosa_Temecula1_virsorter.txt	2862.2976	0:47:42	130.89	781.27	112.53	113.66	12.73	2065.75	55.57
-virsorter	Xylella_fastidiosa_9a5c_virsorter.txt	2889.8430	0:48:09	143.82	757.00	125.82	126.96	904.45	2066.52	59.03
-virsorter	Deinococcus_radiodurans_R1_virsorter.txt	3402.1105	0:56:42	95.37	756.66	83.34	83.60	901.68	2048.52	71.09
-virsorter	Clostridium_tetani_E88_virsorter.txt	3211.4745	0:53:31	131.04	756.62	114.64	114.99	5.34	2055.58	73.18
-virsorter	Neisseria_meningitidis_MC58_virsorter.txt	3090.4045	0:51:30	122.88	756.66	106.29	106.58	1269.53	2044.33	62.93
-virsorter	Paracoccus_aminophilus_JCM_7686_virsorter.txt	3724.7001	1:02:04	131.47	778.52	115.12	115.46	918.02	2077.73	68.88
-virsorter	Paracoccus_yeei_TT13_virsorter.txt	3705.9063	1:01:45	121.30	778.56	105.10	105.34	902.21	2099.68	67.01
-virsorter	Pasteurella_multocida_subsp._multocida_str._Pm70_virsorter.txt	3346.7763	0:55:46	142.58	756.61	130.51	130.75	376.90	2044.73	62.37
-virsorter	Listeria_monocytogenes_EGD-e_virsorter.txt	3568.8100	0:59:28	139.84	778.41	123.23	123.56	381.49	2078.75	71.28
-virsorter	Listeria_innocua_Clip11262_virsorter.txt	3770.6624	1:02:50	124.58	756.45	112.82	113.07	21.03	2080.53	71.76
-virsorter	Clostridium_perfringens_str._13_virsorter.txt	3655.4311	1:00:55	156.55	756.63	144.61	144.87	1274.70	2085.04	78.36
-virsorter	Lactococcus_lactis_subsp._lactis_Il1403_virsorter.txt	3433.0905	0:57:13	149.68	778.55	137.29	137.53	896.30	2074.27	71.18
-virsorter	Staphylococcus_aureus_subsp._aureus_Mu50_virsorter.txt	6184.2275	1:43:04	335.86	756.66	323.70	323.95	1271.52	2061.10	102.24
-virsorter	Staphylococcus_aureus_strain_Sa_Newman_UoM_virsorter.txt	6212.0447	1:43:32	358.28	778.32	345.77	346.03	372.98	2084.20	101.99
-virsorter	Staphylococcus_aureus_subsp._aureus_MW2_virsorter.txt	6335.3757	1:45:35	282.07	756.54	270.09	270.34	375.60	2063.40	98.99
-virsorter	Bifidobacterium_longum_NCC2705_virsorter.txt	864.5613	0:14:24	122.20	756.52	104.13	105.12	6.70	2041.88	147.35
-virsorter	Neisseria_meningitidis_Z2491_virsorter.txt	865.9182	0:14:25	124.42	756.68	106.23	107.16	896.09	2042.28	133.04
-virsorter	Haemophilus_influenzae_Rd_KW20_virsorter.txt	894.1608	0:14:54	146.19	756.85	75.39	76.18	1280.91	2091.07	122.25
-virsorter	Streptococcus_pyogenes_MGAS315_virsorter.txt	894.6746	0:14:54	96.82	756.49	86.48	87.28	1270.76	2075.83	131.11
-virsorter	Streptococcus_pyogenes_MGAS8232_virsorter.txt	920.5878	0:15:20	96.20	649.26	77.93	78.87	11.10	2073.64	126.53
-virsorter	Streptococcus_pyogenes_M1_GAS_virsorter.txt	958.5903	0:15:58	167.11	756.29	154.82	155.60	1265.99	2048.68	124.34
-phigaro	Escherichia_coli_K12_phigaro.txt	1022.5443	0:17:02	206.59	1082.43	172.57	174.01	52.77	7.36	51.36
-phigaro	Paracoccus_denitrificans_PD1222_phigaro.txt	1039.7875	0:17:19	203.75	1079.52	169.56	170.91	201.68	7.30	51.31
-phigaro	Shigella_flexneri_2a_str._301_phigaro.txt	1040.9464	0:17:20	209.09	1260.84	174.99	176.41	65.95	7.56	51.69
-phigaro	Enterococcus_faecalis_strain_V583_phigaro.txt	1036.2316	0:17:16	215.73	1085.16	181.94	183.31	4.33	7.12	50.44
-phigaro	Mycobacterium_tuberculosis_CDC1551_phigaro.txt	257.1818	0:04:17	271.23	1144.19	264.38	264.99	4.27	6.78	178.28
-phigaro	Shewanella_oneidensis_MR-1_phigaro.txt	1069.8241	0:17:49	214.10	1259.05	180.02	181.34	4.89	8.10	53.49
-phigaro	Xanthomonas_axonopodis_pv._citri_str._306_phigaro.txt	1093.0589	0:18:13	214.89	1115.64	180.87	182.30	14.31	8.02	52.40
-phigaro	Mycobacterium_tuberculosis_H37Rv_phigaro.txt	1087.1613	0:18:07	249.96	1152.52	216.19	217.71	4.21	6.81	54.87
-phigaro	Escherichia_coli_CFT073_phigaro.txt	1113.9836	0:18:33	207.99	1092.39	173.76	175.07	4.99	8.37	53.33
-phigaro	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18_phigaro.txt	1111.0109	0:18:31	245.68	1231.55	211.74	213.32	9.88	8.19	52.20
-phigaro	Escherichia_coli_O157-H7_EDL933_phigaro.txt	1174.3543	0:19:34	243.83	1329.66	209.73	211.18	5.27	9.02	54.24
-phigaro	Ralstonia_solanacearum_GMI1000_phigaro.txt	1199.3371	0:19:59	214.27	1144.43	179.90	181.32	5.54	8.90	53.41
-phigaro	Pseudomonas_aeruginosa_PAO1_phigaro.txt	1228.6247	0:20:28	215.75	1151.57	181.93	183.23	5.98	9.67	56.41
-phigaro	Pseudomonas_putida_KT2440_phigaro.txt	1240.0046	0:20:40	265.49	1190.77	231.58	233.06	5.90	9.58	55.70
-phigaro	Achromobacter_denitrificans_strain_PR1_phigaro.txt	1291.2832	0:21:31	219.55	1209.30	185.39	186.80	6.61	10.81	58.64
-phigaro	Mesorhizobium_loti_MAFF303099_phigaro.txt	1318.9112	0:21:58	257.75	1307.24	223.38	224.80	7.25	11.90	62.60
-phigaro	Deinococcus_radiodurans_R1_phigaro.txt	516.4239	0:08:36	235.52	1034.26	201.43	203.18	3.13	5.16	71.93
-phigaro	Brucella_melitensis_16M_phigaro.txt	190.3880	0:03:10	181.93	995.34	150.49	163.09	0.00	5.12	127.54
-phigaro	Clostridium_perfringens_str._13_phigaro.txt	452.7804	0:07:32	197.14	948.76	163.22	164.55	5.94	5.09	78.85
-phigaro	Paracoccus_yeei_TT13_phigaro.txt	573.2365	0:09:33	203.45	1020.94	169.41	170.68	3.43	5.72	71.27
-phigaro	Paracoccus_aminophilus_JCM_7686_phigaro.txt	575.6744	0:09:35	205.50	1043.48	171.57	172.92	6.95	5.75	71.59
-phigaro	Vibrio_cholerae_O1_biovar_eltor_str._N16961_phigaro.txt	630.1638	0:10:30	206.36	1015.13	172.17	173.51	3.85	6.39	70.25
-phigaro	Caulobacter_crescentus_CB15_phigaro.txt	606.9711	0:10:06	213.46	1030.52	179.25	180.64	3.83	6.18	71.97
-phigaro	Listeria_innocua_Clip11262_phigaro.txt	520.7830	0:08:40	192.84	1009.15	158.43	159.84	2.88	5.19	72.08
-phigaro	Bacillus_halodurans_C-125_phigaro.txt	705.6636	0:11:45	226.95	1092.20	192.51	193.91	8.09	7.00	67.95
-phigaro	Bacillus_subtilis_subsp._subtilis_str._168_phigaro.txt	741.5623	0:12:21	284.64	1147.49	250.09	252.01	4.02	7.09	66.23
-phigaro	Listeria_monocytogenes_EGD-e_phigaro.txt	754.9926	0:12:34	206.32	948.52	172.21	173.57	2.81	4.91	45.55
-phigaro	Staphylococcus_aureus_subsp._aureus_Mu50_phigaro.txt	795.9500	0:13:15	228.91	983.69	194.60	195.96	2.77	4.85	43.77
-phigaro	Staphylococcus_aureus_strain_Sa_Newman_UoM_phigaro.txt	943.1490	0:15:43	293.73	1033.14	259.71	261.32	2.75	4.82	34.08
-phigaro	Staphylococcus_aureus_subsp._aureus_MW2_phigaro.txt	921.0028	0:15:21	229.80	979.23	195.50	196.87	2.69	4.67	38.83
-phigaro	Streptococcus_pyogenes_MGAS315_phigaro.txt	570.3796	0:09:30	186.76	863.70	152.96	154.56	1.81	3.29	43.50
-phigaro	Streptococcus_pyogenes_MGAS8232_phigaro.txt	556.6288	0:09:16	196.58	886.02	162.67	164.12	1.81	3.25	40.73
-phigaro	Neisseria_meningitidis_MC58_phigaro.txt	636.0749	0:10:36	179.98	923.95	145.69	147.40	2.17	3.55	40.09
-phigaro	Neisseria_meningitidis_Z2491_phigaro.txt	619.1959	0:10:19	169.89	918.38	135.46	137.12	2.09	3.41	37.61
-phigaro	Pasteurella_multocida_subsp._multocida_str._Pm70_phigaro.txt	162.7028	0:02:42	226.21	958.99	192.28	201.76	0.00	3.55	100.64
-phigaro	Lactococcus_lactis_subsp._lactis_Il1403_phigaro.txt	650.2187	0:10:50	197.60	947.66	163.38	164.98	2.26	4.09	41.21
-phigaro	Clostridium_tetani_E88_phigaro.txt	704.1550	0:11:44	199.02	1080.01	165.14	166.74	2.67	4.75	45.85
-phigaro	Streptococcus_pyogenes_M1_GAS_phigaro.txt	384.4137	0:06:24	192.39	855.97	158.00	160.46	1.77	3.12	64.23
-phigaro	Haemophilus_influenzae_Rd_KW20_phigaro.txt	339.7250	0:05:39	168.38	870.07	134.45	136.62	1.75	2.99	60.81
-phigaro	Bifidobacterium_longum_NCC2705_phigaro.txt	281.6727	0:04:41	207.76	898.68	174.15	177.39	0.00	3.53	87.99
-phigaro	Xylella_fastidiosa_Temecula1_phigaro.txt	283.2761	0:04:43	242.18	975.18	208.04	211.36	0.00	3.90	92.30
-phigaro	Paracoccus_sanguinis_5503_phigaro.txt	286.2098	0:04:46	232.63	981.55	198.56	201.79	0.00	3.75	90.80
-phigaro	Xylella_fastidiosa_9a5c_phigaro.txt	296.3803	0:04:56	191.53	929.46	157.84	162.84	0.00	4.28	99.76
-phigaro	Paracoccus_sp._SCN_68-21_phigaro.txt	319.1921	0:05:19	185.27	952.54	151.00	156.90	0.00	4.77	109.83
-phigaro	Yersinia_pestis_CO92_phigaro.txt	372.6177	0:06:12	215.09	1094.86	181.10	188.35	4.68	7.64	111.67
-phigaro	Yersinia_pestis_KIM_phigaro.txt	376.3752	0:06:16	367.12	1137.00	332.61	336.20	0.00	7.84	112.29
-phigaro	Bacteroides_uniformis_ATCC_8492_strain_81A2_phigaro.txt	401.0026	0:06:41	220.62	1082.03	186.50	193.77	4.61	7.41	119.99
-phigaro	Escherichia_coli_O157-H7_phigaro.txt	412.9063	0:06:52	213.55	1155.19	206.25	206.55	0.00	9.16	136.20
-phage_finder	Enterococcus_faecalis_strain_V583_phage_finder.txt	325.1483	0:05:25	137.14	1787.74	124.89	125.96	5.75	8.24	140.32
-phage_finder	Yersinia_pestis_CO92_phage_finder.txt	327.8006	0:05:27	146.02	438.11	129.06	131.20	6.05	8.34	138.30
-phage_finder	Escherichia_coli_K12_phage_finder.txt	330.8400	0:05:30	137.48	328.43	120.96	123.10	5.86	7.84	137.85
-phage_finder	Mycobacterium_tuberculosis_CDC1551_phage_finder.txt	369.6407	0:06:09	25.23	237.57	8.02	10.90	1.40	2.25	151.16
-phage_finder	Mycobacterium_tuberculosis_H37Rv_phage_finder.txt	371.0432	0:06:11	26.05	237.67	7.50	12.73	1.40	2.30	150.53
-phage_finder	Bacteroides_uniformis_ATCC_8492_strain_81A2_phage_finder.txt	397.6154	0:06:37	93.62	567.96	80.39	81.08	6.28	6.80	129.47
-phage_finder	Bacillus_halodurans_C-125_phage_finder.txt	436.6183	0:07:16	173.42	373.09	158.79	159.76	5.29	6.93	98.33
-phage_finder	Yersinia_pestis_KIM_phage_finder.txt	487.7910	0:08:07	230.83	2073.55	218.80	219.87	6.20	9.20	97.39
-phage_finder	Shigella_flexneri_2a_str._301_phage_finder.txt	500.3533	0:08:20	357.86	1767.04	341.71	342.99	5.82	10.20	95.17
-phage_finder	Shewanella_oneidensis_MR-1_phage_finder.txt	507.6073	0:08:27	106.83	357.24	90.85	92.15	6.90	23.12	95.26
-phage_finder	Xanthomonas_axonopodis_pv._citri_str._306_phage_finder.txt	513.8359	0:08:33	331.31	2178.81	316.47	317.63	6.64	10.05	101.77
-phage_finder	Escherichia_coli_CFT073_phage_finder.txt	518.1329	0:08:38	362.64	1701.14	346.30	347.36	6.62	10.79	101.80
-phage_finder	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18_phage_finder.txt	521.1508	0:08:41	367.94	1865.37	351.46	352.51	6.49	9.90	100.45
-phage_finder	Ralstonia_solanacearum_GMI1000_phage_finder.txt	543.4951	0:09:03	78.43	1850.79	66.63	68.34	7.33	10.93	116.66
-phage_finder	Escherichia_coli_O157-H7_EDL933_phage_finder.txt	545.7583	0:09:05	362.30	675.64	347.93	348.64	7.00	13.70	104.73
-phage_finder	Pseudomonas_putida_KT2440_phage_finder.txt	548.9588	0:09:08	154.84	481.79	138.74	140.46	7.81	9.52	115.54
-phage_finder	Escherichia_coli_O157-H7_phage_finder.txt	553.2125	0:09:13	125.77	1742.03	113.63	114.50	7.07	11.43	103.81
-phage_finder	Pseudomonas_aeruginosa_PAO1_phage_finder.txt	555.9596	0:09:15	378.44	703.54	362.35	363.82	7.95	8.69	113.94
-phage_finder	Achromobacter_denitrificans_strain_PR1_phage_finder.txt	585.0350	0:09:45	65.53	237.55	57.81	58.25	8.80	9.26	117.51
-phage_finder	Mesorhizobium_loti_MAFF303099_phage_finder.txt	611.8006	0:10:11	389.50	583.55	376.96	377.70	9.59	10.65	120.90
-phage_finder	Vibrio_cholerae_O1_biovar_eltor_str._N16961_phage_finder.txt	0.9277	0:00:00	3.72	19.58	0.41	0.59	0.00	0.00	0.00
-phage_finder	Bacillus_subtilis_subsp._subtilis_str._168_phage_finder.txt	14.5666	0:00:14	57.38	291.90	42.85	43.25	0.45	1.59	6.52
-phage_finder	Pasteurella_multocida_subsp._multocida_str._Pm70_phage_finder.txt	393.7241	0:06:33	117.29	1841.24	103.34	104.48	2.86	6.25	54.70
-phage_finder	Neisseria_meningitidis_MC58_phage_finder.txt	398.3861	0:06:38	166.69	1842.10	150.24	151.37	2.86	6.29	61.86
-phage_finder	Xylella_fastidiosa_Temecula1_phage_finder.txt	428.3473	0:07:08	348.40	1684.55	332.00	333.19	2.67	10.59	51.73
-phage_finder	Bifidobacterium_longum_NCC2705_phage_finder.txt	411.9254	0:06:51	341.46	1781.93	325.15	326.13	3.03	9.40	60.05
-phage_finder	Listeria_monocytogenes_EGD-e_phage_finder.txt	444.7192	0:07:24	346.03	565.08	329.89	330.63	2.81	5.41	68.24
-phage_finder	Xylella_fastidiosa_9a5c_phage_finder.txt	445.2589	0:07:25	349.77	1846.10	333.52	334.67	2.61	6.71	55.78
-phage_finder	Clostridium_tetani_E88_phage_finder.txt	445.6926	0:07:25	171.57	493.12	155.26	156.00	2.67	5.44	68.96
-phage_finder	Lactococcus_lactis_subsp._lactis_Il1403_phage_finder.txt	450.4427	0:07:30	246.04	499.57	230.32	231.33	2.50	12.92	55.76
-phage_finder	Brucella_melitensis_16M_phage_finder.txt	457.1064	0:07:37	295.36	452.82	278.84	279.79	3.14	7.11	72.54
-phage_finder	Staphylococcus_aureus_strain_Sa_Newman_UoM_phage_finder.txt	459.7420	0:07:39	344.50	612.20	328.59	329.38	3.05	8.29	64.69
-phage_finder	Staphylococcus_aureus_subsp._aureus_MW2_phage_finder.txt	461.2724	0:07:41	165.18	401.12	148.89	149.69	2.96	8.46	62.47
-phage_finder	Staphylococcus_aureus_subsp._aureus_Mu50_phage_finder.txt	465.3523	0:07:45	345.34	516.21	328.78	329.59	3.05	7.96	63.12
-phage_finder	Listeria_innocua_Clip11262_phage_finder.txt	466.9435	0:07:46	108.82	1844.00	97.92	98.28	2.88	6.82	71.06
-phage_finder	Deinococcus_radiodurans_R1_phage_finder.txt	469.3184	0:07:49	167.66	351.58	151.35	152.16	3.13	5.59	71.17
-phage_finder	Clostridium_perfringens_str._13_phage_finder.txt	470.9466	0:07:50	168.48	342.47	151.88	152.81	2.95	5.72	70.79
-phage_finder	Paracoccus_yeei_TT13_phage_finder.txt	483.5496	0:08:03	22.22	237.61	6.30	8.27	4.50	8.16	79.04
-phage_finder	Paracoccus_sp._SCN_68-21_phage_finder.txt	556.8939	0:09:16	96.51	1821.71	80.44	81.22	4.23	8.85	59.41
-phage_finder	Haemophilus_influenzae_Rd_KW20_phage_finder.txt	167.6054	0:02:47	28.02	237.78	18.32	18.71	2.50	6.48	98.37
-phage_finder	Streptococcus_pyogenes_M1_GAS_phage_finder.txt	185.1046	0:03:05	159.57	427.46	143.39	144.19	2.33	4.43	88.20
-phage_finder	Neisseria_meningitidis_Z2491_phage_finder.txt	222.3667	0:03:42	345.29	626.89	328.73	329.57	2.75	4.52	74.84
-phage_finder	Streptococcus_pyogenes_MGAS315_phage_finder.txt	218.3146	0:03:38	158.17	411.10	141.91	142.73	2.39	4.93	73.39
-phage_finder	Streptococcus_pyogenes_MGAS8232_phage_finder.txt	199.0226	0:03:19	155.08	1664.61	139.08	139.89	2.58	8.96	81.07
-phage_finder	Paracoccus_sanguinis_5503_phage_finder.txt	658.8125	0:10:58	326.56	554.01	312.02	312.56	4.81	14.89	58.59
-phage_finder	Paracoccus_denitrificans_PD1222_phage_finder.txt	671.3636	0:11:11	353.96	672.73	337.77	339.02	0.00	19.80	77.37
-phage_finder	Paracoccus_aminophilus_JCM_7686_phage_finder.txt	897.6352	0:14:57	123.46	1971.03	111.36	112.15	4.80	44.30	83.51
-phageboost	Ralstonia_solanacearum_GMI1000_phageboost.txt	93.5436	0:01:33	179.65	858.46	123.12	129.07	0.00	0.01	75.44
-phageboost	Xanthomonas_axonopodis_pv._citri_str._306_phageboost.txt	103.7838	0:01:43	181.50	858.76	125.39	131.01	0.00	0.01	67.94
-phageboost	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18_phageboost.txt	112.2508	0:01:52	375.37	1053.68	317.97	323.66	0.00	0.01	89.33
-phageboost	Escherichia_coli_CFT073_phageboost.txt	113.8174	0:01:53	304.97	983.18	248.18	254.12	0.01	0.01	88.18
-phageboost	Escherichia_coli_O157-H7_EDL933_phageboost.txt	124.1601	0:02:04	187.60	864.62	131.21	136.91	0.00	0.01	80.99
-phageboost	Escherichia_coli_O157-H7_phageboost.txt	128.9378	0:02:08	188.66	866.08	132.61	138.29	0.01	0.01	77.98
-phageboost	Pseudomonas_putida_KT2440_phageboost.txt	133.7784	0:02:13	188.55	866.08	132.68	138.28	0.00	0.02	74.89
-phageboost	Pseudomonas_aeruginosa_PAO1_phageboost.txt	139.7037	0:02:19	535.54	1277.99	478.48	484.24	0.00	0.02	93.12
-phageboost	Bacteroides_uniformis_ATCC_8492_strain_81A2_phageboost.txt	47.4590	0:00:47	556.78	1239.72	498.14	504.68	0.02	0.01	94.61
-phageboost	Achromobacter_denitrificans_strain_PR1_phageboost.txt	167.6501	0:02:47	567.91	1246.79	509.96	516.25	0.00	0.02	95.61
-phageboost	Mesorhizobium_loti_MAFF303099_phageboost.txt	187.5821	0:03:07	197.18	874.75	141.53	147.17	0.00	0.01	85.39
-phageboost	Yersinia_pestis_KIM_phageboost.txt	86.2653	0:01:26	262.25	941.23	205.56	211.69	3.09	0.01	86.74
-phageboost	Shewanella_oneidensis_MR-1_phageboost.txt	97.0015	0:01:37	182.04	859.24	125.79	131.41	0.04	0.01	77.12
-phageboost	Yersinia_pestis_CO92_phageboost.txt	88.0009	0:01:28	185.62	864.56	129.07	134.93	1.04	0.01	84.66
-phageboost	Escherichia_coli_K12_phageboost.txt	89.4560	0:01:29	180.60	858.46	124.90	130.34	2.95	0.01	83.77
-phageboost	Enterococcus_faecalis_strain_V583_phageboost.txt	79.3191	0:01:19	407.50	1085.82	350.07	356.00	2.81	0.01	94.51
-phageboost	Paracoccus_denitrificans_PD1222_phageboost.txt	88.7529	0:01:28	182.88	860.07	126.57	132.29	0.00	0.01	84.57
-phageboost	Mycobacterium_tuberculosis_H37Rv_phageboost.txt	83.6655	0:01:23	242.30	920.38	184.61	190.35	2.75	0.01	89.25
-phageboost	Shigella_flexneri_2a_str._301_phageboost.txt	99.9915	0:01:39	181.83	859.47	126.39	131.91	2.93	0.01	74.90
-phageboost	Paracoccus_sanguinis_5503_phageboost.txt	35.9433	0:00:35	164.68	842.62	106.86	112.72	2.55	0.01	41.00
-phageboost	Mycobacterium_tuberculosis_CDC1551_phageboost.txt	81.6626	0:01:21	290.01	969.12	233.63	239.39	2.76	0.01	91.47
-phageboost	Paracoccus_sp._SCN_68-21_phageboost.txt	33.3610	0:00:33	163.70	841.79	106.13	112.19	2.33	0.01	45.03
-phageboost	Vibrio_cholerae_O1_biovar_eltor_str._N16961_phageboost.txt	54.7226	0:00:54	239.59	918.08	182.49	188.33	0.54	0.01	81.92
-phageboost	Bacillus_subtilis_subsp._subtilis_str._168_phageboost.txt	83.6439	0:01:23	247.55	925.93	190.18	196.13	2.64	0.01	89.42
-phageboost	Brucella_melitensis_16M_phageboost.txt	44.4272	0:00:44	168.92	846.39	112.90	118.41	2.00	0.01	33.35
-phageboost	Bacillus_halodurans_C-125_phageboost.txt	82.5564	0:01:22	268.20	946.91	211.18	217.24	2.65	0.01	90.62
-phageboost	Caulobacter_crescentus_CB15_phageboost.txt	68.8603	0:01:08	174.62	851.82	118.61	124.92	2.46	0.01	65.31
-phageboost	Deinococcus_radiodurans_R1_phageboost.txt	47.1643	0:00:47	758.68	1511.76	701.50	708.12	2.05	0.01	95.16
-phageboost	Clostridium_perfringens_str._13_phageboost.txt	44.8209	0:00:44	169.90	847.00	113.84	119.74	1.86	0.01	33.42
-phageboost	Listeria_innocua_Clip11262_phageboost.txt	51.7132	0:00:51	229.90	908.29	172.57	178.68	1.91	0.01	86.46
-phageboost	Listeria_monocytogenes_EGD-e_phageboost.txt	46.2037	0:00:46	509.08	1206.77	451.30	457.39	1.85	0.01	97.17
-phageboost	Paracoccus_aminophilus_JCM_7686_phageboost.txt	89.5421	0:01:29	185.73	863.38	130.00	135.56	2.24	0.01	83.56
-phageboost	Paracoccus_yeei_TT13_phageboost.txt	89.0156	0:01:29	181.73	859.56	126.14	131.71	2.22	0.01	84.02
-phageboost	Staphylococcus_aureus_subsp._aureus_Mu50_phageboost.txt	43.3593	0:00:43	169.31	847.02	113.71	119.37	1.77	0.01	34.82
-phageboost	Staphylococcus_aureus_strain_Sa_Newman_UoM_phageboost.txt	43.0637	0:00:43	167.24	844.15	110.95	116.88	0.00	0.01	35.03
-phageboost	Staphylococcus_aureus_subsp._aureus_MW2_phageboost.txt	41.2913	0:00:41	168.91	846.52	113.18	118.74	1.73	0.01	35.92
-phageboost	Clostridium_tetani_E88_phageboost.txt	44.0077	0:00:44	169.35	847.08	113.71	119.56	1.71	0.01	33.71
-phageboost	Xylella_fastidiosa_9a5c_phageboost.txt	47.2395	0:00:47	758.64	1511.08	701.45	707.59	1.71	0.01	94.29
-phageboost	Pasteurella_multocida_subsp._multocida_str._Pm70_phageboost.txt	32.4859	0:00:32	166.53	843.62	110.12	116.29	1.43	0.01	45.84
-phageboost	Lactococcus_lactis_subsp._lactis_Il1403_phageboost.txt	37.0977	0:00:37	168.16	845.29	111.80	118.20	1.48	0.01	40.15
-phageboost	Xylella_fastidiosa_Temecula1_phageboost.txt	42.6298	0:00:42	168.39	845.95	112.54	118.38	1.58	0.01	35.11
-phageboost	Bifidobacterium_longum_NCC2705_phageboost.txt	30.0485	0:00:30	165.46	842.58	109.54	115.17	1.39	0.01	49.79
-phageboost	Streptococcus_pyogenes_MGAS315_phageboost.txt	27.5587	0:00:27	165.45	843.32	108.85	114.86	1.20	0.01	54.63
-phageboost	Neisseria_meningitidis_MC58_phageboost.txt	38.3161	0:00:38	167.87	845.47	112.00	118.03	1.42	0.01	38.94
-phageboost	Streptococcus_pyogenes_MGAS8232_phageboost.txt	27.9947	0:00:27	164.88	843.30	108.79	114.76	1.17	0.01	53.88
-phageboost	Streptococcus_pyogenes_M1_GAS_phageboost.txt	26.3253	0:00:26	164.65	842.68	108.08	114.88	1.17	0.01	57.04
-phageboost	Haemophilus_influenzae_Rd_KW20_phageboost.txt	26.1857	0:00:26	163.86	842.12	107.99	115.86	1.16	0.01	56.94
-phageboost	Neisseria_meningitidis_Z2491_phageboost.txt	46.1758	0:00:46	535.74	1234.41	503.68	506.70	1.38	0.01	97.00
+Prophage_caller	Genome	s	h:m:s	max_rss	max_vms	max_uss	max_pss	io_in	io_out	mean_load	cpu_time
+phage_finder	Achromobacter_denitrificans_strain_PR1	215.0689	0:03:35	18.90	198.25	11.26	11.49	0.00	0.91	167.82	361.64
+phage_finder	Bacillus_halodurans_C-125	159.7786	0:02:39	1009.08	1791.41	995.70	996.85	0.00	5.29	133.36	6.48
+phage_finder	Bacillus_subtilis_subsp._subtilis_str._168	171.4187	0:02:51	48.63	198.44	41.46	41.94	0.00	5.34	125.24	1.25
+phage_finder	Bacteroides_uniformis_ATCC_8492_strain_81A2	273.1262	0:04:33	387.45	562.36	374.13	375.08	0.00	11.11	121.16	1.06
+phage_finder	Bifidobacterium_longum_NCC2705	97.2178	0:01:37	419.80	1020.04	405.95	406.84	0.00	3.30	98.06	1.55
+phage_finder	Brucella_melitensis_16M	123.3290	0:02:03	996.67	1328.89	983.17	983.87	0.00	5.71	129.90	1.72
+phage_finder	Caulobacter_crescentus_CB15	152.9091	0:02:32	170.03	2621.79	160.38	160.89	0.00	6.12	140.19	6.06
+phage_finder	Clostridium_perfringens_str._13	135.0829	0:02:15	1004.85	1616.73	991.08	991.89	0.00	4.14	116.79	3.72
+phage_finder	Clostridium_tetani_E88	118.7879	0:01:58	174.01	5865.51	163.05	163.86	0.00	5.85	129.38	11.02
+phage_finder	Deinococcus_radiodurans_R1	136.9470	0:02:16	236.98	398.54	223.49	224.18	0.00	4.11	115.91	0.46
+phage_finder	Enterococcus_faecalis_strain_V583	172.6161	0:02:52	20.05	198.39	6.12	6.88	0.00	0.88	158.28	274.50
+phage_finder	Escherichia_coli_CFT073	197.5435	0:03:17	1021.07	1680.53	1007.53	1008.32	0.00	6.62	137.57	4.33
+phage_finder	Escherichia_coli_K12	175.0864	0:02:55	21.86	198.79	7.46	7.97	0.00	1.00	154.85	273.39
+phage_finder	Escherichia_coli_O157-H7	195.2526	0:03:15	94.43	198.38	81.72	82.52	0.00	2.00	123.27	0.13
+phage_finder	Escherichia_coli_O157-H7_EDL933	214.2522	0:03:34	20.51	198.94	13.78	14.15	0.00	11.40	149.89	0.14
+phage_finder	Haemophilus_influenzae_Rd_KW20	79.4182	0:01:19	162.55	3661.31	151.67	152.62	0.00	3.78	100.69	4.35
+phage_finder	Lactococcus_lactis_subsp._lactis_Il1403	104.0607	0:01:44	19.24	198.12	10.34	10.51	0.00	1.14	127.28	133.29
+phage_finder	Listeria_innocua_Clip11262	126.5411	0:02:06	19.89	198.28	5.49	6.37	0.00	1.14	149.57	189.62
+phage_finder	Listeria_monocytogenes_EGD-e	120.8866	0:02:00	161.63	5909.58	151.86	152.21	0.00	5.17	129.34	5.03
+phage_finder	Mesorhizobium_loti_MAFF303099	259.0474	0:04:19	21.14	198.35	9.46	11.04	0.00	1.30	168.30	439.36
+phage_finder	Mycobacterium_tuberculosis_CDC1551	180.5110	0:03:00	20.02	198.21	8.89	9.11	0.00	0.84	164.96	298.47
+phage_finder	Mycobacterium_tuberculosis_H37Rv	177.3255	0:02:57	290.52	3983.01	281.08	281.95	0.00	5.23	137.27	2.87
+phage_finder	Neisseria_meningitidis_MC58	91.4217	0:01:31	153.61	3061.25	143.98	144.59	0.00	4.11	107.91	2.93
+phage_finder	Neisseria_meningitidis_Z2491	88.2712	0:01:28	24.74	198.49	20.39	20.82	0.00	5.80	111.59	0.64
+phage_finder	Paracoccus_aminophilus_JCM_7686	365.7653	0:06:05	39.44	198.30	37.03	37.09	0.00	41.95	117.89	217.92
+phage_finder	Paracoccus_denitrificans_PD1222	214.7854	0:03:34	35.15	198.40	30.97	31.41	0.00	15.12	129.57	29.74
+phage_finder	Paracoccus_sanguinis_5503	315.2206	0:05:15	979.98	1619.81	966.94	967.88	0.00	11.14	68.20	1.95
+phage_finder	Paracoccus_sp._SCN_68-21	193.3917	0:03:13	258.94	419.26	245.37	246.28	0.00	6.24	99.80	0.70
+phage_finder	Paracoccus_yeei_TT13	138.6297	0:02:18	19.50	198.52	5.71	6.18	0.00	6.61	137.67	1.06
+phage_finder	Pasteurella_multocida_subsp._multocida_str._Pm70	87.6311	0:01:27	20.07	198.58	5.59	6.39	0.00	0.73	111.83	103.24
+phage_finder	Pseudomonas_aeruginosa_PAO1	195.1258	0:03:15	19.17	198.43	5.54	7.31	0.00	0.93	155.73	304.82
+phage_finder	Pseudomonas_putida_KT2440	220.2592	0:03:40	456.45	845.42	442.60	443.53	0.00	7.45	148.21	2.67
+phage_finder	Ralstonia_solanacearum_GMI1000	213.2723	0:03:33	20.09	198.48	6.12	6.80	0.00	9.36	154.25	0.47
+phage_finder	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18	173.2569	0:02:53	319.73	1097.56	306.14	307.26	0.00	7.23	140.89	4.64
+phage_finder	Shewanella_oneidensis_MR-1	191.3173	0:03:11	685.63	848.89	671.28	672.21	0.00	7.21	142.29	2.53
+phage_finder	Shigella_flexneri_2a_str._301	183.9064	0:03:03	20.35	198.87	6.19	6.62	0.00	9.86	147.54	0.56
+phage_finder	Staphylococcus_aureus_strain_Sa_Newman_UoM	128.2265	0:02:08	550.95	713.28	537.26	537.96	0.00	4.46	117.86	1.45
+phage_finder	Staphylococcus_aureus_subsp._aureus_MW2	118.1199	0:01:58	28.19	198.36	23.84	24.13	0.00	14.47	130.99	1.12
+phage_finder	Staphylococcus_aureus_subsp._aureus_Mu50	121.4558	0:02:01	173.03	5437.08	162.45	163.23	0.00	5.77	127.74	8.59
+phage_finder	Streptococcus_pyogenes_M1_GAS	80.6037	0:01:20	20.44	198.37	5.94	6.55	0.00	0.92	123.35	102.79
+phage_finder	Streptococcus_pyogenes_MGAS315	86.8585	0:01:26	21.95	198.34	7.37	8.38	0.00	1.14	109.09	99.11
+phage_finder	Streptococcus_pyogenes_MGAS8232	89.2609	0:01:29	170.68	3079.67	159.64	160.46	0.00	5.32	102.49	10.88
+phage_finder	Vibrio_cholerae_O1_biovar_eltor_str._N16961	126.8022	0:02:06	20.35	198.68	5.69	7.30	0.00	0.94	149.77	190.85
+phage_finder	Xanthomonas_axonopodis_pv._citri_str._306	170.7160	0:02:50	173.83	3025.32	164.40	164.85	0.00	7.36	144.59	3.72
+phage_finder	Xylella_fastidiosa_9a5c	110.1670	0:01:50	160.52	2744.53	150.84	151.24	0.00	4.93	121.45	3.67
+phage_finder	Xylella_fastidiosa_Temecula1	97.7980	0:01:37	307.20	352.76	294.27	295.50	0.00	3.60	102.22	0.63
+phage_finder	Yersinia_pestis_CO92	156.5649	0:02:36	19.71	198.36	10.84	10.90	0.00	1.24	156.64	245.79
+phage_finder	Yersinia_pestis_KIM	184.0571	0:03:04	122.16	3367.96	112.21	112.65	0.00	7.01	147.15	1.48
+phageboost	Achromobacter_denitrificans_strain_PR1	86.3928	0:01:26	310.83	839.27	244.15	268.73	0.00	0.00	88.73	80.16
+phageboost	Bacillus_halodurans_C-125	39.5668	0:00:39	476.73	1067.04	407.88	410.72	0.00	0.00	85.31	38.08
+phageboost	Bacillus_subtilis_subsp._subtilis_str._168	49.7865	0:00:49	640.61	5774.88	572.89	577.69	0.00	0.00	91.54	48.98
+phageboost	Bacteroides_uniformis_ATCC_8492_strain_81A2	24.7363	0:00:24	413.50	941.80	344.89	346.48	0.00	0.00	62.53	21.56
+phageboost	Bifidobacterium_longum_NCC2705	22.7606	0:00:22	227.84	838.77	161.31	162.92	0.00	0.00	70.22	20.88
+phageboost	Brucella_melitensis_16M	24.6115	0:00:24	561.85	1153.57	492.88	494.67	0.00	0.00	73.77	23.68
+phageboost	Caulobacter_crescentus_CB15	38.6623	0:00:38	595.73	1187.01	526.57	529.38	0.00	0.00	86.58	37.79
+phageboost	Clostridium_perfringens_str._13	28.0550	0:00:28	328.27	856.47	259.61	261.67	0.00	0.00	72.45	26.03
+phageboost	Clostridium_tetani_E88	22.9348	0:00:22	489.52	1080.98	420.69	422.35	0.00	0.00	67.10	21.78
+phageboost	Deinococcus_radiodurans_R1	24.2863	0:00:24	308.96	836.71	239.95	241.54	0.00	0.00	64.57	21.88
+phageboost	Enterococcus_faecalis_strain_V583	39.0548	0:00:39	372.84	5440.30	299.81	304.67	0.00	0.00	87.57	38.54
+phageboost	Escherichia_coli_CFT073	51.0559	0:00:51	588.46	1182.57	519.43	524.69	0.00	0.00	90.83	49.97
+phageboost	Escherichia_coli_K12	43.9701	0:00:43	422.07	5492.56	352.68	356.09	0.00	0.00	89.18	43.20
+phageboost	Escherichia_coli_O157-H7	62.5887	0:01:02	195.94	723.40	128.71	131.36	0.00	0.00	74.47	50.33
+phageboost	Escherichia_coli_O157-H7_EDL933	60.3602	0:01:00	194.72	721.94	127.23	130.20	0.00	0.00	76.98	49.99
+phageboost	Haemophilus_influenzae_Rd_KW20	13.4474	0:00:13	194.62	723.05	126.21	127.56	0.00	0.00	28.38	10.45
+phageboost	Lactococcus_lactis_subsp._lactis_Il1403	24.2647	0:00:24	233.14	761.37	164.75	166.34	0.00	0.00	61.88	21.33
+phageboost	Listeria_innocua_Clip11262	32.4174	0:00:32	607.46	1199.45	538.85	541.42	0.00	0.00	83.64	31.55
+phageboost	Listeria_monocytogenes_EGD-e	25.4840	0:00:25	214.96	742.73	145.93	147.55	0.00	0.00	58.78	21.34
+phageboost	Mesorhizobium_loti_MAFF303099	89.0827	0:01:29	271.55	799.58	204.78	229.44	0.00	0.00	85.69	79.94
+phageboost	Mycobacterium_tuberculosis_CDC1551	45.0216	0:00:45	420.35	5489.51	351.05	354.58	0.00	0.00	89.78	44.33
+phageboost	Mycobacterium_tuberculosis_H37Rv	40.4433	0:00:40	491.62	1082.48	422.61	425.69	0.00	0.00	86.16	39.13
+phageboost	Neisseria_meningitidis_MC58	24.0456	0:00:24	213.96	742.16	145.59	147.20	0.00	0.00	59.93	20.68
+phageboost	Neisseria_meningitidis_Z2491	27.0954	0:00:27	303.04	831.33	234.81	236.74	0.00	0.00	67.59	25.06
+phageboost	Paracoccus_aminophilus_JCM_7686	53.5167	0:00:53	268.52	796.96	200.14	205.26	0.00	0.00	86.94	50.09
+phageboost	Paracoccus_denitrificans_PD1222	48.8058	0:00:48	536.69	5448.50	467.66	472.13	0.00	0.00	91.17	48.10
+phageboost	Paracoccus_sanguinis_5503	18.4779	0:00:18	348.57	876.95	280.12	281.58	0.00	0.00	43.29	14.95
+phageboost	Paracoccus_sp._SCN_68-21	17.8242	0:00:17	373.84	5440.95	298.16	301.90	0.00	0.01	59.70	17.31
+phageboost	Paracoccus_yeei_TT13	46.9775	0:00:46	629.49	5763.30	493.35	499.22	0.00	0.00	90.61	46.27
+phageboost	Pasteurella_multocida_subsp._multocida_str._Pm70	17.7077	0:00:17	260.22	799.02	202.03	203.46	0.00	0.00	45.89	15.38
+phageboost	Pseudomonas_aeruginosa_PAO1	65.2797	0:01:05	196.80	724.40	129.70	132.75	0.00	0.00	71.01	49.82
+phageboost	Pseudomonas_putida_KT2440	65.0463	0:01:05	197.30	723.91	129.09	132.12	0.00	0.00	71.52	50.02
+phageboost	Ralstonia_solanacearum_GMI1000	46.8979	0:00:46	534.20	5506.88	464.89	468.73	0.00	0.00	91.23	46.17
+phageboost	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18	59.0325	0:00:59	192.50	720.99	124.44	129.12	0.00	0.00	78.84	50.17
+phageboost	Shewanella_oneidensis_MR-1	47.5179	0:00:47	555.51	5441.75	486.64	490.48	0.00	0.00	91.09	46.85
+phageboost	Shigella_flexneri_2a_str._301	50.9391	0:00:50	633.35	1226.16	564.36	569.63	0.00	0.00	91.14	50.01
+phageboost	Staphylococcus_aureus_strain_Sa_Newman_UoM	23.6498	0:00:23	490.23	1080.71	421.18	422.83	0.00	0.00	68.36	22.37
+phageboost	Staphylococcus_aureus_subsp._aureus_MW2	20.7715	0:00:20	252.91	781.02	184.20	185.71	0.00	0.00	54.50	17.95
+phageboost	Staphylococcus_aureus_subsp._aureus_Mu50	29.9162	0:00:29	313.61	841.74	245.11	247.32	0.00	0.00	73.97	27.61
+phageboost	Streptococcus_pyogenes_M1_GAS	12.9978	0:00:12	239.16	767.00	170.53	171.90	0.00	0.00	30.86	10.87
+phageboost	Streptococcus_pyogenes_MGAS315	14.7500	0:00:14	605.10	5739.13	491.79	493.32	0.00	0.00	49.02	13.89
+phageboost	Streptococcus_pyogenes_MGAS8232	13.6961	0:00:13	219.66	747.17	150.31	151.73	0.00	0.00	29.47	10.99
+phageboost	Vibrio_cholerae_O1_biovar_eltor_str._N16961	32.0982	0:00:32	524.37	1114.89	455.43	457.95	0.00	0.00	82.10	30.89
+phageboost	Xanthomonas_axonopodis_pv._citri_str._306	52.3863	0:00:52	460.89	988.69	391.75	397.02	0.00	0.00	88.82	50.23
+phageboost	Xylella_fastidiosa_9a5c	25.8769	0:00:25	248.33	776.23	179.47	181.06	0.00	0.00	62.55	22.42
+phageboost	Xylella_fastidiosa_Temecula1	23.2339	0:00:23	490.34	1082.17	422.12	423.76	0.00	0.00	67.65	22.03
+phageboost	Yersinia_pestis_CO92	41.7079	0:00:41	372.50	5439.59	303.12	306.45	0.00	0.00	88.43	41.13
+phageboost	Yersinia_pestis_KIM	42.8561	0:00:42	633.10	1227.05	564.45	567.83	0.00	0.00	88.70	41.87
+phigaro	Achromobacter_denitrificans_strain_PR1	295.7973	0:04:55	399.40	1772.60	366.36	373.55	0.00	10.75	210.10	614.06
+phigaro	Bacillus_halodurans_C-125	245.0249	0:04:05	392.15	1852.63	361.49	362.99	0.00	6.93	192.87	470.87
+phigaro	Bacillus_subtilis_subsp._subtilis_str._168	286.4279	0:04:46	426.87	1667.05	394.16	396.17	0.00	7.01	158.13	454.15
+phigaro	Bacteroides_uniformis_ATCC_8492_strain_81A2	258.6414	0:04:18	389.22	1684.48	356.68	358.64	0.00	7.45	207.26	522.30
+phigaro	Bifidobacterium_longum_NCC2705	234.2856	0:03:54	356.98	1457.26	324.41	325.22	0.00	3.52	136.67	320.52
+phigaro	Brucella_melitensis_16M	274.0090	0:04:34	393.52	1620.67	356.98	358.13	0.00	5.15	132.49	365.67
+phigaro	Caulobacter_crescentus_CB15	277.4485	0:04:37	376.05	1599.28	343.52	345.86	0.00	6.18	163.21	455.91
+phigaro	Clostridium_perfringens_str._13	263.4799	0:04:23	365.38	1497.03	332.44	333.58	0.00	5.04	145.58	386.40
+phigaro	Clostridium_tetani_E88	251.7960	0:04:11	354.80	1516.19	322.43	323.31	0.00	4.80	153.67	390.14
+phigaro	Deinococcus_radiodurans_R1	267.3569	0:04:27	357.20	1570.95	324.64	325.77	0.00	5.12	140.53	377.91
+phigaro	Enterococcus_faecalis_strain_V583	250.7239	0:04:10	382.17	1742.91	349.49	351.11	0.00	7.05	178.84	442.48
+phigaro	Escherichia_coli_CFT073	261.8520	0:04:21	397.68	1882.05	364.98	367.11	0.00	8.36	206.17	535.16
+phigaro	Escherichia_coli_K12	245.0121	0:04:05	465.97	1709.22	433.17	434.67	0.00	7.32	192.91	467.48
+phigaro	Escherichia_coli_O157-H7	270.2239	0:04:30	437.79	1735.41	404.89	406.87	0.00	9.11	200.93	540.02
+phigaro	Escherichia_coli_O157-H7_EDL933	269.3615	0:04:29	396.92	1709.11	364.38	366.35	0.00	8.98	201.76	539.48
+phigaro	Haemophilus_influenzae_Rd_KW20	230.8891	0:03:50	336.95	1519.16	304.21	305.05	0.00	3.00	138.13	322.75
+phigaro	Lactococcus_lactis_subsp._lactis_Il1403	188.7261	0:03:08	350.72	1497.43	318.22	319.45	0.00	4.01	173.32	330.19
+phigaro	Listeria_innocua_Clip11262	262.3354	0:04:22	385.40	1638.14	352.84	353.99	0.00	5.14	145.17	385.28
+phigaro	Listeria_monocytogenes_EGD-e	202.5250	0:03:22	646.34	1725.80	614.00	615.30	0.00	4.91	198.93	401.94
+phigaro	Mesorhizobium_loti_MAFF303099	309.4106	0:05:09	440.67	1930.80	408.04	412.22	0.00	11.82	197.02	600.66
+phigaro	Mycobacterium_tuberculosis_CDC1551	267.4217	0:04:27	423.60	1707.11	387.19	389.17	0.00	6.75	200.57	528.53
+phigaro	Mycobacterium_tuberculosis_H37Rv	262.7210	0:04:22	433.03	1664.42	400.06	401.31	0.00	6.79	201.02	517.73
+phigaro	Neisseria_meningitidis_MC58	246.3430	0:04:06	377.21	1728.83	344.27	345.42	0.00	3.56	144.40	357.94
+phigaro	Neisseria_meningitidis_Z2491	235.5603	0:03:55	343.82	1621.02	311.23	312.08	0.00	3.41	132.13	315.25
+phigaro	Paracoccus_aminophilus_JCM_7686	222.3285	0:03:42	362.52	1629.52	330.18	331.38	0.00	5.70	179.98	397.59
+phigaro	Paracoccus_denitrificans_PD1222	248.1349	0:04:08	425.54	1713.05	392.88	394.15	0.00	7.24	186.34	459.04
+phigaro	Paracoccus_sanguinis_5503	253.2425	0:04:13	366.22	1640.24	332.82	333.98	0.00	3.76	142.61	366.26
+phigaro	Paracoccus_sp._SCN_68-21	261.2827	0:04:21	361.15	1574.40	327.93	329.07	0.00	4.75	143.10	377.27
+phigaro	Paracoccus_yeei_TT13	274.4809	0:04:34	368.53	1976.11	335.49	336.34	0.00	5.66	137.71	381.19
+phigaro	Pasteurella_multocida_subsp._multocida_str._Pm70	239.9693	0:03:59	350.06	1655.02	317.64	318.52	0.00	3.60	133.14	322.87
+phigaro	Pseudomonas_aeruginosa_PAO1	279.9092	0:04:39	555.60	1845.99	522.44	523.70	0.00	9.61	188.78	517.48
+phigaro	Pseudomonas_putida_KT2440	280.6192	0:04:40	445.96	1774.29	413.36	416.20	0.00	9.49	187.94	511.29
+phigaro	Ralstonia_solanacearum_GMI1000	276.5457	0:04:36	408.27	1973.88	375.57	377.61	0.00	8.86	191.20	517.20
+phigaro	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18	261.6905	0:04:21	384.49	1806.15	351.98	353.97	0.00	8.18	205.73	537.25
+phigaro	Shewanella_oneidensis_MR-1	295.2830	0:04:55	384.70	1698.67	352.77	355.05	0.00	8.02	158.25	471.23
+phigaro	Shigella_flexneri_2a_str._301	248.2305	0:04:08	421.15	1873.54	388.49	389.98	0.00	7.47	189.75	468.05
+phigaro	Staphylococcus_aureus_strain_Sa_Newman_UoM	258.9100	0:04:18	431.58	1717.32	399.20	400.07	0.00	4.84	146.70	384.99
+phigaro	Staphylococcus_aureus_subsp._aureus_MW2	255.3684	0:04:15	397.22	1542.21	364.61	365.41	0.00	4.64	148.07	382.16
+phigaro	Staphylococcus_aureus_subsp._aureus_Mu50	204.6951	0:03:24	399.33	1492.68	366.72	367.96	0.00	4.83	195.69	401.18
+phigaro	Streptococcus_pyogenes_M1_GAS	221.0106	0:03:41	330.92	2214.31	297.78	298.61	0.00	3.12	147.04	328.04
+phigaro	Streptococcus_pyogenes_MGAS315	235.0899	0:03:55	350.05	1704.11	313.45	314.30	0.00	3.26	131.44	312.05
+phigaro	Streptococcus_pyogenes_MGAS8232	222.8342	0:03:42	340.28	1507.08	307.79	308.62	0.00	3.27	138.57	312.90
+phigaro	Vibrio_cholerae_O1_biovar_eltor_str._N16961	277.5010	0:04:37	469.66	1676.47	436.96	439.31	0.00	6.39	164.92	461.40
+phigaro	Xanthomonas_axonopodis_pv._citri_str._306	259.3889	0:04:19	396.12	1641.16	363.08	365.08	0.00	8.02	206.73	525.14
+phigaro	Xylella_fastidiosa_9a5c	249.7005	0:04:09	352.43	1581.65	333.58	334.42	0.00	4.28	145.63	368.45
+phigaro	Xylella_fastidiosa_Temecula1	242.7800	0:04:02	374.56	1553.07	342.12	342.93	0.00	3.89	131.93	320.82
+phigaro	Yersinia_pestis_CO92	291.1165	0:04:51	432.59	1759.70	400.15	401.02	0.00	7.64	158.72	466.09
+phigaro	Yersinia_pestis_KIM	294.1653	0:04:54	387.40	1751.22	355.07	357.43	0.00	7.83	155.39	461.09
+phispy	Achromobacter_denitrificans_strain_PR1	141.1604	0:02:21	574.73	931.95	539.73	542.45	0.00	2.19	161.35	227.37
+phispy	Bacillus_halodurans_C-125	140.9295	0:02:20	558.54	881.04	524.03	526.52	0.00	11.91	157.70	225.60
+phispy	Bacillus_subtilis_subsp._subtilis_str._168	135.8142	0:02:15	565.22	922.41	529.77	530.50	0.00	0.00	156.23	220.96
+phispy	Bacteroides_uniformis_ATCC_8492_strain_81A2	140.7170	0:02:20	556.84	914.32	522.20	524.59	0.00	13.96	159.16	226.34
+phispy	Bifidobacterium_longum_NCC2705	132.5581	0:02:12	537.66	906.79	503.62	504.20	0.00	0.00	144.05	209.71
+phispy	Brucella_melitensis_16M	132.4868	0:02:12	526.96	912.24	492.74	493.31	0.00	0.00	131.07	195.45
+phispy	Caulobacter_crescentus_CB15	136.9374	0:02:16	552.04	849.04	517.00	517.96	0.00	0.00	160.27	221.17
+phispy	Clostridium_perfringens_str._13	134.8705	0:02:14	542.87	869.17	508.06	508.63	0.00	0.00	156.12	215.54
+phispy	Clostridium_tetani_E88	138.8429	0:02:18	551.12	936.10	516.18	517.46	0.00	0.00	154.94	219.70
+phispy	Deinococcus_radiodurans_R1	135.5111	0:02:15	552.06	912.29	517.13	517.71	0.00	0.00	150.27	213.73
+phispy	Enterococcus_faecalis_strain_V583	139.7619	0:02:19	553.75	879.91	518.66	520.25	0.00	6.28	156.15	224.89
+phispy	Escherichia_coli_CFT073	138.7928	0:02:18	563.73	886.80	528.16	529.77	0.00	0.01	157.00	220.45
+phispy	Escherichia_coli_K12	136.5342	0:02:16	568.04	923.96	532.95	533.82	0.00	0.00	157.23	219.53
+phispy	Escherichia_coli_O157-H7	142.9379	0:02:22	573.83	932.81	539.16	542.56	0.00	10.86	159.76	228.05
+phispy	Escherichia_coli_O157-H7_EDL933	153.3040	0:02:33	2794.99	3141.40	2792.52	2792.56	0.00	0.01	147.82	228.88
+phispy	Haemophilus_influenzae_Rd_KW20	133.1808	0:02:13	536.25	906.99	501.66	502.22	0.00	0.00	149.72	209.95
+phispy	Lactococcus_lactis_subsp._lactis_Il1403	133.3786	0:02:13	551.31	909.62	516.88	517.52	0.00	0.01	158.19	216.98
+phispy	Listeria_innocua_Clip11262	141.8339	0:02:21	551.56	893.03	516.48	520.23	0.00	1.84	155.77	222.85
+phispy	Listeria_monocytogenes_EGD-e	133.2903	0:02:13	552.15	912.93	517.39	517.98	0.00	0.00	149.20	214.21
+phispy	Mesorhizobium_loti_MAFF303099	143.9436	0:02:23	589.25	946.78	554.82	561.47	0.00	14.13	157.62	229.34
+phispy	Mycobacterium_tuberculosis_CDC1551	133.8703	0:02:13	562.21	883.88	527.46	528.08	0.00	0.01	155.89	221.03
+phispy	Mycobacterium_tuberculosis_H37Rv	136.4991	0:02:16	565.07	921.96	530.42	531.26	0.00	0.00	156.03	219.74
+phispy	Neisseria_meningitidis_MC58	133.4597	0:02:13	546.68	912.05	513.32	513.88	0.00	0.00	151.66	210.15
+phispy	Neisseria_meningitidis_Z2491	138.6507	0:02:18	550.11	910.90	515.48	516.83	0.00	0.00	151.02	218.16
+phispy	Paracoccus_aminophilus_JCM_7686	138.0670	0:02:18	567.93	946.74	533.27	534.21	0.00	0.00	155.83	220.66
+phispy	Paracoccus_denitrificans_PD1222	136.6661	0:02:16	557.19	932.39	524.75	525.36	0.00	6.95	157.01	223.55
+phispy	Paracoccus_sanguinis_5503	137.5961	0:02:17	563.76	920.95	528.85	530.00	0.00	0.00	156.25	222.33
+phispy	Paracoccus_sp._SCN_68-21	136.7231	0:02:16	559.83	918.75	524.88	525.96	0.00	3.21	158.43	218.80
+phispy	Paracoccus_yeei_TT13	137.7296	0:02:17	551.64	848.14	516.36	517.01	0.00	0.12	153.50	219.91
+phispy	Pasteurella_multocida_subsp._multocida_str._Pm70	135.5170	0:02:15	531.95	865.70	497.00	497.59	0.00	0.00	143.90	203.75
+phispy	Pseudomonas_aeruginosa_PAO1	136.8635	0:02:16	567.50	899.41	532.68	533.63	0.00	0.00	155.08	224.22
+phispy	Pseudomonas_putida_KT2440	140.4614	0:02:20	570.80	897.78	535.35	537.17	0.00	18.39	157.38	226.47
+phispy	Ralstonia_solanacearum_GMI1000	143.3897	0:02:23	569.39	953.05	534.62	541.08	0.00	14.71	156.17	223.30
+phispy	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18	138.5522	0:02:18	568.00	928.78	533.28	534.05	0.00	0.01	158.56	225.41
+phispy	Shewanella_oneidensis_MR-1	143.0867	0:02:23	569.54	926.05	535.07	540.36	0.00	5.87	154.20	224.74
+phispy	Shigella_flexneri_2a_str._301	137.1592	0:02:17	566.21	926.52	531.20	531.86	0.00	14.12	158.24	226.59
+phispy	Staphylococcus_aureus_strain_Sa_Newman_UoM	133.7843	0:02:13	545.09	872.00	510.07	510.67	0.00	0.00	151.56	217.62
+phispy	Staphylococcus_aureus_subsp._aureus_MW2	135.7467	0:02:15	542.77	840.71	507.63	508.44	0.00	0.00	158.18	217.64
+phispy	Staphylococcus_aureus_subsp._aureus_Mu50	133.1692	0:02:13	538.46	868.24	503.79	504.34	0.00	0.00	149.52	213.13
+phispy	Streptococcus_pyogenes_M1_GAS	132.7219	0:02:12	540.95	905.92	506.67	507.23	0.00	0.00	147.21	208.94
+phispy	Streptococcus_pyogenes_MGAS315	131.9936	0:02:11	517.24	854.96	482.55	483.11	0.00	0.00	130.34	196.94
+phispy	Streptococcus_pyogenes_MGAS8232	133.2168	0:02:13	547.05	908.11	512.25	512.83	0.00	0.00	151.16	214.58
+phispy	Vibrio_cholerae_O1_biovar_eltor_str._N16961	134.0191	0:02:14	539.52	927.47	506.75	507.34	0.00	9.95	160.09	221.48
+phispy	Xanthomonas_axonopodis_pv._citri_str._306	139.5756	0:02:19	564.96	937.72	530.59	531.99	0.00	14.48	162.27	227.77
+phispy	Xylella_fastidiosa_9a5c	133.2628	0:02:13	536.21	888.86	502.16	502.72	0.00	0.00	145.08	203.21
+phispy	Xylella_fastidiosa_Temecula1	135.5910	0:02:15	555.94	911.94	521.20	521.85	0.00	0.00	147.60	214.04
+phispy	Yersinia_pestis_CO92	134.7944	0:02:14	554.59	925.08	520.42	520.98	0.00	0.00	147.85	210.86
+phispy	Yersinia_pestis_KIM	139.9898	0:02:19	567.43	924.67	532.47	534.35	0.00	6.18	155.92	223.63
+phispy_trained	Achromobacter_denitrificans_strain_PR1	13.0316	0:00:13	290.29	660.84	256.34	259.91	0.00	3.72	75.60	13.61
+phispy_trained	Bacillus_halodurans_C-125	9.7702	0:00:09	273.55	339.34	239.50	240.42	0.00	0.00	5.44	6.97
+phispy_trained	Bacillus_subtilis_subsp._subtilis_str._168	9.3846	0:00:09	271.97	643.47	238.29	238.82	0.00	0.01	0.00	7.70
+phispy_trained	Bacteroides_uniformis_ATCC_8492_strain_81A2	9.3339	0:00:09	259.25	624.55	225.03	225.71	0.00	0.01	32.03	9.64
+phispy_trained	Bifidobacterium_longum_NCC2705	4.7611	0:00:04	200.32	625.32	166.18	166.76	0.00	0.00	0.00	3.67
+phispy_trained	Brucella_melitensis_16M	5.8736	0:00:05	257.68	323.40	223.59	224.14	0.00	0.00	0.00	3.53
+phispy_trained	Caulobacter_crescentus_CB15	7.3804	0:00:07	267.65	633.46	233.38	233.96	0.00	1.69	0.00	7.11
+phispy_trained	Clostridium_perfringens_str._13	9.0719	0:00:09	265.25	330.94	231.18	232.24	0.00	0.00	0.00	7.10
+phispy_trained	Clostridium_tetani_E88	6.3530	0:00:06	264.64	330.58	230.69	231.24	0.00	0.00	0.00	3.42
+phispy_trained	Deinococcus_radiodurans_R1	5.9512	0:00:05	264.07	329.44	229.67	230.23	0.00	0.00	0.00	3.57
+phispy_trained	Enterococcus_faecalis_strain_V583	9.4460	0:00:09	269.64	634.50	235.59	236.44	0.00	3.59	39.49	9.48
+phispy_trained	Escherichia_coli_CFT073	12.3395	0:00:12	281.40	667.98	247.37	248.38	0.00	14.72	83.27	13.13
+phispy_trained	Escherichia_coli_K12	9.4240	0:00:09	268.96	644.89	234.51	235.07	0.00	0.01	0.00	7.48
+phispy_trained	Escherichia_coli_O157-H7	14.3060	0:00:14	286.30	668.70	252.52	254.44	0.00	6.76	78.15	15.05
+phispy_trained	Escherichia_coli_O157-H7_EDL933	21.4298	0:00:21	6056.41	6478.52	6053.64	6053.68	0.00	17.16	90.77	21.96
+phispy_trained	Haemophilus_influenzae_Rd_KW20	4.8193	0:00:04	253.23	318.69	218.96	219.54	0.00	0.00	0.00	3.21
+phispy_trained	Lactococcus_lactis_subsp._lactis_Il1403	5.4619	0:00:05	258.70	324.05	224.17	224.76	0.00	0.00	0.00	3.42
+phispy_trained	Listeria_innocua_Clip11262	7.4507	0:00:07	265.52	331.30	231.39	231.95	0.00	0.00	0.00	3.49
+phispy_trained	Listeria_monocytogenes_EGD-e	6.2378	0:00:06	263.61	329.50	229.58	230.14	0.00	0.00	0.00	3.53
+phispy_trained	Mesorhizobium_loti_MAFF303099	12.8042	0:00:12	296.73	672.41	262.69	263.77	0.00	10.15	83.82	13.55
+phispy_trained	Mycobacterium_tuberculosis_CDC1551	8.2122	0:00:08	270.24	643.71	236.05	236.62	0.00	0.01	0.00	7.40
+phispy_trained	Mycobacterium_tuberculosis_H37Rv	8.1781	0:00:08	270.12	635.39	235.98	236.55	0.00	0.02	0.00	7.81
+phispy_trained	Neisseria_meningitidis_MC58	4.7301	0:00:04	203.76	269.45	169.48	170.11	0.00	0.00	0.00	3.54
+phispy_trained	Neisseria_meningitidis_Z2491	7.0434	0:00:07	257.00	322.84	222.86	223.43	0.00	0.00	0.00	3.85
+phispy_trained	Paracoccus_aminophilus_JCM_7686	9.4862	0:00:09	271.80	650.60	237.54	238.10	0.00	0.01	0.00	7.61
+phispy_trained	Paracoccus_denitrificans_PD1222	8.5805	0:00:08	280.79	653.61	246.56	247.13	0.00	0.01	0.00	8.01
+phispy_trained	Paracoccus_sanguinis_5503	9.1543	0:00:09	264.35	637.77	230.24	230.78	0.00	0.01	0.00	7.56
+phispy_trained	Paracoccus_sp._SCN_68-21	6.8432	0:00:06	262.46	627.61	228.21	228.78	0.00	0.31	0.00	6.68
+phispy_trained	Paracoccus_yeei_TT13	7.7836	0:00:07	273.03	638.48	238.72	239.29	0.00	0.01	0.00	7.22
+phispy_trained	Pasteurella_multocida_subsp._multocida_str._Pm70	4.6891	0:00:04	201.68	626.75	167.53	168.15	0.00	0.00	0.00	3.62
+phispy_trained	Pseudomonas_aeruginosa_PAO1	12.2403	0:00:12	286.74	665.47	252.55	255.67	0.00	18.56	73.69	12.76
+phispy_trained	Pseudomonas_putida_KT2440	11.3316	0:00:11	286.63	657.55	252.63	253.58	0.00	5.08	81.94	12.06
+phispy_trained	Ralstonia_solanacearum_GMI1000	10.7375	0:00:10	275.42	656.63	240.70	241.31	0.00	15.43	77.21	11.67
+phispy_trained	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18	10.0002	0:00:10	278.09	641.85	243.91	244.73	0.00	0.01	46.95	10.04
+phispy_trained	Shewanella_oneidensis_MR-1	11.2715	0:00:11	279.08	647.29	245.39	246.01	0.00	2.32	75.58	11.69
+phispy_trained	Shigella_flexneri_2a_str._301	9.1860	0:00:09	272.97	658.87	238.55	239.13	0.00	14.12	44.79	10.10
+phispy_trained	Staphylococcus_aureus_strain_Sa_Newman_UoM	8.4920	0:00:08	263.10	328.39	228.61	229.39	0.00	0.00	0.00	5.90
+phispy_trained	Staphylococcus_aureus_subsp._aureus_MW2	6.5408	0:00:06	261.59	327.34	227.55	228.09	0.00	0.00	0.00	3.38
+phispy_trained	Staphylococcus_aureus_subsp._aureus_Mu50	5.9056	0:00:05	262.82	328.64	228.73	229.28	0.00	0.00	0.00	3.41
+phispy_trained	Streptococcus_pyogenes_M1_GAS	4.6776	0:00:04	198.85	624.43	165.24	165.82	0.00	0.00	0.00	3.61
+phispy_trained	Streptococcus_pyogenes_MGAS315	5.3934	0:00:05	257.02	322.77	222.82	223.38	0.00	0.00	0.00	3.52
+phispy_trained	Streptococcus_pyogenes_MGAS8232	5.2817	0:00:05	256.00	321.96	222.12	222.67	0.00	0.00	0.00	3.40
+phispy_trained	Vibrio_cholerae_O1_biovar_eltor_str._N16961	6.2096	0:00:06	264.70	330.63	230.70	231.24	0.00	0.00	0.00	3.50
+phispy_trained	Xanthomonas_axonopodis_pv._citri_str._306	8.4699	0:00:08	278.35	651.48	244.25	244.84	0.00	0.01	21.39	7.60
+phispy_trained	Xylella_fastidiosa_9a5c	8.3640	0:00:08	262.79	634.79	228.70	229.26	0.00	2.25	48.93	8.38
+phispy_trained	Xylella_fastidiosa_Temecula1	7.9016	0:00:07	261.12	632.86	226.91	227.47	0.00	0.01	0.00	7.23
+phispy_trained	Yersinia_pestis_CO92	7.3031	0:00:07	267.73	333.53	233.69	234.24	0.00	0.00	0.00	3.44
+phispy_trained	Yersinia_pestis_KIM	8.4753	0:00:08	267.10	637.68	232.73	233.28	0.00	0.01	0.00	7.75
+phispy_pvog	Achromobacter_denitrificans_strain_PR1	366.5734	0:06:06	377.38	674.16	341.98	347.66	0.00	2.27	126.39	116.53
+phispy_pvog	Bacillus_halodurans_C-125	304.7291	0:05:04	403.96	793.15	368.98	370.26	0.00	1.29	146.13	198.21
+phispy_pvog	Bacillus_subtilis_subsp._subtilis_str._168	306.0976	0:05:06	399.95	794.31	364.97	366.25	0.00	1.33	143.95	187.97
+phispy_pvog	Bacteroides_uniformis_ATCC_8492_strain_81A2	322.5042	0:05:22	407.75	789.21	373.37	375.24	0.00	1.56	150.70	192.40
+phispy_pvog	Bifidobacterium_longum_NCC2705	248.7451	0:04:08	422.98	779.37	388.07	388.75	0.00	0.69	151.23	243.85
+phispy_pvog	Brucella_melitensis_16M	271.0214	0:04:31	406.46	785.41	371.80	372.51	0.00	1.02	146.94	213.92
+phispy_pvog	Caulobacter_crescentus_CB15	293.4780	0:04:53	412.28	726.34	377.14	378.38	0.00	1.26	149.73	215.86
+phispy_pvog	Clostridium_perfringens_str._13	276.6587	0:04:36	387.92	784.60	353.31	353.96	0.00	0.91	135.81	192.81
+phispy_pvog	Clostridium_tetani_E88	270.9262	0:04:30	402.07	785.22	367.29	367.99	0.00	0.88	139.41	211.70
+phispy_pvog	Deinococcus_radiodurans_R1	270.8213	0:04:30	407.05	785.45	372.05	372.85	0.00	1.04	144.38	215.09
+phispy_pvog	Enterococcus_faecalis_strain_V583	308.3642	0:05:08	391.60	788.94	356.70	358.03	0.00	1.42	138.52	186.82
+phispy_pvog	Escherichia_coli_CFT073	329.7020	0:05:29	402.61	797.99	367.84	369.72	0.00	1.63	140.18	162.39
+phispy_pvog	Escherichia_coli_K12	306.9228	0:05:06	388.73	795.00	354.39	355.52	0.00	1.44	143.88	180.13
+phispy_pvog	Escherichia_coli_O157-H7	349.3077	0:05:49	451.71	803.70	417.04	422.57	0.00	1.75	144.38	183.25
+phispy_pvog	Escherichia_coli_O157-H7_EDL933	349.8131	0:05:49	3716.74	4089.97	3681.48	3687.13	0.00	1.74	149.29	189.56
+phispy_pvog	Haemophilus_influenzae_Rd_KW20	227.8171	0:03:47	422.86	922.35	388.05	388.62	0.00	6.05	151.76	238.93
+phispy_pvog	Lactococcus_lactis_subsp._lactis_Il1403	253.3251	0:04:13	428.31	782.25	393.08	393.79	0.00	0.73	154.11	246.94
+phispy_pvog	Listeria_innocua_Clip11262	281.8637	0:04:41	386.79	785.95	352.30	353.09	0.00	0.96	133.16	193.89
+phispy_pvog	Listeria_monocytogenes_EGD-e	273.7092	0:04:33	403.83	785.01	369.22	369.97	0.00	0.93	137.45	211.28
+phispy_pvog	Mesorhizobium_loti_MAFF303099	379.1957	0:06:19	446.77	811.70	444.33	444.44	0.00	2.36	144.65	143.17
+phispy_pvog	Mycobacterium_tuberculosis_CDC1551	334.3691	0:05:34	391.16	793.34	356.77	358.63	0.00	1.41	136.15	154.23
+phispy_pvog	Mycobacterium_tuberculosis_H37Rv	335.1267	0:05:35	368.42	665.38	333.47	334.96	0.00	4.85	145.79	186.18
+phispy_pvog	Neisseria_meningitidis_MC58	239.1729	0:03:59	421.79	782.88	387.44	388.05	0.00	0.70	155.27	235.96
+phispy_pvog	Neisseria_meningitidis_Z2491	238.4270	0:03:58	428.13	927.16	393.10	393.68	0.00	0.70	149.51	243.23
+phispy_pvog	Paracoccus_aminophilus_JCM_7686	283.6556	0:04:43	409.71	799.59	374.35	375.56	0.00	1.10	157.96	250.89
+phispy_pvog	Paracoccus_denitrificans_PD1222	306.9872	0:05:06	401.09	805.52	366.11	367.28	0.00	1.37	140.30	178.44
+phispy_pvog	Paracoccus_sanguinis_5503	275.6245	0:04:35	411.66	795.72	377.29	378.05	0.00	1.01	142.57	208.49
+phispy_pvog	Paracoccus_sp._SCN_68-21	275.2919	0:04:35	409.45	793.05	374.83	375.55	0.00	1.02	148.64	210.79
+phispy_pvog	Paracoccus_yeei_TT13	284.6178	0:04:44	400.62	796.68	365.43	366.22	0.00	12.68	159.69	253.17
+phispy_pvog	Pasteurella_multocida_subsp._multocida_str._Pm70	249.7164	0:04:09	421.25	780.16	386.66	387.34	0.00	0.71	139.36	243.23
+phispy_pvog	Pseudomonas_aeruginosa_PAO1	351.9080	0:05:51	427.68	801.82	392.96	398.52	0.00	1.98	136.58	152.79
+phispy_pvog	Pseudomonas_putida_KT2440	347.2157	0:05:47	443.55	802.21	409.23	414.70	0.00	1.92	149.08	172.92
+phispy_pvog	Ralstonia_solanacearum_GMI1000	335.2331	0:05:35	398.10	796.75	363.08	365.25	0.00	1.80	142.43	154.60
+phispy_pvog	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18	330.0242	0:05:30	407.90	799.48	372.29	374.21	0.00	1.60	143.41	184.54
+phispy_pvog	Shewanella_oneidensis_MR-1	326.3965	0:05:26	418.25	796.50	382.87	384.98	0.00	1.55	147.48	194.32
+phispy_pvog	Shigella_flexneri_2a_str._301	316.9459	0:05:16	411.52	733.87	376.18	378.40	0.00	1.44	156.80	224.22
+phispy_pvog	Staphylococcus_aureus_strain_Sa_Newman_UoM	273.7715	0:04:33	399.27	782.39	364.28	365.06	0.00	0.86	144.26	210.70
+phispy_pvog	Staphylococcus_aureus_subsp._aureus_MW2	268.8214	0:04:28	409.88	783.98	375.04	375.77	0.00	0.84	148.43	218.49
+phispy_pvog	Staphylococcus_aureus_subsp._aureus_Mu50	272.7106	0:04:32	389.07	784.55	354.15	354.81	0.00	0.86	133.08	189.64
+phispy_pvog	Streptococcus_pyogenes_M1_GAS	235.0395	0:03:55	424.55	778.64	389.13	389.74	0.00	0.57	151.73	242.28
+phispy_pvog	Streptococcus_pyogenes_MGAS315	238.0972	0:03:58	421.27	779.59	386.25	386.85	0.00	0.59	150.37	237.93
+phispy_pvog	Streptococcus_pyogenes_MGAS8232	240.2702	0:04:00	423.35	779.52	388.79	389.41	0.00	0.62	154.00	244.23
+phispy_pvog	Vibrio_cholerae_O1_biovar_eltor_str._N16961	296.8579	0:04:56	398.63	787.76	363.73	364.73	0.00	1.24	144.72	198.75
+phispy_pvog	Xanthomonas_axonopodis_pv._citri_str._306	322.8174	0:05:22	426.93	796.09	391.82	393.88	0.00	1.61	148.01	193.34
+phispy_pvog	Xylella_fastidiosa_9a5c	258.5256	0:04:18	426.62	786.25	392.58	393.32	0.00	0.84	155.31	243.82
+phispy_pvog	Xylella_fastidiosa_Temecula1	251.0426	0:04:11	419.49	783.84	385.31	386.00	0.00	0.80	147.13	237.13
+phispy_pvog	Yersinia_pestis_CO92	313.2924	0:05:13	427.74	793.93	392.59	394.21	0.00	1.45	154.10	213.41
+phispy_pvog	Yersinia_pestis_KIM	316.0448	0:05:16	371.14	667.65	335.83	337.16	0.00	1.48	151.65	215.01
+virsorter	Achromobacter_denitrificans_strain_PR1	1636.9645	0:27:16	202.63	277.95	186.72	187.72	0.00	2075.73	114.49	201.02
+virsorter	Bacillus_halodurans_C-125	1274.6674	0:21:14	69.44	174.01	58.39	58.49	0.00	2067.98	100.93	19.42
+virsorter	Bacillus_subtilis_subsp._subtilis_str._168	1498.9211	0:24:58	88.72	202.14	78.60	78.71	0.00	2067.99	105.45	138.20
+virsorter	Bacteroides_uniformis_ATCC_8492_strain_81A2	1316.7200	0:21:56	69.99	174.83	59.59	59.73	0.00	2062.64	109.85	169.40
+virsorter	Bifidobacterium_longum_NCC2705	881.5019	0:14:41	72.88	182.47	62.77	62.89	0.00	2041.84	94.10	71.95
+virsorter	Brucella_melitensis_16M	845.1472	0:14:05	68.93	174.25	58.64	58.75	0.00	2048.54	103.48	124.33
+virsorter	Caulobacter_crescentus_CB15	1020.0796	0:17:00	84.06	191.02	73.95	74.05	0.00	2050.96	108.39	135.64
+virsorter	Clostridium_perfringens_str._13	1197.8210	0:19:57	79.18	187.35	68.89	69.01	0.00	2084.79	95.72	4.34
+virsorter	Clostridium_tetani_E88	985.7732	0:16:25	78.27	189.93	68.21	68.32	0.00	2054.26	98.82	87.04
+virsorter	Deinococcus_radiodurans_R1	1019.2890	0:16:59	64.79	162.43	46.72	46.84	0.00	2048.01	104.98	115.03
+virsorter	Enterococcus_faecalis_strain_V583	1278.3026	0:21:18	79.49	184.48	69.15	69.26	0.00	2059.42	107.30	122.08
+virsorter	Escherichia_coli_CFT073	1484.2694	0:24:44	89.07	200.77	78.86	78.97	0.00	2068.63	108.60	147.32
+virsorter	Escherichia_coli_K12	1308.9031	0:21:48	76.26	183.66	66.06	66.18	0.00	2061.73	107.46	127.62
+virsorter	Escherichia_coli_O157-H7	1658.6131	0:27:38	103.18	381718.95	69.73	72.49	0.00	2096.93	104.58	1.30
+virsorter	Escherichia_coli_O157-H7_EDL933	1596.4545	0:26:36	75.62	184.27	65.38	65.52	0.00	2101.44	105.02	2.62
+virsorter	Haemophilus_influenzae_Rd_KW20	867.1709	0:14:27	69.34	168.23	52.84	52.94	0.00	2093.38	79.66	3.26
+virsorter	Lactococcus_lactis_subsp._lactis_Il1403	1128.4106	0:18:48	72.18	177.93	61.91	62.04	0.00	2054.82	94.23	11.32
+virsorter	Listeria_innocua_Clip11262	1190.2097	0:19:50	78.99	185.12	68.79	68.90	0.00	2060.76	98.10	9.98
+virsorter	Listeria_monocytogenes_EGD-e	1129.3389	0:18:49	77.74	184.65	67.45	67.56	0.00	2059.00	98.09	11.37
+virsorter	Mesorhizobium_loti_MAFF303099	1639.5542	0:27:19	185.63	270.49	171.50	171.62	0.00	2078.89	115.27	213.34
+virsorter	Mycobacterium_tuberculosis_CDC1551	1628.5409	0:27:08	145.52	269.73	135.20	135.45	0.00	2053.34	104.32	161.95
+virsorter	Mycobacterium_tuberculosis_H37Rv	1629.5298	0:27:09	116.73	229.89	106.66	106.91	0.00	2053.55	104.30	160.91
+virsorter	Neisseria_meningitidis_MC58	914.1625	0:15:14	84.35	189.75	74.27	74.37	0.00	2043.96	94.91	60.10
+virsorter	Neisseria_meningitidis_Z2491	875.6373	0:14:35	77.18	182.80	67.05	67.16	0.00	2042.26	95.34	76.65
+virsorter	Paracoccus_aminophilus_JCM_7686	1088.6640	0:18:08	70.48	175.76	60.32	60.43	0.00	2057.67	102.46	26.33
+virsorter	Paracoccus_denitrificans_PD1222	1236.5463	0:20:36	84.63	222.63	63.09	63.21	0.00	2082.36	106.18	1.75
+virsorter	Paracoccus_sanguinis_5503	998.0789	0:16:38	72.42	177.64	62.11	62.22	0.00	2051.43	105.62	118.58
+virsorter	Paracoccus_sp._SCN_68-21	967.8919	0:16:07	69.01	174.18	58.95	59.06	0.00	2049.71	105.05	120.37
+virsorter	Paracoccus_yeei_TT13	1065.0482	0:17:45	70.54	211.98	46.63	46.74	0.00	2081.05	98.99	19.25
+virsorter	Pasteurella_multocida_subsp._multocida_str._Pm70	985.9819	0:16:25	88.46	197.20	78.35	78.45	0.00	2044.38	90.89	51.42
+virsorter	Pseudomonas_aeruginosa_PAO1	1576.1327	0:26:16	87.95	197.20	77.61	77.71	0.00	2070.47	111.49	178.85
+virsorter	Pseudomonas_putida_KT2440	1542.6364	0:25:42	81.79	187.82	71.60	71.71	0.00	2069.49	111.75	176.44
+virsorter	Ralstonia_solanacearum_GMI1000	1480.0473	0:24:40	118.63	277.18	108.27	108.44	0.00	2097.55	104.30	20.84
+virsorter	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18	1420.6437	0:23:40	69.23	168.48	52.16	52.27	0.00	2072.45	106.13	22.77
+virsorter	Shewanella_oneidensis_MR-1	1585.0232	0:26:25	76.11	184.96	65.88	65.99	0.00	2091.51	104.28	1.29
+virsorter	Shigella_flexneri_2a_str._301	1338.1106	0:22:18	71.47	181.18	61.27	61.43	0.00	2062.48	107.45	123.02
+virsorter	Staphylococcus_aureus_strain_Sa_Newman_UoM	2527.0533	0:42:07	204.99	381.38	194.75	194.86	0.00	2067.07	97.93	19.88
+virsorter	Staphylococcus_aureus_subsp._aureus_MW2	2504.1029	0:41:44	258.30	505.65	247.95	248.06	0.00	2063.39	97.13	11.09
+virsorter	Staphylococcus_aureus_subsp._aureus_Mu50	2590.3734	0:43:10	209.07	412.92	198.84	198.94	0.00	2060.97	98.91	85.96
+virsorter	Streptococcus_pyogenes_M1_GAS	950.1644	0:15:50	81.95	196.49	71.67	71.78	0.00	2048.66	89.34	9.76
+virsorter	Streptococcus_pyogenes_MGAS315	896.0441	0:14:56	85.18	194.61	75.29	75.39	0.00	2076.33	88.07	1.90
+virsorter	Streptococcus_pyogenes_MGAS8232	915.3837	0:15:15	71.98	174.88	55.15	55.26	0.00	2050.65	89.49	22.79
+virsorter	Vibrio_cholerae_O1_biovar_eltor_str._N16961	1479.1924	0:24:39	78.53	192.85	68.47	68.58	0.00	2065.23	101.34	23.56
+virsorter	Xanthomonas_axonopodis_pv._citri_str._306	1514.6452	0:25:14	78.45	183.79	68.01	68.13	0.00	2063.30	107.42	145.14
+virsorter	Xylella_fastidiosa_9a5c	775.5345	0:12:55	69.32	182.15	51.40	51.50	0.00	2066.53	92.06	4.50
+virsorter	Xylella_fastidiosa_Temecula1	739.6318	0:12:19	71.46	168.81	56.79	56.91	0.00	2048.04	90.38	18.27
+virsorter	Yersinia_pestis_CO92	1475.1479	0:24:35	81.95	189.12	71.71	71.88	0.00	2076.67	104.37	1.29
+virsorter	Yersinia_pestis_KIM	1468.5562	0:24:28	80.50	190.51	70.23	70.35	0.00	2065.16	107.09	145.40
+virsorter2	Achromobacter_denitrificans_strain_PR1	2543.9759	0:42:23	633.41	1117.39	529.76	564.99	0.00	53.82	182.96	73.04
+virsorter2	Bacillus_halodurans_C-125	2139.8199	0:35:39	629.83	1112.88	523.22	550.55	0.00	34.45	158.20	77.45
+virsorter2	Bacillus_subtilis_subsp._subtilis_str._168	2147.0210	0:35:47	629.79	1113.16	522.27	539.94	0.00	35.35	160.24	65.75
+virsorter2	Bacteroides_uniformis_ATCC_8492_strain_81A2	2279.5485	0:37:59	625.33	1107.55	517.47	529.27	0.00	41.37	167.13	35.58
+virsorter2	Bifidobacterium_longum_NCC2705	1638.2075	0:27:18	624.75	1112.05	517.22	525.63	0.00	17.71	116.44	56.69
+virsorter2	Brucella_melitensis_16M	1930.9570	0:32:10	625.77	1112.05	518.66	529.80	0.00	26.60	138.47	71.50
+virsorter2	Caulobacter_crescentus_CB15	2030.6548	0:33:50	627.09	1112.38	523.97	553.95	0.00	31.94	148.54	27.82
+virsorter2	Clostridium_perfringens_str._13	1838.6259	0:30:38	626.03	1038.92	518.40	529.70	0.00	24.74	139.02	68.47
+virsorter2	Clostridium_tetani_E88	1806.9376	0:30:06	625.36	1038.92	518.77	550.45	0.00	29.56	137.53	73.76
+virsorter2	Deinococcus_radiodurans_R1	1927.3639	0:32:07	625.23	1110.88	518.16	529.38	0.00	26.26	137.65	79.05
+virsorter2	Enterococcus_faecalis_strain_V583	2233.5517	0:37:13	627.59	1113.14	519.86	530.89	0.00	36.52	158.18	61.03
+virsorter2	Escherichia_coli_CFT073	2329.1239	0:38:49	629.57	1114.18	522.51	540.35	0.00	51.98	166.06	61.48
+virsorter2	Escherichia_coli_K12	2183.7414	0:36:23	630.40	1113.68	522.51	531.52	0.00	37.12	164.51	75.79
+virsorter2	Escherichia_coli_O157-H7	2382.7956	0:39:42	632.42	1114.88	529.36	560.28	0.00	57.91	174.88	79.64
+virsorter2	Escherichia_coli_O157-H7_EDL933	2413.8563	0:40:13	632.60	1114.67	524.06	536.44	0.00	57.08	168.49	91.17
+virsorter2	Haemophilus_influenzae_Rd_KW20	1485.6101	0:24:45	628.31	1111.79	519.08	536.65	0.00	16.14	110.85	22.10
+virsorter2	Lactococcus_lactis_subsp._lactis_Il1403	1662.7355	0:27:42	625.61	1038.64	518.20	531.56	0.00	25.29	127.23	48.30
+virsorter2	Listeria_innocua_Clip11262	1908.0631	0:31:48	626.80	1039.87	518.56	527.49	0.00	32.29	136.44	55.52
+virsorter2	Listeria_monocytogenes_EGD-e	1859.2355	0:30:59	625.95	1039.16	518.63	529.87	0.00	25.04	134.98	34.87
+virsorter2	Mesorhizobium_loti_MAFF303099	2734.1051	0:45:34	635.24	1118.42	531.91	569.58	0.00	59.36	178.72	119.32
+virsorter2	Mycobacterium_tuberculosis_CDC1551	2424.4775	0:40:24	629.64	1112.65	521.41	531.24	0.00	34.06	149.05	29.46
+virsorter2	Mycobacterium_tuberculosis_H37Rv	2395.2221	0:39:55	629.29	1112.65	521.78	534.11	0.00	34.15	153.17	23.02
+virsorter2	Neisseria_meningitidis_MC58	1627.7678	0:27:07	625.70	1040.25	517.66	526.19	0.00	18.30	111.28	58.65
+virsorter2	Neisseria_meningitidis_Z2491	1604.1420	0:26:44	627.81	1040.29	524.11	554.09	0.00	17.90	111.19	39.77
+virsorter2	Paracoccus_aminophilus_JCM_7686	1990.0622	0:33:10	627.47	1112.42	524.51	554.30	0.00	30.82	147.64	70.10
+virsorter2	Paracoccus_denitrificans_PD1222	2173.8888	0:36:13	628.32	1113.05	520.46	530.96	0.00	38.37	158.76	74.67
+virsorter2	Paracoccus_sanguinis_5503	1976.3303	0:32:56	623.40	1107.52	515.38	526.38	0.00	34.09	145.20	23.69
+virsorter2	Paracoccus_sp._SCN_68-21	1918.5418	0:31:58	624.25	1107.52	515.82	524.94	0.00	29.40	141.54	40.87
+virsorter2	Paracoccus_yeei_TT13	1967.1004	0:32:47	653.43	1208.87	523.06	535.40	0.00	30.67	146.24	62.73
+virsorter2	Pasteurella_multocida_subsp._multocida_str._Pm70	1647.0659	0:27:27	625.86	1039.93	517.25	525.74	0.00	19.04	119.10	1.29
+virsorter2	Pseudomonas_aeruginosa_PAO1	2441.9935	0:40:41	630.57	1115.12	522.41	535.66	0.00	48.46	177.36	87.14
+virsorter2	Pseudomonas_putida_KT2440	2465.8765	0:41:05	629.88	1114.88	521.93	545.76	0.00	48.66	177.79	76.59
+virsorter2	Ralstonia_solanacearum_GMI1000	2452.0981	0:40:52	627.54	1112.42	519.38	530.67	0.00	44.30	160.65	49.94
+virsorter2	Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18	2318.2665	0:38:38	628.82	1119.39	522.02	539.76	0.00	42.29	163.50	62.74
+virsorter2	Shewanella_oneidensis_MR-1	2250.0191	0:37:30	627.85	1113.38	521.32	532.28	0.00	39.72	167.84	88.56
+virsorter2	Shigella_flexneri_2a_str._301	2186.9528	0:36:26	628.70	1113.91	520.93	530.13	0.00	47.72	160.88	1.22
+virsorter2	Staphylococcus_aureus_strain_Sa_Newman_UoM	1885.0544	0:31:25	626.48	1039.66	520.00	537.10	0.00	30.50	139.75	42.24
+virsorter2	Staphylococcus_aureus_subsp._aureus_MW2	1823.3475	0:30:23	626.04	1038.89	517.83	531.40	0.00	23.28	137.57	40.76
+virsorter2	Staphylococcus_aureus_subsp._aureus_Mu50	1865.0625	0:31:05	627.01	1135.04	518.62	534.47	0.00	29.71	140.95	72.46
+virsorter2	Streptococcus_pyogenes_M1_GAS	1497.9994	0:24:57	627.28	1039.79	519.44	536.30	0.11	20.04	111.30	24.78
+virsorter2	Streptococcus_pyogenes_MGAS315	1546.8483	0:25:46	131.43	695.82	95.54	95.96	0.00	14.82	113.43	1515.61
+virsorter2	Streptococcus_pyogenes_MGAS8232	1514.1885	0:25:14	428.66	758.15	396.89	397.13	0.00	21.17	111.80	3.52
+virsorter2	Vibrio_cholerae_O1_biovar_eltor_str._N16961	2064.4307	0:34:24	626.05	1110.92	523.27	553.08	0.00	31.79	154.81	1.87
+virsorter2	Xanthomonas_axonopodis_pv._citri_str._306	2257.5102	0:37:37	629.06	1113.22	522.19	536.03	0.00	38.90	163.82	66.52
+virsorter2	Xylella_fastidiosa_9a5c	1738.3785	0:28:58	628.13	1112.80	521.30	552.99	0.00	28.00	125.77	35.86
+virsorter2	Xylella_fastidiosa_Temecula1	1660.2512	0:27:40	625.36	1112.54	517.95	534.79	0.00	25.55	125.44	67.97
+virsorter2	Yersinia_pestis_CO92	2188.5092	0:36:28	628.41	1113.43	520.54	529.75	0.00	38.45	159.73	2.08
+virsorter2	Yersinia_pestis_KIM	2213.8787	0:36:53	633.58	1113.61	527.78	551.09	0.00	39.82	162.15	41.27

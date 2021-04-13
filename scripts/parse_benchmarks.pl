@@ -9,6 +9,8 @@ Rob Edwards, 2020
 use strict;
 use Getopt::Std;
 use Data::Dumper;
+use FindBin qw($RealBin);
+use lib "$RealBin/../ProphagePredictionsLib";
 use Rob;
 my $rob = new Rob;
 
@@ -45,11 +47,12 @@ foreach my $f (grep {$_ !~ /^\./} readdir(DIR)) {
 			next}
 		chomp;
 		my @p = split /\s+/;
-		unless ($#p == 8) {
+		unless ($#p == 9) {
 			print STDERR "$f does not appear to be a benchmark file. Too many columns in $_. Skipped\n";
 			next;
 		}
-		print join("\t", $opts{c}, $f, @p), "\n";
+		print join("\t", "$opts{c}", $f, @p);
+		print "\n";
 	}
 	close IN;
 }

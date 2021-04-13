@@ -1,29 +1,51 @@
+"""
+Virsorter
 
-test_genomes = "genbank"
-GENOMES, = glob_wildcards(os.path.join(test_genomes, '{genome}.gb.gz'))
+Manuscript: https://peerj.com/articles/985/
+Software: https://github.com/simroux/VirSorter
 
-outputdir = "virsorter_tests"
+"""
+
+import os
+import sys
+
+# CONFIG
+vs1Build = os.path.join(workflow.basedir, "../build/vs1")
+if not os.path.exists(vs1Build):
+    os.makedirs(vs1Build)
+vs1DbUrl = 'https://cloudstor.aarnet.edu.au/plus/s/m55PsF0siDDWI7o/download'
+vs1DbTar = 'virsorter-data-v2.tar.gz'
+vs1Db = os.path.join(vs1Build, 'virsorter-data')
+
+outDirName = "virsorter"
+
+# GENERIC CONFIG/RECIPES
+include: os.path.join(workflow.basedir, "../rules/preflight.smk")
 
 
+# TARGETS
 rule all:
     input:
         expand(os.path.join(outputdir, "{genome}_virsorter_tptn.tsv"), genome=GENOMES)
 
 
-rule convert_gb_to_fna:
-    input:
-        gen = os.path.join(test_genomes, "{genome}.gb.gz")
+# RECIPES
+rule virsorter_db:
     output:
-        fna = os.path.join(outputdir, "{genome}.fna")
+        os.path.join(vs1Db,'VirSorter_Readme.txt')
     shell:
         """
-        python3 ~/GitHubs/EdwardsLab/bin/genbank2sequences.py -g {input.gen} -n {output.fna}
+        cd {vs1Build};
+        curl -o {vs1DbTar} {vs1DbUrl};
+        tar xvf {vs1DbTar};
+        rm {vs1DbTar};
         """
 
 
 rule run_virsorter:
     input:
-        fna = os.path.join(outputdir, "{genome}.fna")
+        fna = os.path.join(outputdir, "{genome}.fna"),
+        req = os.path.join(vs1Db,'VirSorter_Readme.txt')
     output:
         c1 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_cat-1.gb"),
         c2 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_cat-2.gb"),
@@ -35,11 +57,12 @@ rule run_virsorter:
     benchmark:
         os.path.join(outputdir, "benchmarks", "{genome}_virsorter.txt")
     conda:
-        "conda_environments/virsorter.yaml"
+        "../conda_environments/virsorter.yaml"
     shell:
         """
-        wrapper_phage_contigs_sorter_iPlant.pl --ncpu 1 -f {input.fna} --db 1 --wdir {params.odir} --data-dir ~/opt/virsorter/virsorter-data
+        wrapper_phage_contigs_sorter_iPlant.pl --ncpu 1 -f {input.fna} --db 1 --wdir {params.odir} --data-dir {vs1Db}
         """
+
 
 rule virsorter_to_tbl:
     input:
@@ -74,13 +97,19 @@ rule virsorter_to_tbl:
         fi
         """
 
+
 rule count_tp_tn:
     input:
         gen = os.path.join(test_genomes, "{genome}.gb.gz"),
         tbl = os.path.join(outputdir, "{genome}_virsorter", "locs.tsv")
     output:
         tp = os.path.join(outputdir, "{genome}_virsorter_tptn.tsv")
+    params:
+        os.path.join(workflow.basedir, '../')
+    conda:
+        "../conda_environments/roblib.yaml"
     shell:
         """
-        python3 scripts/compare_predictions_to_phages.py -t {input.gen} -r {input.tbl} > {output.tp}
+        export PYTHONPATH={params};
+        python3 {scripts}/compare_predictions_to_phages.py -t {input.gen} -r {input.tbl} > {output.tp}
         """

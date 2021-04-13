@@ -4,17 +4,11 @@ channels:
   - bioconda
   - defaults
 dependencies:
-  - _libgcc_mutex=0.1=conda_forge
-  - _openmp_mutex=4.5=0_gnu
-  - aragorn=1.2.38=h470a237_2
-  - blast-legacy=2.2.26=2
-  - hmmer=3.3=he1b5a44_1
-  - infernal=1.1.2=h14c3975_2
-  - libgcc-ng=9.2.0=h24d8f2e_2
-  - libgomp=9.2.0=h24d8f2e_2
-  - libstdcxx-ng=9.2.0=hdf63c60_2
-  - mummer=3.23=pl526he1b5a44_11
-  - perl=5.26.2=h516909a_1006
-  - perl-math-round=0.07=pl526_1
-  - trnascan-se=2.0.5=pl526h516909a_0
-
+  - aragorn=1.2.38
+  - blast-legacy=2.2.26
+  - hmmer=3.3
+  - infernal=1.1.2
+  - mummer=3.23
+  - perl=5.26.2
+  - perl-math-round=0.07
+  - trnascan-se=2
