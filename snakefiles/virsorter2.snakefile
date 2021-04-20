@@ -61,7 +61,7 @@ rule run_virsorter2:
         time_min = 480
     shell:
         """
-        virsorter run --use-conda-off --db-dir {vs2Build}/db -w {params} -i {input.fna} -j 4 all
+        virsorter run --use-conda-off --db-dir {vs2Build}/db -w {params} -i {input.fna} -j 1 all
         """
 
 
