@@ -12,7 +12,7 @@ import sys
 # CONFIG
 outDirName = 'dbscan-swa'
 dbsBuild = os.path.join(workflow.basedir, "../build/")
-dbsHome = os.path.join(dbsBuild, 'dbscan-swa')
+dbsHome = os.path.join(dbsBuild, 'DBSCAN-SWA')
 dbsRun = os.path.join(dbsHome, 'bin/dbscan-swa.py')
 dlUrl = 'https://github.com/HIT-ImmunologyLab/DBSCAN-SWA.git'
 
@@ -33,14 +33,14 @@ rule build_dbscan_swa:
     clone git, make executable, run test to do the first-time database installation, delete test
     """
     output:
-        dbsRun
+        dbsRun,
+        directory(dbsHome)
     conda:
         "../conda_environments/dbscan-swa.yaml"
     shell:
         """
         cd {dbsBuild};
         git clone {dlUrl};
-        mv DBSCAN-SWA/ dbscan-swa/;
         cd {dbsHome};
         chmod u+x -R bin/
         chmod u+x -R software/
