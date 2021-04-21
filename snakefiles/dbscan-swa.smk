@@ -11,7 +11,7 @@ import sys
 
 # CONFIG
 outDirName = 'dbscan-swa'
-dbsBuild = os.path.join(workflow.basedir, "../build/DBSCAN-SWA")
+dbsBuild = os.path.join(workflow.basedir, "../build/")
 dbsHome = os.path.join(dbsBuild, 'DBSCAN-SWA')
 dbsRun = os.path.join(dbsHome, 'bin/dbscan-swa.py')
 dlUrl = 'https://github.com/HIT-ImmunologyLab/DBSCAN-SWA.git'
