@@ -31,7 +31,7 @@ rule combine_tptn:
         os.path.join(workflow.basedir,"../jupyter_notebooks/all_tptn.tsv")
     run:
         out = open(output[0],'w')
-        out.write(f'Prophage Caller\tGenome\tTP\tTN\tFP\tFN\tAccuracy\tPrecision\tRecall\tSpecificity\tf1 score\n')
+        out.write(f'Prophage_caller\tGenome\tTP\tTN\tFP\tFN\tAccuracy\tPrecision\tRecall\tSpecificity\tf1_score\n')
         for tool in TOOLS:
             for genome in GENOMES:
                 s = {}
