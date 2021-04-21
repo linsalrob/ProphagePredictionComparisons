@@ -40,7 +40,8 @@ rule build_dbscan_swa:
         """
         cd {dbsBuild};
         git clone {dlUrl};
-        mv DBSCAN-SWA/ DBSCAN/;
+        mv DBSCAN-SWA/* DBSCAN/;
+        rm -r DBSCAN-SWA/;
         cd {dbsHome};
         chmod u+x -R bin/;
         chmod u+x -R software/;
