@@ -1,7 +1,16 @@
 
 # CONFIG
-TOOLS = ['phage_finder','phageboost','phigaro','phispy', 'phispy_trained', 'phispy_pvog','virsorter','virsorter2']
 outDirName = ''
+TOOLS = ['dbscan-swa',
+         'phage_finder',
+         'phageboost',
+         'phigaro',
+         'phispy',
+         'phispy_trained',
+         'phispy_pvog',
+         'virsorter',
+         'virsorter2']
+
 
 # GENERIC CONFIG/RECIPES
 include: os.path.join(workflow.basedir, "../rules/preflight.smk")
@@ -18,9 +27,6 @@ rule combine_tptn:
         expand(os.path.join(testDir, '{tool}/{genome}_{tool}_tptn.tsv'), tool=TOOLS, genome=GENOMES)
     output:
         os.path.join(workflow.basedir,"../jupyter_notebooks/all_tptn.tsv")
-    params:
-        script = os.path.join(scripts, 'parse_prophage_predictions.pl'),
-        test = testDir
     run:
         out = open(output[0],'w')
         out.write(f'Prophage Caller\tGenome\tTP\tTN\tFP\tFN\tAccuracy\tPrecision\tRecall\tSpecificity\tf1 score\n')
@@ -43,9 +49,6 @@ rule combine_benchmarks:
         expand(os.path.join(testDir, '{tool}/benchmarks/{genome}_{tool}.txt'), tool=TOOLS, genome=GENOMES)
     output:
         os.path.join(workflow.basedir,"../jupyter_notebooks/all_benchmarks.tsv")
-    params:
-        script = os.path.join(scripts, 'parse_benchmarks.pl'),
-        test = testDir
     run:
         out = open(output[0], 'w')
         print_head = True
