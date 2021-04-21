@@ -51,7 +51,8 @@ rule build_dbscan_swa:
 
 rule run_dbscan_swa:
     input:
-        os.path.join(outputdir,"{genome}.fna")
+        fa = os.path.join(outputdir,"{genome}.fna"),
+        req = dbsRun
     output:
         os.path.join(outputdir, '{genome}/bac_DBSCAN-SWA_prophage_summary.txt')
     conda:
@@ -61,7 +62,7 @@ rule run_dbscan_swa:
     benchmark:
         os.path.join(outputdir, "benchmarks", "{genome}_dbscan-swa.txt")
     shell:
-        "python {dbsRun} --input {input} --output {params} --thread_num 1"
+        "python {dbsRun} --input {input.fa} --output {params} --thread_num 1"
 
 
 rule dbscan_swa_2_tbl:
