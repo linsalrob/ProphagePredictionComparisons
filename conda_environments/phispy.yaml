@@ -4,5 +4,5 @@ channels:
   - bioconda
   - defaults
 dependencies:
-  - phispy
+  - phispy=4.2.6
   - hmmer=3.3
