@@ -28,15 +28,6 @@ rule all:
         expand(os.path.join(outputdir, "{genome}_dbscan-swa_tptn.tsv"), genome=GENOMES)
 
 
-rule unzip_gb:
-    input:
-        os.path.join(test_genomes,'{genome}.gb.gz')
-    output:
-        os.path.join(outputdir,"{genome}.gb")
-    shell:
-        "gunzip -c {input} > {output}"
-
-
 rule build_dbscan_swa:
     """
     clone git, make executable, run test to do the first-time database installation, delete test
@@ -62,7 +53,7 @@ rule build_dbscan_swa:
 
 rule run_dbscan_swa:
     input:
-        gb = os.path.join(outputdir,"{genome}.gb"),
+        fa = os.path.join(outputdir,"{genome}.fna"),
         req = dbsRun
     output:
         os.path.join(outputdir, '{genome}/bac_DBSCAN-SWA_prophage_summary.txt')
@@ -73,7 +64,7 @@ rule run_dbscan_swa:
     benchmark:
         os.path.join(outputdir, "benchmarks", "{genome}_dbscan-swa.txt")
     shell:
-        "python {dbsRun} --input {input.gb} --output {params} --thread_num 1"
+        "python {dbsRun} --input {input.fa} --output {params} --thread_num 1"
 
 
 rule dbscan_swa_2_tbl:
