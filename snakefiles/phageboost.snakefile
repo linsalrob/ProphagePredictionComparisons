@@ -1,7 +1,8 @@
 """
 PhageBoost
 
-Manuscript: https://www.biorxiv.org/content/10.1101/2020.08.09.243022v1.full.pdf
+Preprint: https://www.biorxiv.org/content/10.1101/2020.08.09.243022v1.full.pdf
+Manuscript: https://academic.oup.com/nargab/article/3/1/lqaa109/6066536
 Software: https://github.com/ku-cbd/PhageBoost
 
 Notes:

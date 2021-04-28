@@ -52,7 +52,7 @@ rule run_phigaro:
     shell:
         """
         cd {outputdir};
-        phigaro -f {input.fna} -e tsv -o {params.tsv} --delete-shorts
+        phigaro -t 1 -f {input.fna} -e tsv -o {params.tsv} --delete-shorts
         """
 
 

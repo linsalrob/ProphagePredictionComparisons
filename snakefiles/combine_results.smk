@@ -1,7 +1,18 @@
 
 # CONFIG
-TOOLS = ['phage_finder','phageboost','phigaro','phispy', 'phispy_trained', 'phispy_pvog','virsorter','virsorter2']
 outDirName = ''
+TOOLS = {
+    'dbscan-swa' : 'DBSCAN-SWA',
+    'phage_finder' : 'Phage Finder',
+    'phageboost' : 'PhageBoost',
+    'phigaro' : 'Phigaro',
+    'phispy' : 'PhiSpy',
+    'phispy_trained' : 'PhiSpy (trained)',
+    'phispy_pvog' : 'PhiSpy (+pVOGs)',
+    'virsorter' : 'VirSorter',
+    'virsorter2' : 'VirSorter2'
+}
+
 
 # GENERIC CONFIG/RECIPES
 include: os.path.join(workflow.basedir, "../rules/preflight.smk")
@@ -18,12 +29,9 @@ rule combine_tptn:
         expand(os.path.join(testDir, '{tool}/{genome}_{tool}_tptn.tsv'), tool=TOOLS, genome=GENOMES)
     output:
         os.path.join(workflow.basedir,"../jupyter_notebooks/all_tptn.tsv")
-    params:
-        script = os.path.join(scripts, 'parse_prophage_predictions.pl'),
-        test = testDir
     run:
         out = open(output[0],'w')
-        out.write(f'Prophage Caller\tGenome\tTP\tTN\tFP\tFN\tAccuracy\tPrecision\tRecall\tSpecificity\tf1 score\n')
+        out.write(f'Prophage_caller\tGenome\tTP\tTN\tFP\tFN\tAccuracy\tPrecision\tRecall\tSpecificity\tf1_score\n')
         for tool in TOOLS:
             for genome in GENOMES:
                 s = {}
@@ -33,7 +41,7 @@ rule combine_tptn:
                         l = line.split()
                         s[l[0]] = l[1]
                 tptn.close()
-                out.write('\t'.join( [ tool, genome, s["TP:"], s["TN:"], s["FP:"], s["FN:"], s["Accuracy:"],
+                out.write('\t'.join( [ TOOLS[tool], genome, s["TP:"], s["TN:"], s["FP:"], s["FN:"], s["Accuracy:"],
                     s["Precision:"], s["Recall:"], s["Specificity:"], s["f1_score:"] + "\n" ] ))
         out.close()
 
@@ -43,9 +51,6 @@ rule combine_benchmarks:
         expand(os.path.join(testDir, '{tool}/benchmarks/{genome}_{tool}.txt'), tool=TOOLS, genome=GENOMES)
     output:
         os.path.join(workflow.basedir,"../jupyter_notebooks/all_benchmarks.tsv")
-    params:
-        script = os.path.join(scripts, 'parse_benchmarks.pl'),
-        test = testDir
     run:
         out = open(output[0], 'w')
         print_head = True
@@ -59,6 +64,6 @@ rule combine_benchmarks:
                     out.write('\t'.join(['Prophage_caller','Genome'] + h ))
                     out.write("\n")
                     print_head = False
-                out.write('\t'.join([tool, genome] + b ))
+                out.write('\t'.join([TOOLS[tool], genome] + b ))
                 out.write("\n")
         out.close()

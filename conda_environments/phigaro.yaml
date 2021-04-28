@@ -5,6 +5,6 @@ channels:
   - defaults
 dependencies:
   - python=3
-  - phigaro=2.3
+  - phigaro=2.3.0
   - prodigal=2.6.3
   - hmmer=3.3
