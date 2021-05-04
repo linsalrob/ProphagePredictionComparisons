@@ -58,7 +58,7 @@ We have:
  - [VirSorter](https://github.com/simroux/VirSorter) ([original citation](https://peerj.com/articles/985/))  Version used: v1.0.6
  - [Phigaro](https://github.com/bobeobibo/phigaro) ([original citation](https://academic.oup.com/bioinformatics/article-abstract/36/12/3882/5822875?redirectedFrom=fulltext)) Version used: v2.3.0
  - [DBSCAN-SWA](https://github.com/HIT-ImmunologyLab/DBSCAN-SWA) ([original citation](https://www.biorxiv.org/content/10.1101/2020.07.12.199018v1.full)) Version used: 2e61b95
- - [PhageBoost](http://phageboost.ml) ([original citation](https://www.biorxiv.org/content/10.1101/2020.08.09.243022v1.full.pdf)) Version used: 0.1.7
+ - [PhageBoost](https://github.com/ku-cbd/PhageBoost) ([original citation](https://www.biorxiv.org/content/10.1101/2020.08.09.243022v1.full.pdf)) Version used: 0.1.7
  - [Virsorter2](https://github.com/jiarong/VirSorter2) ([original citation](https://doi.org/10.1186/s40168-020-00990-y)) Version used: 2.2.1
 
 If you know of other tools that should be included please let us know or make a PR.
