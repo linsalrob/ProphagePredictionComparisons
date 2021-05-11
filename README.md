@@ -1,5 +1,7 @@
 [![Edwards Lab](https://img.shields.io/badge/Bioinformatics-EdwardsLab-03A9F4)](https://edwards.sdsu.edu/research)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://www.zenodo.org/badge/273771924.svg)](https://www.zenodo.org/badge/latestdoi/273771924)
+
 
 
 
@@ -60,6 +62,11 @@ We have:
  - [DBSCAN-SWA](https://github.com/HIT-ImmunologyLab/DBSCAN-SWA) ([original citation](https://www.biorxiv.org/content/10.1101/2020.07.12.199018v1.full)) Version used: 2e61b95
  - [PhageBoost](https://github.com/ku-cbd/PhageBoost) ([original citation](https://www.biorxiv.org/content/10.1101/2020.08.09.243022v1.full.pdf)) Version used: 0.1.7
  - [Virsorter2](https://github.com/jiarong/VirSorter2) ([original citation](https://doi.org/10.1186/s40168-020-00990-y)) Version used: 2.2.1
+
+We could not install:
+ - [LysoPhD](https://ieeexplore.ieee.org/document/8983280) - We can not find this available online anywhere
+ - [ProphET](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0223364]) - This requires legacy BLAST 
+and EMBOSS packages and we could not get it to install and run.
 
 If you know of other tools that should be included please let us know or make a PR.
 
