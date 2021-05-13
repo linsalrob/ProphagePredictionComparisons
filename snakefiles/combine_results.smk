@@ -10,7 +10,8 @@ TOOLS = {
     'phispy_trained' : 'PhiSpy (trained)',
     'phispy_pvog' : 'PhiSpy (+pVOGs)',
     'virsorter' : 'VirSorter',
-    'virsorter2' : 'VirSorter2'
+    'virsorter2' : 'VirSorter2',
+    'vibrant' : 'VIBRANT'
 }
 
 

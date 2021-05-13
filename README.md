@@ -33,7 +33,7 @@ git lfs update
 ```
 Then run the pipelines (requires snakemake and conda)
 ```bash
-snakemake -s snakefiles/virsorter.snakefile --use-conda # --profile slurm or -j 16 etc...
+snakemake -s snakefiles/virsorter.smk --use-conda # --profile slurm or -j 16 etc...
 ```
 
 If you develop prophage prediction software, clone the repository and implement your tool using a 
