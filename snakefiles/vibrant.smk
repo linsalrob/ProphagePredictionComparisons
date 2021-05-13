@@ -80,7 +80,7 @@ rule count_tp_tn:
         gen = os.path.join(test_genomes, "{genome}.gb.gz"),
         tbl = os.path.join(outputdir, "{genome}.out", "locs.tsv")
     output:
-        tp = os.path.join(outputdir, "{genome}_virsorter2_tptn.tsv")
+        tp = os.path.join(outputdir, "{genome}_vibrant_tptn.tsv")
     params:
         os.path.join(workflow.basedir,'../')
     conda:
