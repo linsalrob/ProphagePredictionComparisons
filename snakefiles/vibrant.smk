@@ -12,7 +12,7 @@ import sys
 
 # CONFIG
 outDirName = 'vibrant'
-vBuild = os.path.join(workflow.basedir, "../build/")
+vBuild = os.path.join(workflow.basedir, "../build/vibrant/")
 
 
 # GENERIC CONFIG/RECIPES
@@ -29,19 +29,20 @@ rule all:
 # RECIPES
 rule vibrant_db_download:
     output:
-        os.path.join(vs2Build, 'setup.done')
+        os.path.join(vBuild, 'setup.done')
     conda:
         "../conda_environments/vibrant.yaml"
     shell:
         """
         download-db.sh;
-        touch {vBuild}/DB_downloaded
+        touch {output}
         """
 
 
 rule run_vibrant:
     input:
-        os.path.join(outputdir,"{genome}.fna")
+        f = os.path.join(outputdir,"{genome}.fna"),
+        req = os.path.join(vBuild, 'setup.done')
     output:
         os.path.join(outputdir, '{genome}/VIBRANT_{genome}/VIBRANT_RESULTS_{genome}/VIBRANT_integrated_prophage_coordinates_{genome}.tsv')
     conda:
@@ -54,7 +55,7 @@ rule run_vibrant:
         """
         mkdir {params};
         cd {params};
-        VIBRANT_run.py -i {input} -no_plot -t 1
+        VIBRANT_run.py -i {input.f} -no_plot -t 1
         """
 
 
