@@ -51,11 +51,13 @@ rule run_vibrant:
         os.path.join(outputdir, "benchmarks", "{genome}_vibrant.txt")
     params:
         os.path.join(outputdir, '{genome}')
+    log:
+        os.path.join(outputdir,'{genome}.vibrant.log')
     shell:
         """
         mkdir {params};
         cd {params};
-        VIBRANT_run.py -i {input.f} -no_plot -t 1
+        VIBRANT_run.py -i {input.f} -no_plot -t 1 2> {log};
         """
 
 
