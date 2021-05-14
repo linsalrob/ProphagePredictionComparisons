@@ -55,7 +55,7 @@ rule run_vibrant:
         """
         mkdir -p {params};
         cd {params};
-        VIBRANT_run.py -i {input.f} -no_plot -t 1 2>;
+        VIBRANT_run.py -i {input.f} -no_plot -t 1;
         """
 
 
