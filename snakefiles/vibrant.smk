@@ -61,7 +61,7 @@ rule run_vibrant:
 
 rule vibrant_to_tbl:
     input:
-        os.path.join(outputdir, '{genome}/VIBRANT_{genome}/VIBRANT_RESULTS_{genome}/VIBRANT_integrated_prophage_coordinates_{genome}.tsv')
+        os.path.join(outputdir, '{genome}/VIBRANT_{genome}/VIBRANT_results_{genome}/VIBRANT_integrated_prophage_coordinates_{genome}.tsv')
     output:
         os.path.join(outputdir, "{genome}.out", "locs.tsv")
     run:
