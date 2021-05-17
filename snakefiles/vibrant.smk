@@ -44,7 +44,7 @@ rule run_vibrant:
         f = os.path.join(outputdir,"{genome}.fna"),
         req = os.path.join(vBuild, 'setup.done')
     output:
-        os.path.join(outputdir, '{genome}/VIBRANT_{genome}/VIBRANT_RESULTS_{genome}/VIBRANT_integrated_prophage_coordinates_{genome}.tsv')
+        os.path.join(outputdir, '{genome}/VIBRANT_{genome}/VIBRANT_results_{genome}/VIBRANT_integrated_prophage_coordinates_{genome}.tsv')
     conda:
         "../conda_environments/vibrant.yaml"
     benchmark:
