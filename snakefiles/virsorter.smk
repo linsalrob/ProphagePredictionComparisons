@@ -58,6 +58,8 @@ rule run_virsorter:
         os.path.join(outputdir, "benchmarks", "{genome}_virsorter.txt")
     conda:
         "../conda_environments/virsorter.yaml"
+    resources:
+        mem_mb = 8000
     shell:
         """
         wrapper_phage_contigs_sorter_iPlant.pl --ncpu 1 -f {input.fna} --db 1 --wdir {params.odir} --data-dir {vs1Db}

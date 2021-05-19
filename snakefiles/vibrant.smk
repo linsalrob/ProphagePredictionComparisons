@@ -7,7 +7,6 @@ Software: https://github.com/AnantharamanLab/VIBRANT
 """
 
 import os
-import sys
 
 
 # CONFIG
@@ -17,7 +16,6 @@ vBuild = os.path.join(workflow.basedir, "../build/vibrant/")
 
 # GENERIC CONFIG/RECIPES
 include: os.path.join(workflow.basedir, "../rules/preflight.smk")
-
 
 
 # TARGETS
@@ -51,6 +49,8 @@ rule run_vibrant:
         os.path.join(outputdir, "benchmarks", "{genome}_vibrant.txt")
     params:
         os.path.join(outputdir, '{genome}')
+    resources:
+        mem_mb = 8000
     shell:
         """
         mkdir -p {params};

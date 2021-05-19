@@ -63,6 +63,8 @@ rule run_dbscan_swa:
         os.path.join(outputdir, '{genome}')
     benchmark:
         os.path.join(outputdir, "benchmarks", "{genome}_dbscan-swa.txt")
+    resources:
+        mem_mb = 8000
     shell:
         "python {dbsRun} --input {input.fa} --output {params} --thread_num 1"
 
