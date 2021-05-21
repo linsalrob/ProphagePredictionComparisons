@@ -21,21 +21,20 @@ rule run_phispy:
         o = os.path.join(outputdir, f"{{genome}}.{outDirName}"),
         t = training_set,
         v = use_pvogs
-    benchmark:
-        os.path.join(outputdir, "benchmarks", f"{{genome}}_{outDirName}.txt")
     output:
         temporary(os.path.join(outputdir, f"{{genome}}.{outDirName}", "bacteria.fasta")),
         temporary(os.path.join(outputdir, f"{{genome}}.{outDirName}", "bacteria.gbk")),
         temporary(os.path.join(outputdir, f"{{genome}}.{outDirName}", "phage.fasta")),
         os.path.join(outputdir, f"{{genome}}.{outDirName}", "phage.gbk"),
         os.path.join(outputdir, f"{{genome}}.{outDirName}", "phispy.log"),
+        bench = os.path.join(outputdir, "benchmarks", f"{{genome}}_{outDirName}.txt")
     conda:
         "../conda_environments/phispy.yaml"
     resources:
         mem_mb = 8000
     shell:
         """
-        PhiSpy.py --threads 1 -o {params.o} {params.t} {params.v} --output_choice 4 {input.g}
+        /usr/bin/time -v -o {out.bench} PhiSpy.py --threads 1 -o {params.o} {params.t} {params.v} --output_choice 4 {input.g}
         """
 
 

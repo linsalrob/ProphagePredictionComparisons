@@ -52,17 +52,16 @@ rule run_virsorter:
         c3 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_cat-3.gb"),
         c4 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-4.gb"),
         c5 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-5.gb"),
+        bench = os.path.join(outputdir, "benchmarks", "{genome}_virsorter.txt")
     params:
-        odir = os.path.join(outputdir, "{genome}_virsorter")
-    benchmark:
-        os.path.join(outputdir, "benchmarks", "{genome}_virsorter.txt")
+        odir = os.path.join(outputdir, "{genome}_virsorter"),
     conda:
         "../conda_environments/virsorter.yaml"
     resources:
         mem_mb = 8000
     shell:
         """
-        wrapper_phage_contigs_sorter_iPlant.pl --ncpu 1 -f {input.fna} --db 1 --wdir {params.odir} --data-dir {vs1Db}
+        /usr/bin/time -v -o {out.bench} wrapper_phage_contigs_sorter_iPlant.pl --ncpu 1 -f {input.fna} --db 1 --wdir {params.odir} --data-dir {vs1Db}
         """
 
 
