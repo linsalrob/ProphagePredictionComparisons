@@ -53,7 +53,7 @@ rule run_phigaro:
     shell:
         """
         cd {outputdir};
-        /usr/bin/time -v -o {out.bench} phigaro -t 1 -f {input.fna} -e tsv -o {params.tsv} --delete-shorts
+        /usr/bin/time -v -o {output.bench} phigaro -t 1 -f {input.fna} -e tsv -o {params.tsv} --delete-shorts
         """
 
 

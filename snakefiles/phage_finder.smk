@@ -90,7 +90,7 @@ rule run_phage_finder:
         mem_mb = 8000
     shell:
         """
-        /usr/bin/time -v -o {out.bench} sh -c ' \
+        /usr/bin/time -v -o {output.bench} sh -c ' \
             cd {params};
         
             # hmm searches

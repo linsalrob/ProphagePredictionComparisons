@@ -65,7 +65,7 @@ rule run_phageboost:
     shell:
         """
         export PYTHONPATH={params.pypath};
-        /usr/bin/time -v -o {out.bench} python3 scripts/phageboost_genbank.py -g {input.gen} -o {output.tsv} \
+        /usr/bin/time -v -o {output.bench} python3 scripts/phageboost_genbank.py -g {input.gen} -o {output.tsv} \
             -m {params.datdir}/model_delta_std_hacked.pickled.silent.gz
         """
 

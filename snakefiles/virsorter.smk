@@ -61,7 +61,8 @@ rule run_virsorter:
         mem_mb = 8000
     shell:
         """
-        /usr/bin/time -v -o {out.bench} wrapper_phage_contigs_sorter_iPlant.pl --ncpu 1 -f {input.fna} --db 1 --wdir {params.odir} --data-dir {vs1Db}
+        /usr/bin/time -v -o {output.bench} wrapper_phage_contigs_sorter_iPlant.pl --ncpu 1 -f {input.fna} --db 1 \
+            --wdir {params.odir} --data-dir {vs1Db}
         """
 
 

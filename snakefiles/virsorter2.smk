@@ -58,7 +58,8 @@ rule run_virsorter2:
         mem_mb = 16000
     shell:
         """
-        /usr/bin/time -v -o {out.bench} virsorter run --use-conda-off --db-dir {vs2Build}/db -w {params.out} -i {input.fna} -j 1 all
+        /usr/bin/time -v -o {output.bench} virsorter run --use-conda-off --db-dir {vs2Build}/db -w {params.out} \
+            -i {input.fna} -j 1 all
         """
 
 

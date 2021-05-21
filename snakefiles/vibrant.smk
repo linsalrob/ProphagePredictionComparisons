@@ -54,7 +54,7 @@ rule run_vibrant:
         """
         mkdir -p {params};
         cd {params};
-        /usr/bin/time -v -o {out.bench} VIBRANT_run.py -i {input.f} -no_plot -t 1;
+        /usr/bin/time -v -o {output.bench} VIBRANT_run.py -i {input.f} -no_plot -t 1;
         """
 
 
