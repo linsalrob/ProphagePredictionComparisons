@@ -7,4 +7,5 @@ dependencies:
   - python=3
   - pip
   - pip:
-    - PhageBoost=0.1.7
+    - PhageBoost==0.1.7
+    - xgboost==1.1.1
