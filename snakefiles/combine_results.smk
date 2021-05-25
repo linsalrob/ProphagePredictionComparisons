@@ -53,18 +53,36 @@ rule combine_benchmarks:
     output:
         os.path.join(workflow.basedir,"../jupyter_notebooks/all_benchmarks.tsv")
     run:
-        out = open(output[0], 'w')
-        print_head = True
+        bmk = {}
+        benchmarks = []
+        for tool in TOOLS:
+            try:
+                bmk[tool]
+            except KeyError:
+                bmk[tool] = {}
+            for genome in GENOMES:
+                try:
+                    bmk[tool][genome]
+                except KeyError:
+                    bmk[tool][genome] = {}
+                bench = open(os.path.join(testDir, f'{tool}/benchmarks/{genome}_{tool}.txt'), 'r')
+                for line in bench:
+                    l = line.strip().split(': ')
+                    bmk[tool][genome][l[0]] = l[1]
+                    try:
+                        benchmarks.index(l[0])
+                    except ValueError:
+                        benchmarks.append(l[0])
+                bench.close()
+        out = open(output[0],'w')
+        out.write('Prophage_caller\tGenome')
+        for bench in benchmarks:
+            out.write(f'\t{bench}')
+        out.write('\n')
         for tool in TOOLS:
             for genome in GENOMES:
-                bench = open(os.path.join(testDir, f'{tool}/benchmarks/{genome}_{tool}.txt'), 'r')
-                h = bench.readline().split()
-                b = bench.readline().split()
-                bench.close()
-                if print_head:
-                    out.write('\t'.join(['Prophage_caller','Genome'] + h ))
-                    out.write("\n")
-                    print_head = False
-                out.write('\t'.join([TOOLS[tool], genome] + b ))
-                out.write("\n")
+                out.write(f'{tool}\t{genome}')
+                for bench in benchmarks:
+                    out.write('\t{bmk[tool][genome][bench]}')
+                out.write('\n')
         out.close()
