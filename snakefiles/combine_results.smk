@@ -36,7 +36,9 @@ rule out_dir_sizes:
         out = open(output[0], 'w')
         for tool in TOOLS:
             dirSize = subprocess.check_output(['du', '-sb', os.path.join(testDir, tool)], text=True)
-            out.write(dirSize)
+            d = dirSize.split()
+            d[0] = d[0] / 1000000       # bytes to mb
+            out.write(f'{TOOLS[tool]}\t{d[0]}\n')
         out.close()
 
 
