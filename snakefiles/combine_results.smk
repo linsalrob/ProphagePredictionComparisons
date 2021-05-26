@@ -83,6 +83,6 @@ rule combine_benchmarks:
             for genome in GENOMES:
                 out.write(f'{tool}\t{genome}')
                 for bench in benchmarks:
-                    out.write(f'\t{bmk[tool][genome][bench]}')
+                    out.write('\t{bmk[tool][genome][bench]}')
                 out.write('\n')
         out.close()
