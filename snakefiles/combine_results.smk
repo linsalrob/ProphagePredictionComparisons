@@ -22,7 +22,22 @@ include: os.path.join(workflow.basedir, "../rules/preflight.smk")
 rule all:
     input:
         os.path.join(workflow.basedir, "../jupyter_notebooks/all_benchmarks.tsv"),
-        os.path.join(workflow.basedir, "../jupyter_notebooks/all_tptn.tsv")
+        os.path.join(workflow.basedir, "../jupyter_notebooks/all_tptn.tsv"),
+        os.path.join(workflow.basedir, "../jupyter_notebooks/all_dirSize.tsv")
+
+
+rule out_dir_sizes:
+    input:
+        expand(os.path.join(testDir, '{tool}/{genome}_{tool}_tptn.tsv'), tool=TOOLS, genome=GENOMES)
+    output:
+        os.path.join(workflow.basedir,"../jupyter_notebooks/dirSizes.tsv")
+    run:
+        import subprocess
+        out = open(output[0], 'w')
+        for tool in TOOLS:
+            dirSize = subprocess.check_output(['du', '-sb', os.path.join(testDir, tool)])
+            out.write(dirSize)
+        out.close()
 
 
 rule combine_tptn:
