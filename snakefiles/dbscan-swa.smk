@@ -56,16 +56,17 @@ rule run_dbscan_swa:
         fa = os.path.join(outputdir,"{genome}.fna"),
         req = dbsRun
     output:
-        os.path.join(outputdir, '{genome}/bac_DBSCAN-SWA_prophage_summary.txt'),
-        bench = os.path.join(outputdir, "benchmarks", "{genome}_dbscan-swa.txt")
+        os.path.join(outputdir, '{genome}/bac_DBSCAN-SWA_prophage_summary.txt')
     conda:
         "../conda_environments/dbscan-swa.yaml"
     params:
         os.path.join(outputdir, '{genome}')
+    benchmark:
+        os.path.join(outputdir, "benchmarks", "{genome}_dbscan-swa.txt")
     resources:
         mem_mb = 8000
     shell:
-        "/usr/bin/time -v -o {out.bench} python {dbsRun} --input {input.fa} --output {params} --thread_num 1"
+        "python {dbsRun} --input {input.fa} --output {params} --thread_num 1"
 
 
 rule dbscan_swa_2_tbl:

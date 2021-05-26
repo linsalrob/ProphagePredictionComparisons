@@ -53,8 +53,9 @@ rule run_phageboost:
         gen = os.path.join(test_genomes, "{genome}.gb.gz"),
         req = os.path.join(pfBuild, 'pip.done')
     output:
-        tsv = os.path.join(outputdir, "{genome}_phageboost.tsv"),
-        bench = os.path.join(outputdir, "benchmarks", "{genome}_phageboost.txt")
+        tsv = os.path.join(outputdir, "{genome}_phageboost.tsv")
+    benchmark:
+        os.path.join(outputdir, "benchmarks", "{genome}_phageboost.txt")
     conda:
         "../conda_environments/phageboost.yaml"
     params:
@@ -65,7 +66,7 @@ rule run_phageboost:
     shell:
         """
         export PYTHONPATH={params.pypath};
-        /usr/bin/time -v -o {out.bench} python3 scripts/phageboost_genbank.py -g {input.gen} -o {output.tsv} \
+        python3 scripts/phageboost_genbank.py -g {input.gen} -o {output.tsv} \
             -m {params.datdir}/model_delta_std_hacked.pickled.silent.gz
         """
 

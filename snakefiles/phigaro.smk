@@ -42,10 +42,11 @@ rule run_phigaro:
         fna = os.path.join(outputdir, "{genome}.fna"),
         req = os.path.join(pgBuild, 'setup.done')
     output:
-        tsv = os.path.join(outputdir, "{genome}_phigaro", "{genome}.phigaro.tsv"),
-        bench = os.path.join(outputdir, "benchmarks", "{genome}_phigaro.txt")
+        tsv = os.path.join(outputdir, "{genome}_phigaro", "{genome}.phigaro.tsv")
     params:
         tsv = "{genome}_phigaro" # phigaro adds the .tsv extension
+    benchmark:
+        os.path.join(outputdir, "benchmarks", "{genome}_phigaro.txt")
     conda:
         "../conda_environments/phigaro.yaml"
     resources:
@@ -53,7 +54,7 @@ rule run_phigaro:
     shell:
         """
         cd {outputdir};
-        /usr/bin/time -v -o {out.bench} phigaro -t 1 -f {input.fna} -e tsv -o {params.tsv} --delete-shorts
+        phigaro -t 1 -f {input.fna} -e tsv -o {params.tsv} --delete-shorts
         """
 
 

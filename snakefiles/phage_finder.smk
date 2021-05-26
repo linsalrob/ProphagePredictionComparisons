@@ -79,10 +79,11 @@ rule run_phage_finder:
         pfi = os.path.join(outputdir, "{genome}_phage_finder", "phage_finder_info.txt"),
         req = pfRun
     output:
-        os.path.join(outputdir, "{genome}_phage_finder", "PFPR_tab.txt"),
-        bench = os.path.join(outputdir, "benchmarks", "{genome}_phage_finder.txt")
+        os.path.join(outputdir, "{genome}_phage_finder", "PFPR_tab.txt")
     params:
         os.path.join(outputdir, "{genome}_phage_finder")
+    benchmark:
+        os.path.join(outputdir, "benchmarks", "{genome}_phage_finder.txt")
     conda:
         "../conda_environments/phage_finder.yaml"
     resources:
@@ -90,33 +91,31 @@ rule run_phage_finder:
         mem_mb = 8000
     shell:
         """
-        /usr/bin/time -v -o {out.bench} sh -c ' \
-            cd {params};
+        cd {params};
         
-            # hmm searches
-            echo "Running hmmsearch";
-            for i in `cat {pfHome}/hmm3.lst`; do
-                hmmsearch {pfHome}/PHAGE_HMM3s_dir/$i.HMM {wildcards.genome}.faa;
-            done > combined.hmm3;
-            
-            # blast
-            echo "Running blastall";
-            blastall -p blastp -d {pfHome}/DB/phage_10_02_07_release.db -m 8 -e 0.001 -i {wildcards.genome}.faa \
-                -o ncbi.out -v 4 -b 4 -a 2 -F F;
-            
-            # tRNA scan
-            echo "Running tRNAscan-SE";
-            if [[ -e tRNAscan.out ]]; then rm tRNAscan.out; fi
-            tRNAscan-SE -B -Q -o tRNAscan.out {wildcards.genome}.fna;
-            
-            # aragorn
-            echo "Running aragorn";
-            aragorn -m -o tmRNA_aragorn.out {wildcards.genome}.fna;
-            
-            # phage_finder
-            echo "Running phage_finder";
-            {pfRun} -t ncbi.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -A {wildcards.genome}.fna -S;
-        '
+        # hmm searches
+        echo "Running hmmsearch";
+        for i in `cat {pfHome}/hmm3.lst`; do
+            hmmsearch {pfHome}/PHAGE_HMM3s_dir/$i.HMM {wildcards.genome}.faa;
+        done > combined.hmm3;
+        
+        # blast
+        echo "Running blastall";
+        blastall -p blastp -d {pfHome}/DB/phage_10_02_07_release.db -m 8 -e 0.001 -i {wildcards.genome}.faa \
+            -o ncbi.out -v 4 -b 4 -a 2 -F F;
+        
+        # tRNA scan
+        echo "Running tRNAscan-SE";
+        if [[ -e tRNAscan.out ]]; then rm tRNAscan.out; fi
+        tRNAscan-SE -B -Q -o tRNAscan.out {wildcards.genome}.fna;
+        
+        # aragorn
+        echo "Running aragorn";
+        aragorn -m -o tmRNA_aragorn.out {wildcards.genome}.fna;
+        
+        # phage_finder
+        echo "Running phage_finder";
+        {pfRun} -t ncbi.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -A {wildcards.genome}.fna -S;
         
         """
 

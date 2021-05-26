@@ -42,19 +42,20 @@ rule run_vibrant:
         f = os.path.join(outputdir,"{genome}.fna"),
         req = os.path.join(vBuild, 'setup.done')
     output:
-        os.path.join(outputdir, '{genome}/VIBRANT_{genome}/VIBRANT_results_{genome}/VIBRANT_integrated_prophage_coordinates_{genome}.tsv'),
-        bench = os.path.join(outputdir, "benchmarks", "{genome}_vibrant.txt")
+        os.path.join(outputdir, '{genome}/VIBRANT_{genome}/VIBRANT_results_{genome}/VIBRANT_integrated_prophage_coordinates_{genome}.tsv')
     conda:
         "../conda_environments/vibrant.yaml"
+    benchmark:
+        os.path.join(outputdir, "benchmarks", "{genome}_vibrant.txt")
     params:
-        out = os.path.join(outputdir, '{genome}'),
+        os.path.join(outputdir, '{genome}')
     resources:
         mem_mb = 8000
     shell:
         """
         mkdir -p {params};
         cd {params};
-        /usr/bin/time -v -o {out.bench} VIBRANT_run.py -i {input.f} -no_plot -t 1;
+        VIBRANT_run.py -i {input.f} -no_plot -t 1;
         """
 
 
