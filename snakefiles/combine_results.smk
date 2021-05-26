@@ -54,7 +54,7 @@ rule combine_benchmarks:
         os.path.join(workflow.basedir,"../jupyter_notebooks/all_benchmarks.tsv")
     run:
         bmk = {}
-        benchmarks = []
+        benchmarks = ['User time (seconds)', 'Maximum resident set size (kbytes)', 'File system outputs']
         for tool in TOOLS:
             try:
                 bmk[tool]
@@ -68,11 +68,11 @@ rule combine_benchmarks:
                 bench = open(os.path.join(testDir, f'{tool}/benchmarks/{genome}_{tool}.txt'), 'r')
                 for line in bench:
                     l = line.strip().split(': ')
-                    bmk[tool][genome][l[0]] = l[1]
                     try:
                         benchmarks.index(l[0])
+                        bmk[tool][genome][l[0]] = l[1]
                     except ValueError:
-                        benchmarks.append(l[0])
+                        continue
                 bench.close()
         out = open(output[0],'w')
         out.write('Prophage_caller\tGenome')
