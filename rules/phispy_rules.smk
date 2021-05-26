@@ -34,7 +34,7 @@ rule run_phispy:
         mem_mb = 8000
     shell:
         """
-        /usr/bin/time -v -o {output.bench} PhiSpy.py --threads 1 -o {params.o} {params.t} {params.v} --output_choice 4 {input.g}
+        /usr/bin/time -v -o {out.bench} PhiSpy.py --threads 1 -o {params.o} {params.t} {params.v} --output_choice 4 {input.g}
         """
 
 

@@ -65,7 +65,7 @@ rule run_dbscan_swa:
     resources:
         mem_mb = 8000
     shell:
-        "/usr/bin/time -v -o {output.bench} python {dbsRun} --input {input.fa} --output {params} --thread_num 1"
+        "/usr/bin/time -v -o {out.bench} python {dbsRun} --input {input.fa} --output {params} --thread_num 1"
 
 
 rule dbscan_swa_2_tbl:
