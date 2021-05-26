@@ -30,7 +30,7 @@ rule out_dir_sizes:
     input:
         expand(os.path.join(testDir, '{tool}/{genome}_{tool}_tptn.tsv'), tool=TOOLS, genome=GENOMES)
     output:
-        os.path.join(workflow.basedir,"../jupyter_notebooks/all_dirSize.tsv")
+        os.path.join(workflow.basedir,"../jupyter_notebooks/dirSizes.tsv")
     run:
         import subprocess
         out = open(output[0], 'w')
