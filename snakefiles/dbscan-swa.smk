@@ -41,6 +41,8 @@ rule build_dbscan_swa:
         cd {dbsBuild};
         git clone {dlUrl};
         mv DBSCAN-SWA/* DBSCAN/;
+        cd DBSCAN/;
+        git checkout 2e61b95; 
         rm -rf DBSCAN-SWA/;
         cd {dbsHome};
         chmod u+x -R bin/;
