@@ -12,7 +12,7 @@ import sys
 # CONFIG
 outDirName = 'dbscan-swa'
 dbsBuild = os.path.join(workflow.basedir, "../build/")
-dbsHome = os.path.join(dbsBuild, 'DBSCAN-SWA')
+dbsHome = os.path.join(dbsBuild, 'DBSCAN')
 dbsRun = os.path.join(dbsHome, 'bin/dbscan-swa.py')
 dlUrl = 'https://github.com/HIT-ImmunologyLab/DBSCAN-SWA.git'
 
@@ -41,7 +41,10 @@ rule build_dbscan_swa:
         cd {dbsBuild};
         git clone {dlUrl};
         cd DBSCAN-SWA/;
-        git checkout 2e61b95; 
+        git checkout 2e61b95;
+        cd ../;
+        mv DBSCAN-SWA/* DBSCAN/;
+        rm -rf DBSCAN-SWA/
         cd {dbsHome};
         chmod u+x -R bin/;
         chmod u+x -R software/;
