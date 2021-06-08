@@ -35,7 +35,7 @@ rule out_dir_sizes:
         import subprocess
         out = open(output[0], 'w')
         for tool in TOOLS:
-            dirSize = subprocess.check_output(['du', '-sb', os.path.join(testDir, tool)])
+            dirSize = subprocess.check_output('du', '-sb', os.path.join(testDir, tool))
             out.write(dirSize)
         out.close()
 
