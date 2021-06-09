@@ -83,8 +83,8 @@ rule virsorter_to_tbl:
         for f in [input.c1, input.c2, input.c3]:
             infh = open(f, 'r')
             for line in infh:
-                l = line.split()
-                if l[0]=='LOCUS':
+                if line.startswith('LOCUS'):
+                    l = line.split()
                     out.write(f'{l[1]}\t1\t{l[2]}\n')
             infh.close()
         for f in [input.c4, input.c5, input.c6]:
