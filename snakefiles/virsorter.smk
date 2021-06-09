@@ -90,8 +90,8 @@ rule virsorter_to_tbl:
         for f in [input.c4, input.c5, input.c6]:
             infh = open(f, 'r')
             for line in infh:
-                l = line.split()
-                if l[0]=='LOCUS':
+                if line.startswith('LOCUS'):
+                    l = line.split()
                     l[1] = re.sub('VIRSorter_|-cat_.','',l[1])
                     l[1] = re.sub('_gene.*gene_\d*-|-','\t',l[1])
                     out.write(f'{l[1]}\n')
