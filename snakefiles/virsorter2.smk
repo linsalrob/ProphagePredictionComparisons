@@ -67,7 +67,7 @@ rule virsorter2_to_tbl:
     input:
         os.path.join(outputdir, "{genome}.out", 'final-viral-boundary.tsv'),
     output:
-        os.path.join(outputdir, "{genome}.out", "locs.tsv")
+        temp(os.path.join(outputdir, "{genome}.out", "locs.tsv.tmp"))
     run:
         outFH = open(output[0], 'w')
         inFH = open(input[0], 'r')
@@ -77,6 +77,15 @@ rule virsorter2_to_tbl:
                 outFH.write(f'{l[0]}\t{l[16]}\t{l[17]}\n')
         outFH.close()
         inFH.close()
+
+
+rule virsorter2_tbl_merge:
+    input:
+        os.path.join(outputdir,"{genome}.out","locs.tsv.tmp")
+    output:
+        os.path.join(outputdir,"{genome}.out","locs.tsv")
+    shell:
+        "bedtools merge -i {input} > {output}"
 
 
 rule count_tp_tn:
