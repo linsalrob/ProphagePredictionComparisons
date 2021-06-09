@@ -72,8 +72,9 @@ rule virsorter2_to_tbl:
         outFH = open(output[0], 'w')
         inFH = open(input[0], 'r')
         for line in inFH:
-            l = line.split('\t')
-            outFH.write(f'{l[0]}\t{l[16]}\t{l[17]}\n')
+            if not line.startswith('seqname'):
+                l = line.split('\t')
+                outFH.write(f'{l[0]}\t{l[16]}\t{l[17]}\n')
         outFH.close()
         inFH.close()
 
