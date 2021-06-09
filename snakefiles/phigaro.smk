@@ -49,6 +49,8 @@ rule run_phigaro:
         os.path.join(outputdir, "benchmarks", "{genome}_phigaro.txt")
     conda:
         "../conda_environments/phigaro.yaml"
+    resources:
+        mem_mb = 8000
     shell:
         """
         cd {outputdir};

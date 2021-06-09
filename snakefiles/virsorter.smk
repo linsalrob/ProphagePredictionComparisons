@@ -52,12 +52,15 @@ rule run_virsorter:
         c3 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_cat-3.gb"),
         c4 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-4.gb"),
         c5 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-5.gb"),
+        c6 = os.path.join(outputdir,"{genome}_virsorter","Predicted_viral_sequences/VIRSorter_prophages_cat-6.gb")
     params:
         odir = os.path.join(outputdir, "{genome}_virsorter")
     benchmark:
         os.path.join(outputdir, "benchmarks", "{genome}_virsorter.txt")
     conda:
         "../conda_environments/virsorter.yaml"
+    resources:
+        mem_mb = 8000
     shell:
         """
         wrapper_phage_contigs_sorter_iPlant.pl --ncpu 1 -f {input.fna} --db 1 --wdir {params.odir} --data-dir {vs1Db}
@@ -71,31 +74,29 @@ rule virsorter_to_tbl:
         c3 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_cat-3.gb"),
         c4 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-4.gb"),
         c5 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-5.gb"),
+        c6 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-6.gb")
     output:
         os.path.join(outputdir, "{genome}_virsorter", "locs.tsv")
-    shell:
-        """
-        set +e
-        G=$(grep -h LOCUS {input.c1} {input.c2} {input.c3});
-        exitcode=$?
-        if [ $exitcode == 0 ]; then
-            echo $G | awk '{{print $2"\t1\t"$3}}' | sed -e 's/VIRSorter_//' > {output};
-        elif [ $exitcode == 1 ]; then
-            touch {output}
-        else
-            exit $exitcode
-        fi
-
-        G=$(grep -h LOCUS {input.c4} {input.c5})
-        exitcode=$?
-        if [ $exitcode == 0 ]; then
-            echo $G | awk '{{print $2}}' | perl -pe 's/VIRSorter_(\S+)_gene_\d+_gene_\d+-(\d+)-(\d+)-.*/$1\t$2\t$3/' >> {output}
-        elif [ $exitcode == 1 ]; then
-            touch {output}
-        else
-            exit $exitcode
-        fi
-        """
+    run:
+        import re
+        out = open(output[0], 'w')
+        for f in [input.c1, input.c2, input.c3]:
+            infh = open(f, 'r')
+            for line in infh:
+                l = line.split()
+                if l[0]=='LOCUS':
+                    out.write(f'{l[1]}\t1\t{l[2]}\n')
+            infh.close()
+        for f in [input.c4, input.c5, input.c6]:
+            infh = open(f, 'r')
+            for line in infh:
+                l = line.split()
+                if l[0]=='LOCUS':
+                    l[1] = re.sub('VIRSorter_|-cat_.','',l[1])
+                    l[1] = re.sub('_gene.*gene_\d*-|-','\t',l[1])
+                    out.write(f'{l[1]}\n')
+            infh.close()
+        out.close()
 
 
 rule count_tp_tn:

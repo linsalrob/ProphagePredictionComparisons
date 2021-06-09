@@ -56,9 +56,7 @@ rule run_virsorter2:
     conda:
         "../conda_environments/virsorter2.yaml"
     resources:
-        mem_mb = 16000,
-        cpus = 4,
-        time_min = 480
+        mem_mb = 16000
     shell:
         """
         virsorter run --use-conda-off --db-dir {vs2Build}/db -w {params} -i {input.fna} -j 1 all
@@ -75,8 +73,7 @@ rule virsorter2_to_tbl:
         inFH = open(input[0], 'r')
         for line in inFH:
             l = line.split('\t')
-            if l[13]=='0':
-                outFH.write(f'{l[0]}\t{l[16]}\t{l[17]}\n')
+            outFH.write(f'{l[0]}\t{l[16]}\t{l[17]}\n')
         outFH.close()
         inFH.close()
 

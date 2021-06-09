@@ -1,0 +1,7 @@
+name: vibrant
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - vibrant=1.2.1

@@ -40,8 +40,11 @@ rule build_dbscan_swa:
         """
         cd {dbsBuild};
         git clone {dlUrl};
+        cd DBSCAN-SWA/;
+        git checkout 2e61b95;
+        cd ../;
         mv DBSCAN-SWA/* DBSCAN/;
-        rm -rf DBSCAN-SWA/;
+        rm -rf DBSCAN-SWA/
         cd {dbsHome};
         chmod u+x -R bin/;
         chmod u+x -R software/;
@@ -63,6 +66,8 @@ rule run_dbscan_swa:
         os.path.join(outputdir, '{genome}')
     benchmark:
         os.path.join(outputdir, "benchmarks", "{genome}_dbscan-swa.txt")
+    resources:
+        mem_mb = 8000
     shell:
         "python {dbsRun} --input {input.fa} --output {params} --thread_num 1"
 

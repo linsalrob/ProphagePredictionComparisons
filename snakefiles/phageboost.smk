@@ -61,6 +61,8 @@ rule run_phageboost:
     params:
         pypath = os.path.join(workflow.basedir,'../'),
         datdir = dataDir
+    resources:
+        mem_mb = 8000
     shell:
         """
         export PYTHONPATH={params.pypath};
