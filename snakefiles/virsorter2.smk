@@ -59,7 +59,7 @@ rule run_virsorter2:
         mem_mb = 16000
     shell:
         """
-        virsorter run --use-conda-off --db-dir {vs2Build}/db -w {params} -i {input.fna} -j 1 all
+        virsorter run --use-conda-off --min-score 0.9 --db-dir {vs2Build}/db -w {params} -i {input.fna} -j 1 all
         """
 
 
