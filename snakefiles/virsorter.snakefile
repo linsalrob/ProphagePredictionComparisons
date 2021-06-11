@@ -71,15 +71,18 @@ rule virsorter_to_tbl:
         c3 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_cat-3.gb"),
         c4 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-4.gb"),
         c5 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-5.gb"),
+        dir = os.path.join(outputdir, "{genome}_virsorter")
     output:
-        os.path.join(outputdir, "{genome}_virsorter", "locs.tsv")
+        tmp = os.path.join(outputdir, "{genome}_virsorter", "locs.tsv.vsidentifiers"),
+        final = os.path.join(outputdir, "{genome}_virsorter", "locs.tsv")
     shell:
         """
         set +e
         G=$(grep -h LOCUS {input.c1} {input.c2} {input.c3});
         exitcode=$?
         if [ $exitcode == 0 ]; then
-            echo $G | awk '{{print $2"\t1\t"$3}}' | sed -e 's/VIRSorter_//' > {output};
+            grep -h LOCUS {input.c1} {input.c2} {input.c3} | awk '{{print $2"\t1\t"$3}}' | sed -e 's/VIRSorter_//' > {output.tmp};
+            {scripts}/reverse_engineer_id_virsorter.pl -i {input.dir};
         elif [ $exitcode == 1 ]; then
             touch {output}
         else
@@ -89,7 +92,8 @@ rule virsorter_to_tbl:
         G=$(grep -h LOCUS {input.c4} {input.c5})
         exitcode=$?
         if [ $exitcode == 0 ]; then
-            echo $G | awk '{{print $2}}' | perl -pe 's/VIRSorter_(\S+)_gene_\d+_gene_\d+-(\d+)-(\d+)-.*/$1\t$2\t$3/' >> {output}
+            grep -h LOCUS {input.c4} {input.c5} | awk '{{print $2}}' | perl -pe 's/VIRSorter_(\S+)_gene_\d+_gene_\d+-(\d+)-(\d+)-.*/$1\t$2\t$3/' >> {output.tmp};
+            {scripts}/reverse_engineer_id_virsorter.pl -i {input.dir};
         elif [ $exitcode == 1 ]; then
             touch {output}
         else
