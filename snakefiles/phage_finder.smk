@@ -87,7 +87,8 @@ rule run_phage_finder:
     conda:
         "../conda_environments/phage_finder.yaml"
     resources:
-        time_min = 2880
+        time_min = 2880,
+        mem_mb = 8000
     shell:
         """
         cd {params};
