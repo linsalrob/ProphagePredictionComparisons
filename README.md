@@ -65,7 +65,7 @@ We have:
 
 We could not install:
  - [LysoPhD](https://ieeexplore.ieee.org/document/8983280) - We can not find this available online anywhere
- - [ProphET](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0223364]) - This requires legacy BLAST 
+ - [ProphET](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0223364) - This requires legacy BLAST 
 and EMBOSS packages and we could not get it to install and run.
 
 If you know of other tools that should be included please let us know or make a PR.
