@@ -59,7 +59,7 @@ rule run_virsorter2:
         mem_mb = 16000
     shell:
         """
-        virsorter run --use-conda-off --min-score 0.9 --db-dir {vs2Build}/db -w {params} -i {input.fna} -j 1 all
+        virsorter run --use-conda-off --db-dir {vs2Build}/db -w {params} -i {input.fna} --high-confidence-only --exclude-lt2gene -j 1 all
         """
 
 
@@ -67,25 +67,19 @@ rule virsorter2_to_tbl:
     input:
         os.path.join(outputdir, "{genome}.out", 'final-viral-boundary.tsv'),
     output:
-        temp(os.path.join(outputdir, "{genome}.out", "locs.tsv.tmp"))
+        os.path.join(outputdir, "{genome}.out", "locs.tsv")
     run:
         outFH = open(output[0], 'w')
         inFH = open(input[0], 'r')
         for line in inFH:
-            if not line.startswith('seqname'):
-                l = line.split('\t')
-                outFH.write(f'{l[0]}\t{l[16]}\t{l[17]}\n')
+            l = line.split('\t')
+            if l[13]=='0' or l[13]=='1': # 0 = full contig predicted as viral, 1 = integrated prophage predicted, we consider both cases
+                # l[5] is the score of the predicted prophage. l[25] is the number of hallmark gene(s) in the prophage.
+                # l[3] and l[4] have the coordinate of the predicted prophage
+                outFH.write(f'{l[0]}\t{l[3]}\t{l[4]}\n')
+                # outFH.write(f'{l[0]}\t{l[16]}\t{l[17]}\n')
         outFH.close()
         inFH.close()
-
-
-rule virsorter2_tbl_merge:
-    input:
-        os.path.join(outputdir,"{genome}.out","locs.tsv.tmp")
-    output:
-        os.path.join(outputdir,"{genome}.out","locs.tsv")
-    shell:
-        "bedtools merge -i {input} > {output}"
 
 
 rule count_tp_tn:

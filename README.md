@@ -1,5 +1,7 @@
 [![Edwards Lab](https://img.shields.io/badge/Bioinformatics-EdwardsLab-03A9F4)](https://edwards.sdsu.edu/research)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://www.zenodo.org/badge/273771924.svg)](https://www.zenodo.org/badge/latestdoi/273771924)
+
 
 
 
@@ -53,12 +55,18 @@ If you go to all that work, please make a pull request and we will update this s
 # What software is currently included?
 
 We have:
- - [PhageBoost](http://phageboost.ml) [original citation](https://www.biorxiv.org/content/10.1101/2020.08.09.243022v1.full.pdf) Version used: 0.1.4
- - [Phage Finder](http://phage-finder.sourceforge.net/) [original citation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1635311/) Version used: v2.1
- - [Phigaro](https://github.com/bobeobibo/phigaro) [original citation](https://academic.oup.com/bioinformatics/article-abstract/36/12/3882/5822875?redirectedFrom=fulltext) Version used: v2.2.3
- - [PhiSpy](https://github.com/linsalrob/phispy) [original citation](https://pubmed.ncbi.nlm.nih.gov/22584627/) Version used: 4.1.19
- - [VirSorter](https://github.com/simroux/VirSorter) [original citation](https://peerj.com/articles/985/)  Version used: v1.0.6
- - [Virsorter2](https://github.com/jiarong/VirSorter2) [original citation](https://doi.org/10.1186/s40168-020-00990-y) Version used: 2.2.1
+ - [Phage Finder](http://phage-finder.sourceforge.net/) ([original citation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1635311/)) Version used: v2.1
+ - [PhiSpy](https://github.com/linsalrob/phispy) ([original citation](https://pubmed.ncbi.nlm.nih.gov/22584627/)) Version used: 4.2.6
+ - [VirSorter](https://github.com/simroux/VirSorter) ([original citation](https://peerj.com/articles/985/))  Version used: v1.0.6
+ - [Phigaro](https://github.com/bobeobibo/phigaro) ([original citation](https://academic.oup.com/bioinformatics/article-abstract/36/12/3882/5822875?redirectedFrom=fulltext)) Version used: v2.3.0
+ - [DBSCAN-SWA](https://github.com/HIT-ImmunologyLab/DBSCAN-SWA) ([original citation](https://www.biorxiv.org/content/10.1101/2020.07.12.199018v1.full)) Version used: 2e61b95
+ - [PhageBoost](https://github.com/ku-cbd/PhageBoost) ([original citation](https://www.biorxiv.org/content/10.1101/2020.08.09.243022v1.full.pdf)) Version used: 0.1.7
+ - [Virsorter2](https://github.com/jiarong/VirSorter2) ([original citation](https://doi.org/10.1186/s40168-020-00990-y)) Version used: 2.2.1
+
+We could not install:
+ - [LysoPhD](https://ieeexplore.ieee.org/document/8983280) - We can not find this available online anywhere
+ - [ProphET](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0223364) - This requires legacy BLAST 
+and EMBOSS packages and we could not get it to install and run.
 
 If you know of other tools that should be included please let us know or make a PR.
 
@@ -69,6 +77,19 @@ the prophage region, and we mark each prophage gene as being a phage gene with a
 prediction software on those genbank files, and then compare the predictions with our manual curations.
 
 **We need more manually curated genomes!** Please contribute by adding more manually curated genomes to our data set.
+
+# How can I contribute genomes?
+
+Our [dataset](genbank/) of manually curated genomes is a start, and we welcome submissions from anyone. 
+To add a new genome:
+1. Please generate a GenBank format file with the _complete_ bacterial genome
+2. For the `CDS` entries that are phages, please add the flag `/is_phage="1"` to the entry (the value doesn't matter,
+   we check for the presence of the `is_phage` flag and that the value is not zero)
+3. Make a clone of this repository and add your genome(s)
+4. Make a pull request to add your genome(s) from your clone to the master branch
+
+We welcome annotated microbial genomes from all sources, but we ask that you please _manually_ curate the presence of
+phage, because it is that gold-standard manual curation that allows us to accurately compare tools.
 
 # What are the results?
 

@@ -74,29 +74,35 @@ rule virsorter_to_tbl:
         c3 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_cat-3.gb"),
         c4 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-4.gb"),
         c5 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-5.gb"),
-        c6 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-6.gb")
+        dir = os.path.join(outputdir, "{genome}_virsorter")
     output:
-        os.path.join(outputdir, "{genome}_virsorter", "locs.tsv")
-    run:
-        import re
-        out = open(output[0], 'w')
-        for f in [input.c1, input.c2, input.c3]:
-            infh = open(f, 'r')
-            for line in infh:
-                if line.startswith('LOCUS'):
-                    l = line.split()
-                    out.write(f'{l[1]}\t1\t{l[2]}\n')
-            infh.close()
-        for f in [input.c4, input.c5, input.c6]:
-            infh = open(f, 'r')
-            for line in infh:
-                if line.startswith('LOCUS'):
-                    l = line.split()
-                    l[1] = re.sub('VIRSorter_|-cat_.','',l[1])
-                    l[1] = re.sub('_gene.*gene_\d*-|-','\t',l[1])
-                    out.write(f'{l[1]}\n')
-            infh.close()
-        out.close()
+        tmp = os.path.join(outputdir, "{genome}_virsorter", "locs.tsv.vsidentifiers"),
+        final = os.path.join(outputdir, "{genome}_virsorter", "locs.tsv")
+    shell:
+        """
+        set +e
+        G=$(grep -h LOCUS {input.c1} {input.c2} {input.c3});
+        exitcode=$?
+        if [ $exitcode == 0 ]; then
+            grep -h LOCUS {input.c1} {input.c2} {input.c3} | awk '{{print $2"\t1\t"$3}}' | sed -e 's/VIRSorter_//' > {output.tmp};
+            {scripts}/reverse_engineer_id_virsorter.pl -i {input.dir};
+        elif [ $exitcode == 1 ]; then
+            touch {output}
+        else
+            exit $exitcode
+        fi
+
+        G=$(grep -h LOCUS {input.c4} {input.c5})
+        exitcode=$?
+        if [ $exitcode == 0 ]; then
+            grep -h LOCUS {input.c4} {input.c5} | awk '{{print $2}}' | perl -pe 's/VIRSorter_(\S+)_gene_\d+_gene_\d+-(\d+)-(\d+)-.*/$1\t$2\t$3/' >> {output.tmp};
+            {scripts}/reverse_engineer_id_virsorter.pl -i {input.dir};
+        elif [ $exitcode == 1 ]; then
+            touch {output}
+        else
+            exit $exitcode
+        fi
+        """
 
 
 rule count_tp_tn:

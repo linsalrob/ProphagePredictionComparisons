@@ -89,6 +89,7 @@ def predicted_regions(regf, gbkf, verbose):
             assert(len(p) == 3), f"Expected a tple of [contig, start, stop] in {regf}"
             p[1] = int(p[1])
             p[2] = int(p[2])
+            # print("Found a region predicted from {} to {} into {} ".format(p[1],p[2],p[0]))
             if p[0] not in regions:
                 regions[p[0]] = []
             if p[2] < p[1]:
@@ -101,6 +102,7 @@ def predicted_regions(regf, gbkf, verbose):
 
     predicted = {}
     for seq in genbank_seqio(gbkf):
+        # print("Now testing {}".format(seq))
         if seq.id in regions:
             for loc in regions[seq.id]:
                 if verbose:
@@ -207,7 +209,7 @@ def compare_real_predicted(phage: dict, nonphage: dict, predicted: dict, print_f
         print(f"Specificity:\t{specificity:.3f}\t(This is the fraction of non phage genes we got right)")
     else:
         print("Specificity:\tNaN")
-    
+
     if f1_score != "NaN":
         print(f"f1_score:\t{f1_score:.3f}\t(this is the harmonic mean of precision and recall, and is the best " +
               "measure when, as in this case, there is a big difference between the " +
