@@ -1,0 +1,20 @@
+{
+	"creators": [
+		{
+			"orcid": "0000-0003-1488-5148",
+			"affiliation": "Flinders University",
+			"name": "Roach, Michael"
+		},
+		{	"orcid": "0000-0001-8383-8949",
+			"affiliation": "Flinders University",
+			"name": "Edwards, Robert"
+		},
+		{
+			"orcid": "0000-0002-5831-5895",
+			"affiliation": "DOE Joint Genome Institute",
+			"name": "Roux, Simon"
+		}
+	],
+		"license": "MIT",
+		"title": "Prophage Prediction Comparisons"
+}
