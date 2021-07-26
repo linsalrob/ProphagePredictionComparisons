@@ -1,0 +1,5 @@
+name: seeker
+dependencies:
+  - pip
+  - pip:
+      - seeker
