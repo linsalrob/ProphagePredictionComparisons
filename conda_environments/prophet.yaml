@@ -1,0 +1,17 @@
+name: prophet
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - blast-legacy
+  - emboss
+  - bedtools
+  - perl-bioperl
+  - perl-svg
+  - perl-gd
+  - perl-gd-svg
+  - perl-lwp-simple
+  - perl-xml-simple
+  - perl-mozilla-ca
+  - perl-lwp-protocol-https
