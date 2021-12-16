@@ -5,7 +5,9 @@ rule dl_pvogs:
     shell:
         """
         cd {psBuild};
-        wget http://dmk-brain.ecn.uiowa.edu/pVOGs/downloads/All/AllvogHMMprofiles.tar.gz;
+        wget -O AllvogHMMprofiles.tar.gz https://cloudstor.aarnet.edu.au/plus/s/TcawWb8USNOY9bc/download;
+        # mirror
+        # wget https://ftp.ncbi.nlm.nih.gov/pub/kristensen/pVOGs/downloads/All/AllvogHMMprofiles.tar.gz;
         tar -zxvf AllvogHMMprofiles.tar.gz;
         cat AllvogHMMprofiles/* > pVOGs.hmm;
         rm -r AllvogHMMprofiles;
