@@ -14,7 +14,7 @@ outDirName = 'dbscan-swa'
 dbsBuild = os.path.join(workflow.basedir, "../build/")
 dbsHome = os.path.join(dbsBuild, 'DBSCAN')
 dbsRun = os.path.join(dbsHome, 'bin/dbscan-swa.py')
-dlUrl = 'https://github.com/HIT-ImmunologyLab/DBSCAN-SWA.git'
+dlUrl = 'https://github.com/beardymcjohnface/DBSCAN-SWA-1.git'
 
 
 
@@ -38,19 +38,26 @@ rule build_dbscan_swa:
         "../conda_environments/dbscan-swa.yaml"
     shell:
         """
-        cd {dbsBuild};
-        git clone {dlUrl};
-        cd DBSCAN-SWA/;
-        git checkout 2e61b95;
-        cd ../;
-        mv DBSCAN-SWA/* DBSCAN/;
-        rm -rf DBSCAN-SWA/
-        cd {dbsHome};
-        chmod u+x -R bin/;
-        chmod u+x -R software/;
-        cd {dbsHome}/test;
-        python {dbsRun} --input NC_007054.fasta --output yeet --thread_num 1;
-        rm -r yeet;
+        cd {dbsBuild}
+        git clone {dlUrl}
+        cd DBSCAN-SWA-1/
+        cd {dbsBuild}
+        rm -rf DBSCAN/ && mkdir DBSCAN
+        mv DBSCAN-SWA-1/* DBSCAN/
+        rm -rf DBSCAN-SWA-1/
+        cd DBSCAN/
+        wget -O db.tar.gz https://cloudstor.aarnet.edu.au/plus/s/2nfXwDm9YuWNy5C/download
+        tar xvf db.tar.gz
+        cd {dbsHome}
+        chmod u+x -R bin/
+        chmod u+x -R software/
+        cd {dbsHome}/test
+        # sed 's/num_threads = 20/num_threads = thread_num/' {dbsRun} \
+        #     | sed 's/thread_num <- 10//' \
+        #     | sed "s/.*0 prophage region was detected in the query bacterial genome.*/\\t\\topen(save_prophage_summary_file,'w').close()\\n\\t\\tsys.exit(0)/" \
+        #     > tmp.py && mv tmp.py {dbsRun}
+        python {dbsRun} --input NC_007054.fasta --output yeet --thread_num 1
+        rm -r yeet
         """
 
 
@@ -66,10 +73,12 @@ rule run_dbscan_swa:
         os.path.join(outputdir, '{genome}')
     benchmark:
         os.path.join(outputdir, "benchmarks", "{genome}_dbscan-swa.txt")
+    log:
+        os.path.join(outputdir, '{genome}/dbscan.log')
     resources:
         mem_mb = 8000
     shell:
-        "python {dbsRun} --input {input.fa} --output {params} --thread_num 1"
+        "python {dbsRun} --input {input.fa} --output {params} --thread_num 1 &> {log}"
 
 
 rule dbscan_swa_2_tbl:
