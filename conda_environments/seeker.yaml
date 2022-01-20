@@ -1,5 +1,6 @@
 name: seeker
 dependencies:
   - pip
+  - tensorflow
   - pip:
       - seeker

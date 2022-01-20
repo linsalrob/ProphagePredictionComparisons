@@ -4,4 +4,5 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - pandas
   - vibrant=1.2.1

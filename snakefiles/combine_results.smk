@@ -7,8 +7,10 @@ TOOLS = {
     'phageboost' : 'PhageBoost',
     'phigaro' : 'Phigaro',
     'phispy' : 'PhiSpy',
+    'prophet' : 'ProphET',
     # 'phispy_trained' : 'PhiSpy (trained)',
-    'phispy_pvog' : 'PhiSpy (+pVOGs)',
+    # 'phispy_pvog' : 'PhiSpy (+pVOGs)',
+    'seeker' : 'Seeker',
     'virsorter' : 'VirSorter',
     'virsorter2' : 'VirSorter2',
     'vibrant' : 'VIBRANT'

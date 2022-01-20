@@ -52,7 +52,8 @@ rule run_virsorter:
         c3 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_cat-3.gb"),
         c4 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-4.gb"),
         c5 = os.path.join(outputdir, "{genome}_virsorter", "Predicted_viral_sequences/VIRSorter_prophages_cat-5.gb"),
-        c6 = os.path.join(outputdir,"{genome}_virsorter","Predicted_viral_sequences/VIRSorter_prophages_cat-6.gb")
+        c6 = os.path.join(outputdir,"{genome}_virsorter","Predicted_viral_sequences/VIRSorter_prophages_cat-6.gb"),
+        dir = directory(os.path.join(outputdir, "{genome}_virsorter"))
     params:
         odir = os.path.join(outputdir, "{genome}_virsorter")
     benchmark:

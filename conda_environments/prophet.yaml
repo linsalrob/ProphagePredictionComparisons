@@ -4,6 +4,7 @@ channels:
   - bioconda
   - defaults
 dependencies:
+  - libwebp=0.5.2
   - blast-legacy
   - emboss
   - bedtools

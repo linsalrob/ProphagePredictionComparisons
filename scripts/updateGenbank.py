@@ -32,7 +32,7 @@ for seq in genbankfilesarestupid:
         try:
             for b in bed[seq.id]:
                 if seq.features[i].location.start < b[1] and seq.features[i].location.end > b[0]:
-                    seq.features[i].qualifiers['is_phage'] = 1
+                    seq.features[i].qualifiers['is_phage'] = '1'
         except KeyError:
             pass
     sys.stdout.write(seq.format('genbank'))

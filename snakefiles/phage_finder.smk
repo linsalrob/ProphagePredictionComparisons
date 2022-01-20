@@ -42,7 +42,7 @@ rule build_phage_finder:
         tar xvf {dlTar};
         rm {dlTar};
         cd ~/;
-        ln -s {pfHome} .;
+        #ln -s {pfHome} .;
         cd {pfHome};
         for i in `ls | grep hmm3.lst | sed 's/3.lst//'`;
             do ln -s ${{i}}3.lst ${{i}}.lst; 
