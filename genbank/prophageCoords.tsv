@@ -1,0 +1,276 @@
+FILE	ORGANISM	ACCESSION	PROPHAGE NUMBER	PROPHAGE START	PROPHAGE END	GENES IN PROPHAGE
+Achromobacter_denitrificans_strain_PR1.gb.gz	Achromobacter denitrificans	CP020917.1	1	988393	993461	10
+Achromobacter_denitrificans_strain_PR1.gb.gz	Achromobacter denitrificans	CP020917.1	2	997263	997998	1
+Achromobacter_denitrificans_strain_PR1.gb.gz	Achromobacter denitrificans	CP020917.1	3	999141	999558	1
+Achromobacter_denitrificans_strain_PR1.gb.gz	Achromobacter denitrificans	CP020917.1	4	1000958	1031433	46
+Achromobacter_denitrificans_strain_PR1.gb.gz	Achromobacter denitrificans	CP020917.1	5	6851263	6910253	71
+Bacillus_halodurans_C-125.gb.gz	Bacillus halodurans C-125	NC_002570	1	3617919	3652236	46
+Bacillus_subtilis_subsp._subtilis_str._168.gb.gz	Bacillus subtilis subsp. subtilis str. 168	NC_000964	1	1319159	1347653	39
+Bacillus_subtilis_subsp._subtilis_str._168.gb.gz	Bacillus subtilis subsp. subtilis str. 168	NC_000964	2	2151328	2285649	196
+Bacillus_subtilis_subsp._subtilis_str._168.gb.gz	Bacillus subtilis subsp. subtilis str. 168	NC_000964	3	2667762	2701023	48
+Bacteroides_uniformis_ATCC_8492_strain_81A2.gb.gz	Bacteroides uniformis ATCC 8492	411479.31.con.0003	1	48618	82501	44
+Bacteroides_uniformis_ATCC_8492_strain_81A2.gb.gz	Bacteroides uniformis ATCC 8492	411479.31.con.0010	2	71422	120064	31
+Bacteroides_uniformis_ATCC_8492_strain_81A2.gb.gz	Bacteroides uniformis ATCC 8492	411479.31.con.0008	3	4	149343	176
+Bacteroides_uniformis_ATCC_8492_strain_81A2.gb.gz	Bacteroides uniformis ATCC 8492	411479.31.con.0020	4	2	42319	58
+Bacteroides_uniformis_ATCC_8492_strain_81A2.gb.gz	Bacteroides uniformis ATCC 8492	411479.31.con.0021	5	38496	80204	48
+Bifidobacterium_longum_NCC2705.gb.gz	Bifidobacterium longum NCC2705	NC_004307	1	466770	483602	27
+Bifidobacterium_longum_NCC2705.gb.gz	Bifidobacterium longum NCC2705	NC_004307	2	1813658	1869960	51
+Brucella_melitensis_16M.gb.gz	Brucella melitensis bv. 1 str. 16M	NC_003317	1	771325	810902	45
+Brucella_melitensis_16M.gb.gz	Brucella melitensis bv. 1 str. 16M	NC_003317	2	1723474	1743933	33
+Caulobacter_crescentus_CB15.gb.gz	Caulobacter vibrioides CB15	NC_002696	1	2986135	3002280	19
+Clostridium_perfringens_str._13.gb.gz	Clostridium perfringens str. 13	NC_003366	1	1298198	1333426	43
+Clostridium_tetani_E88.gb.gz	Clostridium tetani E88	NC_004557	1	1138053	1181003	66
+Clostridium_tetani_E88.gb.gz	Clostridium tetani E88	NC_004557	2	1663820	1696272	38
+Clostridium_tetani_E88.gb.gz	Clostridium tetani E88	NC_004557	3	2245646	2281387	63
+Deinococcus_radiodurans_R1.gb.gz	Deinococcus radiodurans R1	NC_001263	1	518498	547481	31
+Enterococcus_faecalis_strain_V583.gb.gz	Enterococcus faecalis	1351.557.con.0001	1	3336794	3389002	72
+Escherichia_coli_CFT073.gb.gz	Escherichia coli CFT073	NC_004431	1	909003	942273	46
+Escherichia_coli_CFT073.gb.gz	Escherichia coli CFT073	NC_004431	2	1328013	1371636	64
+Escherichia_coli_CFT073.gb.gz	Escherichia coli CFT073	NC_004431	3	1377929	1388654	20
+Escherichia_coli_CFT073.gb.gz	Escherichia coli CFT073	NC_004431	4	1397369	1446615	77
+Escherichia_coli_CFT073.gb.gz	Escherichia coli CFT073	NC_004431	5	3018709	3066517	62
+Escherichia_coli_K12.gb.gz	Escherichia coli str. K-12 substr. MG1655	NC_000913	1	564037	584856	33
+Escherichia_coli_K12.gb.gz	Escherichia coli str. K-12 substr. MG1655	NC_000913	2	1197917	1215858	25
+Escherichia_coli_K12.gb.gz	Escherichia coli str. K-12 substr. MG1655	NC_000913	3	1410023	1431010	31
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	1	300072	322981	32
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	2	892844	930183	46
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	3	1250520	1295458	75
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	4	1330281	1391923	89
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	5	1626721	1665486	62
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	6	1678726	1744796	85
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	7	1897624	1927638	40
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	8	2116072	2141700	38
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	9	2146735	2165694	30
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	10	2282957	2330172	66
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	11	2668338	2687237	30
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	12	2746047	2797853	63
+Escherichia_coli_O157-H7_EDL933.gb.gz	Escherichia coli O157:H7 str. EDL933	NC_002655	13	2965955	3015014	76
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	1	891195	929292	46
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	2	1161296	1210641	70
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	3	1246039	1308182	93
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	4	1541625	1585503	64
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	5	1594750	1609329	26
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	6	1618211	1654021	43
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	7	1757548	1801201	54
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	8	1921471	1972408	66
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	9	2158241	2204274	75
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	10	2209504	2254887	67
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	11	2593127	2613167	31
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	12	2670689	2692605	30
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	13	2696724	2707277	22
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	14	2896150	2943747	76
+Escherichia_coli_O157-H7.gb.gz	Escherichia coli O157:H7 str. Sakai	NC_002695	15	5041092	5079469	55
+GCA_000007985.2_ASM798v2_genomic.gb.gz	Geobacter sulfurreducens PCA	AE017180.2	1	1036178	1074106	29
+GCA_000152565.1_ASM15256v1_genomic.gb.gz	Burkholderia cenocepacia PC184	CH482377.1	1	6852	42422	28
+GCA_002082995.2_ASM208299v2_genomic.gb.gz	Campylobacter jejuni subsp. jejuni	NBTT02000001.1	1	1436676	1471298	53
+GCA_002082995.2_ASM208299v2_genomic.gb.gz	Campylobacter jejuni subsp. jejuni	NBTT02000001.1	2	1729604	>1753287	37
+GCA_002813895.1_ASM281389v1_genomic.gb.gz	Cyanobacterium sp. HL-69	CP024912.1	1	2438918	2461137	28
+Haemophilus_influenzae_Rd_KW20.gb.gz	Haemophilus influenzae Rd KW20	NC_000907	1	1496763	1513073	26
+Haemophilus_influenzae_Rd_KW20.gb.gz	Haemophilus influenzae Rd KW20	NC_000907	2	1559374	1592771	50
+Lactococcus_lactis_subsp._lactis_Il1403.gb.gz	Lactococcus lactis subsp. lactis Il1403	NC_002662	1	35515	50948	28
+Lactococcus_lactis_subsp._lactis_Il1403.gb.gz	Lactococcus lactis subsp. lactis Il1403	NC_002662	2	447235	483244	55
+Lactococcus_lactis_subsp._lactis_Il1403.gb.gz	Lactococcus lactis subsp. lactis Il1403	NC_002662	3	502722	517314	26
+Lactococcus_lactis_subsp._lactis_Il1403.gb.gz	Lactococcus lactis subsp. lactis Il1403	NC_002662	4	1036641	1071558	61
+Lactococcus_lactis_subsp._lactis_Il1403.gb.gz	Lactococcus lactis subsp. lactis Il1403	NC_002662	5	1414111	1456949	58
+Listeria_innocua_Clip11262.gb.gz	Listeria innocua Clip11262	NC_003212	1	76208	115401	65
+Listeria_innocua_Clip11262.gb.gz	Listeria innocua Clip11262	NC_003212	2	1246562	1293952	72
+Listeria_innocua_Clip11262.gb.gz	Listeria innocua Clip11262	NC_003212	3	1713230	1760832	79
+Listeria_innocua_Clip11262.gb.gz	Listeria innocua Clip11262	NC_003212	4	2407381	2445891	60
+Listeria_innocua_Clip11262.gb.gz	Listeria innocua Clip11262	NC_003212	5	2587879	2625807	60
+Listeria_monocytogenes_EGD-e.gb.gz	Listeria monocytogenes EGD-e	NC_003210	1	119739	130671	17
+Listeria_monocytogenes_EGD-e.gb.gz	Listeria monocytogenes EGD-e	NC_003210	2	2363708	2402366	63
+Mesorhizobium_loti_MAFF303099.gb.gz	Mesorhizobium japonicum MAFF 303099	NC_002678	1	310804	347654	51
+Mesorhizobium_loti_MAFF303099.gb.gz	Mesorhizobium japonicum MAFF 303099	NC_002678	2	6575295	6619463	64
+Mesorhizobium_loti_MAFF303099.gb.gz	Mesorhizobium japonicum MAFF 303099	NC_002678	3	6975632	7020571	63
+Mycobacterium_tuberculosis_CDC1551.gb.gz	Mycobacterium tuberculosis CDC1551	NC_002755	1	2966693	2976077	14
+Mycobacterium_tuberculosis_CDC1551.gb.gz	Mycobacterium tuberculosis CDC1551	NC_002755	2	3871192	3879990	14
+Mycobacterium_tuberculosis_H37Rv.gb.gz	Mycobacterium tuberculosis H37Rv	NC_000962	1	1779311	1788113	14
+Mycobacterium_tuberculosis_H37Rv.gb.gz	Mycobacterium tuberculosis H37Rv	NC_000962	2	2970119	2981289	17
+NC_002745.gb.gz	Staphylococcus aureus subsp. aureus N315	BA000018.3	1	2005923	2049520	64
+NC_002935.gb.gz	Corynebacterium diphtheriae NCTC 13129	BX248353.1	1	154364	190992	46
+NC_002935.gb.gz	Corynebacterium diphtheriae NCTC 13129	BX248353.1	2	776520	792017	21
+NC_002935.gb.gz	Corynebacterium diphtheriae NCTC 13129	BX248353.1	3	1866722	1880855	21
+NC_002935.gb.gz	Corynebacterium diphtheriae NCTC 13129	BX248353.1	4	2215818	2298856	55
+NC_002967.gb.gz	Treponema denticola ATCC 35405	AE017226.1	1	1169949	1202411	33
+NC_002978.gb.gz	Wolbachia endosymbiont of Drosophila melanogaster	AE017196.1	1	245828	275225	31
+NC_002978.gb.gz	Wolbachia endosymbiont of Drosophila melanogaster	AE017196.1	2	551653	558625	9
+NC_002978.gb.gz	Wolbachia endosymbiont of Drosophila melanogaster	AE017196.1	3	567042	582561	19
+NC_002978.gb.gz	Wolbachia endosymbiont of Drosophila melanogaster	AE017196.1	4	623342	634537	13
+NC_003030.gb.gz	Clostridium acetobutylicum ATCC 824	AE001437.1	1	1277642	1348417	84
+NC_003030.gb.gz	Clostridium acetobutylicum ATCC 824	AE001437.1	2	2024019	2073956	77
+NC_003155.gb.gz	Streptomyces avermitilis MA-4680 = NBRC 14893	BA000030.4	1	6670510	6721444	63
+NC_003197.gb.gz	Salmonella enterica subsp. enterica serovar Typhimurium str. LT2	AE006468.2	1	962614	1007530	41
+NC_003197.gb.gz	Salmonella enterica subsp. enterica serovar Typhimurium str. LT2	AE006468.2	2	1098230	1143702	51
+NC_003197.gb.gz	Salmonella enterica subsp. enterica serovar Typhimurium str. LT2	AE006468.2	3	2042046	2061276	20
+NC_003197.gb.gz	Salmonella enterica subsp. enterica serovar Typhimurium str. LT2	AE006468.2	4	2330959	2345216	15
+NC_003197.gb.gz	Salmonella enterica subsp. enterica serovar Typhimurium str. LT2	AE006468.2	5	2728976	2776819	53
+NC_003197.gb.gz	Salmonella enterica subsp. enterica serovar Typhimurium str. LT2	AE006468.2	6	2844430	2879237	46
+NC_003197.gb.gz	Salmonella enterica subsp. enterica serovar Typhimurium str. LT2	AE006468.2	7	4417930	4438350	24
+NC_003902.gb.gz	Xanthomonas campestris pv. campestris str. ATCC 33913	AE008922.1	1	2435594	2448519	21
+NC_003902.gb.gz	Xanthomonas campestris pv. campestris str. ATCC 33913	AE008922.1	2	3523233	3560198	51
+NC_003997.gb.gz	Bacillus anthracis str. Ames	AE016879.1	1	447386	484339	57
+NC_003997.gb.gz	Bacillus anthracis str. Ames	AE016879.1	2	3456915	3505685	66
+NC_003997.gb.gz	Bacillus anthracis str. Ames	AE016879.1	3	3745957	3791042	71
+NC_003997.gb.gz	Bacillus anthracis str. Ames	AE016879.1	4	4842148	4858240	24
+NC_004116.gb.gz	Streptococcus agalactiae 2603V/R	AE009948.1	1	558253	599207	63
+NC_004116.gb.gz	Streptococcus agalactiae 2603V/R	AE009948.1	2	1833317	1867117	50
+NC_004310.gb.gz	Brucella suis 1330	AE014291.4	1	578084	584879	10
+NC_004567.gb.gz	Lactiplantibacillus plantarum WCFS1	AL935263.2	1	590127	633804	63
+NC_004567.gb.gz	Lactiplantibacillus plantarum WCFS1	AL935263.2	2	2161729	2218340	76
+NC_004567.gb.gz	Lactiplantibacillus plantarum WCFS1	AL935263.2	3	2998562	3007279	14
+NC_004578.gb.gz	Pseudomonas syringae pv. tomato str. DC3000	AE016853.1	1	623638	647486	20
+NC_004578.gb.gz	Pseudomonas syringae pv. tomato str. DC3000	AE016853.1	2	2252627	2264999	18
+NC_004578.gb.gz	Pseudomonas syringae pv. tomato str. DC3000	AE016853.1	3	3824532	3865278	46
+NC_004578.gb.gz	Pseudomonas syringae pv. tomato str. DC3000	AE016853.1	4	4517027	4530373	16
+NC_004578.gb.gz	Pseudomonas syringae pv. tomato str. DC3000	AE016853.1	5	4543231	4563495	23
+NC_004606.gb.gz	Streptococcus pyogenes SSI-1	BA000034.2	1	446426	486160	49
+NC_004606.gb.gz	Streptococcus pyogenes SSI-1	BA000034.2	2	545635	583603	55
+NC_004606.gb.gz	Streptococcus pyogenes SSI-1	BA000034.2	3	625069	666334	63
+NC_004606.gb.gz	Streptococcus pyogenes SSI-1	BA000034.2	4	725016	759141	55
+NC_004606.gb.gz	Streptococcus pyogenes SSI-1	BA000034.2	5	878689	919064	61
+NC_004606.gb.gz	Streptococcus pyogenes SSI-1	BA000034.2	6	1107956	1147543	55
+NC_004631.gb.gz	Salmonella enterica subsp. enterica serovar Typhi str. Ty2	AE014613.1	1	1314606	1441766	142
+NC_004631.gb.gz	Salmonella enterica subsp. enterica serovar Typhi str. Ty2	AE014613.1	2	1928057	1972330	64
+NC_004631.gb.gz	Salmonella enterica subsp. enterica serovar Typhi str. Ty2	AE014613.1	3	2735201	2754628	21
+NC_004631.gb.gz	Salmonella enterica subsp. enterica serovar Typhi str. Ty2	AE014613.1	4	3501127	3538076	48
+NC_004631.gb.gz	Salmonella enterica subsp. enterica serovar Typhi str. Ty2	AE014613.1	5	4458028	4490856	42
+NC_004631.gb.gz	Salmonella enterica subsp. enterica serovar Typhi str. Ty2	AE014613.1	6	4671629	4678034	9
+NC_004668.gb.gz	Enterococcus faecalis V583	AE016830.1	1	289353	326185	53
+NC_004668.gb.gz	Enterococcus faecalis V583	AE016830.1	2	1245336	1259965	18
+NC_004668.gb.gz	Enterococcus faecalis V583	AE016830.1	3	1398096	1443843	70
+NC_004668.gb.gz	Enterococcus faecalis V583	AE016830.1	4	1922999	1962485	46
+NC_004668.gb.gz	Enterococcus faecalis V583	AE016830.1	5	2004909	2048146	62
+NC_004668.gb.gz	Enterococcus faecalis V583	AE016830.1	6	2700665	2736808	54
+NC_004668.gb.gz	Enterococcus faecalis V583	AE016830.1	7	2817286	2829554	20
+NC_004722.gb.gz	Bacillus cereus ATCC 14579	AE016877.1	1	1805566	1866036	71
+NC_004722.gb.gz	Bacillus cereus ATCC 14579	AE016877.1	2	2355783	2369311	14
+NC_004722.gb.gz	Bacillus cereus ATCC 14579	AE016877.1	3	2531804	2565093	44
+NC_004722.gb.gz	Bacillus cereus ATCC 14579	AE016877.1	4	3660465	3668825	11
+NC_004741.gb.gz	Shigella flexneri 2a str. 2457T	AE014073.1	1	238510	254700	20
+NC_004741.gb.gz	Shigella flexneri 2a str. 2457T	AE014073.1	2	313842	327223	14
+NC_004741.gb.gz	Shigella flexneri 2a str. 2457T	AE014073.1	3	692890	746123	68
+NC_004741.gb.gz	Shigella flexneri 2a str. 2457T	AE014073.1	4	897506	930670	41
+NC_004741.gb.gz	Shigella flexneri 2a str. 2457T	AE014073.1	5	1100130	1105919	9
+NC_004741.gb.gz	Shigella flexneri 2a str. 2457T	AE014073.1	6	1177836	1191596	16
+NC_004741.gb.gz	Shigella flexneri 2a str. 2457T	AE014073.1	7	1614218	1620622	7
+NC_004741.gb.gz	Shigella flexneri 2a str. 2457T	AE014073.1	8	1901036	1921793	24
+NC_004741.gb.gz	Shigella flexneri 2a str. 2457T	AE014073.1	9	2021894	2044342	24
+NC_004741.gb.gz	Shigella flexneri 2a str. 2457T	AE014073.1	10	2678518	2687517	11
+NC_005085.gb.gz	Chromobacterium violaceum ATCC 12472	AE016825.1	1	353383	372826	20
+NC_005085.gb.gz	Chromobacterium violaceum ATCC 12472	AE016825.1	2	428567	450397	26
+NC_005085.gb.gz	Chromobacterium violaceum ATCC 12472	AE016825.1	3	2303968	2334742	42
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	1	10250	29999	27
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	2	132319	180394	45
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	3	1267569	1617919	252
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	4	2088100	2101272	10
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	5	2331852	2466741	121
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	6	2552734	2573940	20
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	7	2800482	2848507	41
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	8	2955620	2991661	37
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	9	3409530	3537385	166
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	10	3774755	3892173	69
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	11	4006890	4057232	65
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	12	4190162	4242791	39
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	13	4340685	4389122	38
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	14	5175987	5190589	20
+NC_005126.gb.gz	Photorhabdus laumondii subsp. laumondii TTO1	BX470251.1	15	5201180	5228815	27
+NC_005362.gb.gz	Lactobacillus johnsonii NCC 533	AE017198.1	1	327893	367791	46
+NC_005362.gb.gz	Lactobacillus johnsonii NCC 533	AE017198.1	2	1292552	1330377	50
+Neisseria_meningitidis_MC58.gb.gz	Neisseria meningitidis MC58	NC_003112	1	1099100	1133957	50
+Neisseria_meningitidis_Z2491.gb.gz	Neisseria meningitidis Z2491	NC_003116	1	1207796	1236260	51
+Neisseria_meningitidis_Z2491.gb.gz	Neisseria meningitidis Z2491	NC_003116	2	1769732	1807515	61
+Paracoccus_aminophilus_JCM_7686.gb.gz	Paracoccus aminophilus JCM 7686	NC_022041.1	1	552564	567235	18
+Paracoccus_aminophilus_JCM_7686.gb.gz	Paracoccus aminophilus JCM 7686	NC_022041.1	2	725100	768864	57
+Paracoccus_aminophilus_JCM_7686.gb.gz	Paracoccus aminophilus JCM 7686	NC_022041.1	3	1209993	1246935	51
+Paracoccus_aminophilus_JCM_7686.gb.gz	Paracoccus aminophilus JCM 7686	NC_022041.1	4	2047042	2082080	53
+Paracoccus_aminophilus_JCM_7686.gb.gz	Paracoccus aminophilus JCM 7686	NC_022041.1	5	2251226	2266190	15
+Paracoccus_aminophilus_JCM_7686.gb.gz	Paracoccus aminophilus JCM 7686	NC_022041.1	6	2286124	2334044	63
+Paracoccus_aminophilus_JCM_7686.gb.gz	Paracoccus aminophilus JCM 7686	NC_022041.1	7	2707825	2750676	59
+Paracoccus_aminophilus_JCM_7686.gb.gz	Paracoccus aminophilus JCM 7686	NC_022041.1	8	3004881	3043587	57
+Paracoccus_denitrificans_PD1222.gb.gz	Paracoccus denitrificans PD1222	NC_008686.1	1	318370	360705	61
+Paracoccus_denitrificans_PD1222.gb.gz	Paracoccus denitrificans PD1222	NC_008686.1	2	2646848	2652053	6
+Paracoccus_denitrificans_PD1222.gb.gz	Paracoccus denitrificans PD1222	NC_008686.1	3	2654387	2655395	1
+Paracoccus_denitrificans_PD1222.gb.gz	Paracoccus denitrificans PD1222	NC_008687.1	4	49989	64611	18
+Paracoccus_denitrificans_PD1222.gb.gz	Paracoccus denitrificans PD1222	NC_008687.1	5	876102	919704	75
+Paracoccus_sanguinis_5503.gb.gz	Paracoccus sanguinis strain 5503 	NZ_JRKQ01000001.1	1	25235	78116	59
+Paracoccus_sanguinis_5503.gb.gz	Paracoccus sanguinis strain 5503 	NZ_JRKQ01000003.1	2	21727	83273	70
+Paracoccus_sanguinis_5503.gb.gz	Paracoccus sanguinis strain 5503 	NZ_JRKQ01000004.1	3	605	49623	52
+Paracoccus_sanguinis_5503.gb.gz	Paracoccus sanguinis strain 5503 	NZ_JRKQ01000005.1	4	3431	36046	42
+Paracoccus_sanguinis_5503.gb.gz	Paracoccus sanguinis strain 5503 	NZ_JRKQ01000008.1	5	435	43846	56
+Paracoccus_sp._SCN_68-21.gb.gz	Paracoccus sp. SCN 68-21	MEES01000006.1	1	114022	161996	63
+Paracoccus_sp._SCN_68-21.gb.gz	Paracoccus sp. SCN 68-21	MEES01000009.1	2	21274	35966	18
+Paracoccus_yeei_TT13.gb.gz	Paracoccus yeei strain TT13	CP024422.1	1	809049	812670	3
+Paracoccus_yeei_TT13.gb.gz	Paracoccus yeei strain TT13	CP024422.1	2	813233	816532	5
+Paracoccus_yeei_TT13.gb.gz	Paracoccus yeei strain TT13	CP024422.1	3	1118492	1136975	29
+Paracoccus_yeei_TT13.gb.gz	Paracoccus yeei strain TT13	CP024422.1	4	2080759	2134791	80
+Paracoccus_yeei_TT13.gb.gz	Paracoccus yeei strain TT13	CP024422.1	5	2509222	2547320	39
+Paracoccus_yeei_TT13.gb.gz	Paracoccus yeei strain TT13	CP024422.1	6	2660668	2712541	60
+Paracoccus_yeei_TT13.gb.gz	Paracoccus yeei strain TT13	CP024422.1	7	2725398	2769347	58
+Pasteurella_multocida_subsp._multocida_str._Pm70.gb.gz	Pasteurella multocida subsp. multocida str. Pm70	NC_002663	1	1994905	2008494	16
+Pseudomonas_aeruginosa_PAO1.gb.gz	Pseudomonas aeruginosa PAO1	NC_002516	1	673190	698696	31
+Pseudomonas_aeruginosa_PAO1.gb.gz	Pseudomonas aeruginosa PAO1	NC_002516	2	786073	796776	15
+Pseudomonas_putida_KT2440.gb.gz	Pseudomonas putida KT2440	NC_002947	1	1738081	1777262	58
+Pseudomonas_putida_KT2440.gb.gz	Pseudomonas putida KT2440	NC_002947	2	2586632	2625819	44
+Pseudomonas_putida_KT2440.gb.gz	Pseudomonas putida KT2440	NC_002947	3	3409966	3450969	49
+Pseudomonas_putida_KT2440.gb.gz	Pseudomonas putida KT2440	NC_002947	4	4372063	4427414	78
+Ralstonia_solanacearum_GMI1000.gb.gz	Ralstonia solanacearum GMI1000	NC_003295	1	879249	914965	39
+Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18.gb.gz	Salmonella enterica subsp. enterica serovar Typhi str. CT18	NC_003385	1	36522	63925	26
+Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18.gb.gz	Salmonella enterica subsp. enterica serovar Typhi str. CT18	NC_003198	2	1008746	1052755	68
+Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18.gb.gz	Salmonella enterica subsp. enterica serovar Typhi str. CT18	NC_003198	3	1537772	1572919	55
+Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18.gb.gz	Salmonella enterica subsp. enterica serovar Typhi str. CT18	NC_003198	4	1889470	1933558	61
+Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18.gb.gz	Salmonella enterica subsp. enterica serovar Typhi str. CT18	NC_003198	5	3515469	3552416	52
+Salmonella_enterica_subsp._enterica_serovar_Typhi_str._CT18.gb.gz	Salmonella enterica subsp. enterica serovar Typhi str. CT18	NC_003198	6	4474436	4507270	46
+Shewanella_oneidensis_MR-1.gb.gz	Shewanella oneidensis MR-1	NC_004347	1	669360	703908	43
+Shewanella_oneidensis_MR-1.gb.gz	Shewanella oneidensis MR-1	NC_004347	2	705158	708836	5
+Shewanella_oneidensis_MR-1.gb.gz	Shewanella oneidensis MR-1	NC_004347	3	2788306	2822836	54
+Shewanella_oneidensis_MR-1.gb.gz	Shewanella oneidensis MR-1	NC_004347	4	3075408	3126249	78
+Shigella_flexneri_2a_str._301.gb.gz	Shigella flexneri 2a str. 301	NC_004337	1	238840	251370	12
+Shigella_flexneri_2a_str._301.gb.gz	Shigella flexneri 2a str. 301	NC_004337	2	725856	746810	24
+Shigella_flexneri_2a_str._301.gb.gz	Shigella flexneri 2a str. 301	NC_004337	3	1178174	1188703	19
+Shigella_flexneri_2a_str._301.gb.gz	Shigella flexneri 2a str. 301	NC_004337	4	1920777	1934730	15
+Staphylococcus_aureus_strain_Sa_Newman_UoM.gb.gz	ARRAY(0x6c0db48)	1280.10152.con.0001	1	320838	363183	67
+Staphylococcus_aureus_strain_Sa_Newman_UoM.gb.gz	ARRAY(0x6c0db48)	1280.10152.con.0001	2	1098899	1141349	65
+Staphylococcus_aureus_strain_Sa_Newman_UoM.gb.gz	ARRAY(0x6c0db48)	1280.10152.con.0001	3	1980873	2024358	67
+Staphylococcus_aureus_strain_Sa_Newman_UoM.gb.gz	ARRAY(0x6c0db48)	1280.10152.con.0001	4	2089427	2133097	66
+Staphylococcus_aureus_subsp._aureus_Mu50.gb.gz	Staphylococcus aureus	NC_002758	1	917530	961185	73
+Staphylococcus_aureus_subsp._aureus_Mu50.gb.gz	Staphylococcus aureus	NC_002758	2	2083582	2126179	65
+Staphylococcus_aureus_subsp._aureus_MW2.gb.gz	Staphylococcus aureus	NC_003923	1	1531687	1574930	64
+Staphylococcus_aureus_subsp._aureus_MW2.gb.gz	Staphylococcus aureus	NC_003923	2	2046604	2088749	59
+Streptococcus_pyogenes_M1_GAS.gb.gz	Streptococcus pyogenes M1 GAS	NC_002737	1	529630	570157	49
+Streptococcus_pyogenes_M1_GAS.gb.gz	Streptococcus pyogenes M1 GAS	NC_002737	2	778641	820599	63
+Streptococcus_pyogenes_M1_GAS.gb.gz	Streptococcus pyogenes M1 GAS	NC_002737	3	1189733	1222549	51
+Streptococcus_pyogenes_M1_GAS.gb.gz	Streptococcus pyogenes M1 GAS	NC_002737	4	1773457	1786407	21
+Streptococcus_pyogenes_MGAS315.gb.gz	Streptococcus pyogenes MGAS315	NC_004070	1	749212	787822	60
+Streptococcus_pyogenes_MGAS315.gb.gz	Streptococcus pyogenes MGAS315	NC_004070	2	977436	1018193	61
+Streptococcus_pyogenes_MGAS315.gb.gz	Streptococcus pyogenes MGAS315	NC_004070	3	1137742	1171867	55
+Streptococcus_pyogenes_MGAS315.gb.gz	Streptococcus pyogenes MGAS315	NC_004070	4	1230303	1271815	65
+Streptococcus_pyogenes_MGAS315.gb.gz	Streptococcus pyogenes MGAS315	NC_004070	5	1313281	1351250	62
+Streptococcus_pyogenes_MGAS315.gb.gz	Streptococcus pyogenes MGAS315	NC_004070	6	1410724	1450458	53
+Streptococcus_pyogenes_MGAS8232.gb.gz	Streptococcus pyogenes MGAS8232	NC_003485	1	293881	332714	60
+Streptococcus_pyogenes_MGAS8232.gb.gz	Streptococcus pyogenes MGAS8232	NC_003485	2	578092	618765	64
+Streptococcus_pyogenes_MGAS8232.gb.gz	Streptococcus pyogenes MGAS8232	NC_003485	3	1041279	1087739	76
+Streptococcus_pyogenes_MGAS8232.gb.gz	Streptococcus pyogenes MGAS8232	NC_003485	4	1206359	1241416	59
+Streptococcus_pyogenes_MGAS8232.gb.gz	Streptococcus pyogenes MGAS8232	NC_003485	5	1451843	1493373	63
+Vibrio_cholerae_O1_biovar_eltor_str._N16961.gb.gz	Vibrio cholerae O1 biovar El Tor str. N16961	NC_002505	1	1564151	1582851	26
+Vibrio_cholerae_O1_biovar_eltor_str._N16961.gb.gz	Vibrio cholerae O1 biovar El Tor str. N16961	NC_002505	2	1938738	1948022	14
+Xanthomonas_axonopodis_pv._citri_str._306.gb.gz	Xanthomonas citri pv. citri str. 306	NC_003919	1	1208131	1228271	28
+Xanthomonas_axonopodis_pv._citri_str._306.gb.gz	Xanthomonas citri pv. citri str. 306	NC_003919	2	3093991	3120498	39
+Xylella_fastidiosa_9a5c.gb.gz	Xylella fastidiosa 9a5c	NC_002488	1	487056	528096	62
+Xylella_fastidiosa_9a5c.gb.gz	Xylella fastidiosa 9a5c	NC_002488	2	649114	690375	58
+Xylella_fastidiosa_9a5c.gb.gz	Xylella fastidiosa 9a5c	NC_002488	3	1514346	1541287	46
+Xylella_fastidiosa_9a5c.gb.gz	Xylella fastidiosa 9a5c	NC_002488	4	1585979	1631056	74
+Xylella_fastidiosa_9a5c.gb.gz	Xylella fastidiosa 9a5c	NC_002488	5	2006147	2022372	25
+Xylella_fastidiosa_9a5c.gb.gz	Xylella fastidiosa 9a5c	NC_002488	6	2361168	2404268	58
+Xylella_fastidiosa_Temecula1.gb.gz	Xylella fastidiosa Temecula1	NC_004556	1	454016	464902	19
+Xylella_fastidiosa_Temecula1.gb.gz	Xylella fastidiosa Temecula1	NC_004556	2	1117951	1142413	50
+Xylella_fastidiosa_Temecula1.gb.gz	Xylella fastidiosa Temecula1	NC_004556	3	1161142	1217907	75
+Xylella_fastidiosa_Temecula1.gb.gz	Xylella fastidiosa Temecula1	NC_004556	4	1287475	1331541	65
+Xylella_fastidiosa_Temecula1.gb.gz	Xylella fastidiosa Temecula1	NC_004556	5	2005023	2020421	25
+Yersinia_pestis_CO92.gb.gz	Yersinia pestis CO92	NC_003134	1	2021	55200	66
+Yersinia_pestis_CO92.gb.gz	Yersinia pestis CO92	NC_003143	2	1392936	1412947	24
+Yersinia_pestis_CO92.gb.gz	Yersinia pestis CO92	NC_003143	3	2363015	2403216	54
+Yersinia_pestis_KIM.gb.gz	Yersinia pestis KIM	NC_004838	1	16214	46315	31
+Yersinia_pestis_KIM.gb.gz	Yersinia pestis KIM	NC_004835	2	2021	31441	30
+Yersinia_pestis_KIM.gb.gz	Yersinia pestis KIM	NC_004835	3	40131	55265	23
+Yersinia_pestis_KIM.gb.gz	Yersinia pestis KIM	NC_004088	4	2415699	2456467	55
+Yersinia_pestis_KIM.gb.gz	Yersinia pestis KIM	NC_004088	5	3234758	3254804	24
