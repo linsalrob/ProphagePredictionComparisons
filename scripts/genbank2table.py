@@ -18,9 +18,9 @@ with gzip.open(sys.argv[1], 'rt') as fh:
             orgName['O'] = line.replace('ORGANISM', '').strip()
             break
 
-if len(orgName['O']) > 5:
+if len(orgName['O']) > 16:
     oName = orgName['O']
-elif len(orgName['S']) > 5:
+elif len(orgName['S']) > 16:
     oName = orgName['S']
 else:
     oName = orgName['D']

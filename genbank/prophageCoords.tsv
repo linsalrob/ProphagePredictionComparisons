@@ -228,10 +228,10 @@ Shigella_flexneri_2a_str._301.gb.gz	Shigella flexneri 2a str. 301	NC_004337	1	23
 Shigella_flexneri_2a_str._301.gb.gz	Shigella flexneri 2a str. 301	NC_004337	2	725856	746810	24
 Shigella_flexneri_2a_str._301.gb.gz	Shigella flexneri 2a str. 301	NC_004337	3	1178174	1188703	19
 Shigella_flexneri_2a_str._301.gb.gz	Shigella flexneri 2a str. 301	NC_004337	4	1920777	1934730	15
-Staphylococcus_aureus_strain_Sa_Newman_UoM.gb.gz	ARRAY(0x6c0db48)	1280.10152.con.0001	1	320838	363183	67
-Staphylococcus_aureus_strain_Sa_Newman_UoM.gb.gz	ARRAY(0x6c0db48)	1280.10152.con.0001	2	1098899	1141349	65
-Staphylococcus_aureus_strain_Sa_Newman_UoM.gb.gz	ARRAY(0x6c0db48)	1280.10152.con.0001	3	1980873	2024358	67
-Staphylococcus_aureus_strain_Sa_Newman_UoM.gb.gz	ARRAY(0x6c0db48)	1280.10152.con.0001	4	2089427	2133097	66
+Staphylococcus_aureus_strain_Sa_Newman_UoM.gb.gz	Staphylococcus aureus strain Sa_Newman_UoM	1280.10152.con.0001	1	320838	363183	67
+Staphylococcus_aureus_strain_Sa_Newman_UoM.gb.gz	Staphylococcus aureus strain Sa_Newman_UoM	1280.10152.con.0001	2	1098899	1141349	65
+Staphylococcus_aureus_strain_Sa_Newman_UoM.gb.gz	Staphylococcus aureus strain Sa_Newman_UoM	1280.10152.con.0001	3	1980873	2024358	67
+Staphylococcus_aureus_strain_Sa_Newman_UoM.gb.gz	Staphylococcus aureus strain Sa_Newman_UoM	1280.10152.con.0001	4	2089427	2133097	66
 Staphylococcus_aureus_subsp._aureus_Mu50.gb.gz	Staphylococcus aureus	NC_002758	1	917530	961185	73
 Staphylococcus_aureus_subsp._aureus_Mu50.gb.gz	Staphylococcus aureus	NC_002758	2	2083582	2126179	65
 Staphylococcus_aureus_subsp._aureus_MW2.gb.gz	Staphylococcus aureus	NC_003923	1	1531687	1574930	64
