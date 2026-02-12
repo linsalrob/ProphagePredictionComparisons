@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: prophage_prediction_comparisons
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Robert
+    name-particle: Robert
+    family-names: Edwards
+    email: raedwards@gmail.com
+    affiliation: Flinders University
+    orcid: 'https://orcid.org/0000-0001-8383-8949'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.4739878
+    description: Zenodo repository of release
+repository-code: 'https://github.com/linsalrob/ProphagePredictionComparisons'
+abstract: >-
+  Prophages are viruses that are integrated into bacterial genomes. A few computational biologists
+  are keen to identify those specific regions, because they are more interesting than the rest of the
+  genome. For more about prophages, take a look at the home pages for some of the tools listed here.
+
+  This site is not intended to be a gentle introduction to prophages, but a FAIR (findable,
+  accessible, interoperable, and reusable) data resource for comparing prophage prediction software.
+keywords:
+  - metagenome
+  - genome
+  - phage
+  - prophage
+  - DNA sequencing
+  - microbiome
+  - bacteria
+  - virus
+license: MIT
