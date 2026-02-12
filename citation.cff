@@ -11,10 +11,11 @@ authors:
     email: raedwards@gmail.com
     affiliation: Flinders University
     orcid: 'https://orcid.org/0000-0001-8383-8949'
+doi: 10.5281/zenodo.4739878
 identifiers:
   - type: doi
     value: 10.5281/zenodo.4739878
-    description: Zenodo repository of release
+    description: Zenodo repository of latest release
 repository-code: 'https://github.com/linsalrob/ProphagePredictionComparisons'
 abstract: >-
   Prophages are viruses that are integrated into bacterial genomes. A few computational biologists
